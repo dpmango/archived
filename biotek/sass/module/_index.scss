@@ -1,0 +1,742 @@
+.heading{
+	font-size: 26px;
+	font-family: "LatoSemibold";
+	line-height: 1.2em;
+	margin-bottom: 12px;
+
+	@include mq($until: tablet){font-size: 18px;};
+}
+.heading--super{
+	font-size: 32px;
+	@include mq($until: tablet){font-size: 22px;};
+}
+.heading-sub{
+	font-size: 20px;
+	@include mq($until: tablet){font-size: 14px;};
+}
+.heading-desc{
+	font-size: 18px;
+	line-height: 22px;
+	display: block;
+	margin-top: 20px;
+	text-align: left;
+	@include mq($until: tablet){font-size: 14px; line-height: 16px; text-align: center;};
+}
+
+.btn:hover{
+	color: white;
+}
+/////////////////////
+// Header
+/////////////////////
+
+.header-logo{
+	@include transform(scale(0.8));
+	@include mq($until: tablet){max-width: 150px;};
+}
+
+.header-phone{
+	font-size: 24px;
+	padding-left: 5px;
+	font-family: "LatoSemibold";
+	display: inline-block;
+	@include mq($until: desktop){font-size: 18px; padding-bottom: 5px;};
+	@include mq($until: tablet){font-size: 16px; padding-top: 13px; text-align: right;};
+}
+
+.header-btn{
+	display: inline-block;
+	background-color: rgba(white, 0.1);
+	border-radius: 20px;
+	border: 1px solid white;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	margin-top: 4px;
+	cursor: pointer;
+	&:hover{
+		background-color: rgba(white, 0.5);
+		@include transition(all .4s ease); 
+	}
+	@include mq($until: desktop){font-size: 14px; padding: 0; width: 100%; text-align: center;}
+}
+
+/////////////////////
+// HERO
+/////////////////////
+
+.hero-heading{
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-family: "LatoLight";
+	color: white;
+	text-align: right;
+	@include text-shadow(0, 3px, 6px, rgba(black, .15));
+	span{
+		color: $purple;
+	}
+
+	@include mq($until: desktop){width: 100%; }
+	@include mq($until: tablet){
+		position: absolute;
+		top: 0px; left: 5%; width: 90%;
+		z-index: 9;
+		text-align: center;
+		font-size: 20px;
+		line-height: 25px;
+		span{color: white; font-family: "LatoSemibold";}
+	};
+}
+
+.hero{
+	.hero-btn{
+		float: right;
+		margin-top: 170px;
+		margin-left: 20%;
+		text-align: center;
+		@include mq($until: desktop){margin-left: 0; padding: 0 30px; }
+		@include mq($until: tablet){
+			position: absolute; top: 200px; left: 10%;
+			width: 80%;
+			z-index: 9;
+			margin: 0;
+			text-align: center;
+			font-size: 13px;
+			padding: 0;
+			float: none;
+		};
+		&:after{
+			content: ' ';
+			display: block;
+			clear: both;
+		}
+	}
+
+}
+.hero-btn{
+	display: inline-block;
+	position: relative;
+	font-size: 16px;
+	color: white;
+	text-transform: uppercase;
+	background-color: $purple;
+	border-radius: 20px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 7%;
+	border-bottom: 2px solid darken($purple, 10%);
+	&:hover{
+		color: white;
+		@include transition(all .4s ease);
+		background-color: darken($purple, 10%);
+	}
+	@include mq($until: desktop){margin-left: 0; padding: 0 30px; }
+	@include mq($until: tablet){
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		font-size: 13px;
+		padding: 0;
+		float: none;
+	};
+}
+
+/////////////////////
+// INTRO
+/////////////////////
+
+.intro-video{
+	margin-top: 20px;
+}
+
+.benefits{
+	margin-top: 50px;
+	@include mq($until: tablet){margin-top: 20px;};
+	.col-xs-6{
+		@include mq($until: tablet){min-height: 190px;};
+	}
+}
+
+.benefit-ico{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	@include mq($until: tablet){margin-bottom:  10px;};
+	&.ico1{background: #1ABC9C url('../img/svg/people.svg') no-repeat 50% 50%;}
+	&.ico2{background: #E67E22 url('../img/svg/education.svg') no-repeat 50% 50%;;}
+	&.ico3{background: #3498DB url('../img/svg/tool.svg') no-repeat 50% 50%;;}
+	&.ico4{background: #E74C3C url('../img/svg/favorite.svg') no-repeat 60% 50%;;}
+	&.ico5{background: #9B59B6 url('../img/svg/pen.svg') no-repeat 50% 50%;;}
+	&.ico6{background: #E2B70E url('../img/svg/certificate.svg') no-repeat 50% 55%;;}
+}
+
+.benefit-text{
+	display: block;
+	color: $grey;
+	line-height: 17px;
+	@include mq($until: tablet){margin-bottom: 20px; line-height: 14px; font-size: 12px;};
+}
+
+/////////////////////
+// COURSE BENEFITS
+/////////////////////
+
+.course-benefits-list{}
+.course-benefit-item{
+	margin-top: 60px;
+	@include mq($until: tablet){margin-top: 30px;};
+}
+.course-benefit-ico{
+	display: block;
+	border: 2px solid white;
+	content: ' ';
+	width: 130px;
+	height: 130px;
+	border-radius: 50%; 
+	margin: 0 auto 20px auto;
+	@include mq($until: tablet){width: 80px;height: 80px;};
+}
+.course-benefit-desc{}
+
+
+/////////////////////
+// CTA
+/////////////////////
+
+.btn-cta{
+	margin: 50px 0 0 0;
+	@include mq($until: tablet){margin: 20px 0 0 0;};
+}
+
+/////////////////////
+// COURSES
+/////////////////////
+.course-item{
+	display: block;
+	height: 260px;
+	position: relative;
+	margin-bottom: 20px;
+
+	@include mq($until: tablet){height: 200px;};
+	&:hover:after{
+		background-color: rgba($purple, .4);
+		@include transition(all .4s ease);
+		@include box-shadow(0, 0, 10px, rgba(white, .15));
+	}
+	&:after{
+		display: block;
+		position: absolute;
+		top: 0; left: 0;
+		background-color: rgba(black, .4);
+		content: ' ';
+		width: 100%; height: 100%;
+		z-index: 1;
+	}
+	.btn{
+		background: transparent;
+	}
+	&.cuorse-bg{
+		background-color: $purple;
+		&:after{
+			background: transparent url('../img/question.png') no-repeat 50% 50%;
+		}
+		&:hover{background-color: $purple;}
+		.course-item-name:after{display: none;}
+	}
+	.btn{
+		position: absolute;
+		left: 50%;
+		z-index: 9;
+		@include transform(translateX(-50%));
+		bottom: 30px;
+		padding: 9px 70px;
+		@include mq($until: tablet){bottom: 20px; width: 90%; padding: 7px 10px};
+		&:hover{
+			color: white;
+			background-color: rgba(white, 0.35);
+			@include transition(all .4s ease);
+		}
+	}
+	.btn-trsp{
+		font-size: 14px;
+		border: 1px solid white;
+		border-radius: 20px;
+		text-transform: uppercase;
+	}
+}
+
+.course-item-name{
+	font-size: 20px;
+	line-height: 28px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	display: inline-block;
+	position: absolute;
+	width: 80%;
+	left: 10%;
+	z-index: 9;
+	font-family: "LatoSemibold";
+	text-transform: uppercase;
+	-moz-control-character-visibility: hidden;
+	@include mq($until: desktop){padding-top: 30px; font-size: 18px; line-height: 24px;};
+	@include mq($until: tablet){ padding-top: 20px; font-size: 16px; line-height: 22px;};
+	&:after{
+		display: block;
+		width: 60px;
+		height: 4px;
+		background-color: white;
+		content: ' ';
+		margin: 15px auto 0 auto;
+		@include mq($until: tablet){display: none;};
+	}
+}
+
+.course-item-secondary{
+	position: absolute;
+	top: 75px;
+	left: 50%;
+	@include transform(translateX(-50%));
+	font-size: 16px;
+	width: 100%;
+}
+
+// courses bottom
+.courses-bottom{
+	.col-sm-3{
+		@include mq($until: tablet){margin-bottom: 30px;};
+		&:first-child{
+			.c-number{
+				@include mq($until: wide){font-size: 60px;};
+				@include mq($until: desktop){font-size: 42px;};
+				@include mq($until: tablet){font-size: 60px;};
+			}
+			.c-name{
+				@include mq($until: wide){vertical-align: 35px;};
+				@include mq($until: desktop){font-size: 14px; vertical-align: 22px;};
+				@include mq($until: tablet){vertical-align: 32px; margin-left: 10px;};
+			}
+		}
+	}
+
+}
+
+.c-number{
+	display: inline-block;
+	font-size: 84px;
+	line-height: 1em;
+	font-family: "LatoSemibold";
+	border-bottom: 1px solid white;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	@include mq($until: tablet){font-size: 60px;};
+}
+.c-name{
+	font-size: 16px;
+	vertical-align: 52px;
+	@include mq($until: tablet){vertical-align: 32px; margin-left: 10px;};
+}
+
+.c-desc{
+	font-size: 20px;
+	text-transform: uppercase;
+	display: block;
+	@include mq($until: desktop){font-size: 18px;};
+	@include mq($until: tablet){font-size: 16px;};
+}
+
+/////////////////////
+// DISCOUNT
+/////////////////////
+.discount-name{
+	font-size: 28px;
+	line-height: 34px;
+	@include mq($until: tablet){font-size: 24px; line-height: 28px;};
+	span{
+		color: $purple;
+		display: block;
+	}
+}
+.discount-desc{
+	font-size: 18px;
+	line-height: 22px;
+	display: block;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	@include mq($until: tablet){font-size: 14px; line-height: 17px; margin-top: 15px; margin-bottom: 15px;};
+}
+.ico{
+	display: inline-block;
+}
+.ico-ava{
+	width: 23px;
+	height: 21px;
+	background: url('../img/avatar.png') no-repeat 50% 50%;
+}
+.ico-phone{
+	width: 23px;
+	height: 21px;
+	background: url('../img/telephone.png') no-repeat 50% 50%;
+}
+.ico-mail{
+	width: 23px;
+	height: 21px;
+	background: url('../img/envelope.png') no-repeat 50% 50%;
+}
+
+.popup-form{
+	width: 100%;
+	margin-top: 30px;
+	.heading{
+		margin-top: 40px;
+		display: inline-block;
+	}
+}
+.discount-form{
+	width: 300px;
+	@include mq($until: mobileLand){width: 100%};
+}
+.discount-form, .popup-form{
+	.form-group{
+		margin-bottom: 10px;
+	}
+	input{
+		height: 40px;
+		background-color: #F8F8F8;
+		border: 1px solid #E7E7E7;
+		&:focus{
+			@include box-shadow(2px, 2px, 0px, rgba($purple, 1));
+			border-color: $purple;
+			@include transition(all .4s ease);
+			outline: none;
+		}
+	}
+	.input-group-addon{
+		padding: 7px;
+		background-color: #E7E7E7;
+		border: 0px solid #ccc;
+	}
+	.hero-btn{
+		margin: 0;
+		border-radius: 5px;
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+
+/////////////////////
+// PHOTOS
+/////////////////////
+.photo-item{
+	margin-top: 40px;
+	@include mq($until: tablet){margin-top: 20px;};
+	.btn{
+		padding: 9px 55px;
+		@include mq($until: tablet){width: 100%; padding: 6px 25px;};
+		&:hover{
+			color: white;
+			background-color: rgba(white, 0.35);
+			@include transition(all .4s ease);
+		}
+	}
+	.btn-trsp{
+		margin-top: 65px;
+		font-size: 14px;
+		border: 1px solid white;
+		border-radius: 20px;
+		text-transform: uppercase;
+		@include mq($until: tablet){font-size: 13px; margin-top: 25px;};
+	}
+}
+.photo-name{
+	font-size: 28px;
+	line-height: 34px;
+	display: block;
+	margin-bottom: 15px;
+	font-family: "LatoSemibold";
+	font-family: "LatoLight";
+
+	@include mq($until: tablet){font-size: 22px; line-height: 28px;};
+}
+.photo-desc{
+	font-size: 15px;
+	line-height: 18px;
+	@include mq($until: tablet){font-size: 13px; line-height: 15px;};
+}
+
+.photo-testinomials{
+	margin-top: 30px;
+	.testimonials-name{
+		font-size: 20px;
+		display: block;
+		font-family: "LatoSemibold";
+		@include mq($until: tablet){font-size: 16px;};
+	}
+	.testimonial{/*for owl*/}
+	.testimonial-content{
+		font-family: "Lato";
+		font-style: italic;
+		font-size: 15px;
+		line-height: 18px;
+		background-color: $dark;
+		border: 1px solid #848B8F;
+		border-radius: 30px;
+		padding: 20px;
+		display: block;
+		margin-top: 20px;
+		position: relative;
+		@include mq($until: tablet){padding: 10px 20px; font-size: 13px; line-height: 16px;};
+		&:after{
+			display: block;
+			background: url('../img/testimonial-triangle.png') no-repeat 0 0;
+			width: 22px;
+			height: 26px;
+			content: ' ';
+			position: absolute;
+			right: 50px;
+			bottom: -26px;
+		}
+	}
+	.testimonial-author{
+		text-align: right;
+		display: inline-block;
+		margin-top: 10px;
+		float: right;
+		margin-top: 30px;
+		@include mq($until: tablet){padding-right: 20px;};
+	}
+}
+.main-photo{
+	border-radius: 10px;
+	border: 1px solid white;
+	margin-bottom: 15px;
+	display: inline-block;
+	@include mq($until: tablet){margin-top: 20px;};
+}
+.mini-photo{
+	display: inline-block;
+	border-radius: 50%;
+	border: 1px solid white;
+}
+
+/////////////////////
+// LICENCES
+/////////////////////
+
+.licence-decs{
+	font-size: 18px;
+	line-height: 22px;
+	@include mq($until: tablet){font-size: 14px; line-height: 18px;};
+}
+
+.licences{
+	.hero-btn{
+		margin: 80px 0 0 0;
+		@include mq($until: tablet){margin: 30px 0 20px 0;};
+	}
+}
+
+/////////////////////
+// CONTACTS
+/////////////////////
+
+.contacts-wrap{
+	position: relative;
+	padding: 35px 90px 30px 90px;
+	height: 500px;
+	@include mq($until: desktop){padding: 35px 40px 30px 40px;};
+	@include mq($until: tablet){padding: 35px 30px 30px 30px;};
+	.heading{
+		margin-top: 0;
+		margin-bottom: 30px;
+		display: inline-block;
+	}
+	.contacts-phone{
+		font-size: 20px;
+		line-height: 1em;
+		margin-bottom: 30px;
+		@include mq($until: tablet){font-size: 16px; margin-bottom: 20px;};
+		span{
+			vertical-align: 10px;
+		}
+	}
+	.contacts-mail{
+		font-size: 18px;
+		line-height: 1em;
+		margin-bottom: 30px;
+		@include mq($until: tablet){font-size: 16px; margin-bottom: 20px;};
+		span{
+			vertical-align: 14px;
+		}
+	}
+	.contacts-loc{
+		font-size: 18px;
+		line-height: 22px;
+		position: relative;
+		@include mq($until: tablet){font-size: 16px; };
+		span{
+			vertical-align: 25px;
+			display: inline-block;
+			position: absolute;
+			left: 65px; top: -5px;
+			@include mq($until: tablet){left: 50px;};
+		}
+	}
+	.c-ico-phone{
+		display: inline-block;
+		width: 31px; height: 31px;
+		background: url('../img/phone.png') no-repeat 0 0px;
+		margin-right: 35px;
+		@include mq($until: tablet){margin-right: 20px;};
+	}
+	.c-ico-mail{
+		display: inline-block;
+		width: 31px; height: 31px;
+		background: url('../img/mail.png') no-repeat 0 0px;
+		margin-right: 35px;
+		@include mq($until: tablet){margin-right: 20px;};
+	}
+	.c-ico-loc{
+		position: absolute;
+		left:5px;
+		display: inline-block;
+		width: 31px; height: 31px;
+		background: url('../img/loc.png') no-repeat 0 0px;
+		margin-right: 35px;
+		@include mq($until: tablet){margin-right: 20px;};
+	}
+}
+
+.callback{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(white, 0.1);
+	padding: 20px 0 20px 90px;
+	@include mq($until: desktop){padding: 20px 0 20px 40px;};
+	@include mq($until: tablet){padding: 20px 0 20px 30px;};
+	.form-group{position: relative;}
+	.callback-sucess{
+		display: none;
+		position: absolute;
+		top: -82px; left: 0;
+		border: 2px solid green;
+		background-color: $dark;
+		border-radius: 10px;
+		padding: 5px 20px;
+		font-size: 12px;
+		width: 100%;
+
+	}
+	.callback-error{
+		display: none;
+		position: absolute;
+		top: -100px; left: 0;
+		border: 2px solid tomato;
+		background-color: $dark;
+		border-radius: 10px;
+		padding: 5px 20px;
+		font-size: 12px;
+		width: 100%;
+	}
+}
+
+.callback-desc{
+	display: block;
+	span{
+		color: $purple;
+	}
+}
+
+.callback-form{
+	margin-top: 15px;
+	input{
+		background-color: transparent;
+		border: none;
+		border-bottom: 2px solid white;
+		outline: none;
+		border-radius: 0;
+		font-size: 16px;color: white;
+		width: 165px !important;
+		@include mq($until: tablet){font-size: 14px; width: 90% !important;};
+		&:active,&:focus{
+			@include box-shadow(0,0,0,rgba(black,0.0));
+			border-color: $purple;
+			@include transition(all .4s ease);
+		}
+	}
+	::-webkit-input-placeholder {color:white;}
+	::-moz-placeholder          {color:white;}/* Firefox 19+ */
+	:-moz-placeholder           {color:white;}/* Firefox 18- */
+	:-ms-input-placeholder      {color:white;}
+	::input-placeholder {color:white;}
+	.btn{
+		background-color: $purple;
+		color: white;
+		margin-left: 15px;
+		font-size: 14px;
+		padding: 5px 15px;
+		@include mq($until: tablet){width: 90%; margin-left: 0px;};
+	}
+}
+
+/////////////////////
+// CTA BTM
+/////////////////////
+
+.cta-bottom{
+	.heading{
+		display: block; margin-top: 60px;
+		@include mq($until: tablet){margin-top: 30px;};
+	}
+}
+.cta-btm{
+	color: $purple;
+	font-size: 25px;
+	line-height: 30px;
+	border-bottom: 2px dashed $purple;
+	display: inline-block;
+	margin-top: 25px;
+	&:hover{
+		color: darken($purple, 7%);
+		border-bottom: 2px dashed darken($purple, 7%);
+		@include transition (all .4s ease);
+	}
+	@include mq($until: tablet){font-size: 18px;line-height: 22px;margin-top: 15px;};
+}
+
+/////////////////////
+// FOOTER
+/////////////////////
+
+.footer-logo{
+	@include transform(scale(0.8));
+	@include mq($until: tablet){max-width: 150px;};
+}
+
+.footer-phone{
+	font-size: 24px;
+	font-family: "LatoSemibold";
+	margin-top: 25px;
+	display: inline-block;
+
+	@include mq($until: tablet){font-size: 15px;line-height: 18px;margin-top: 15px;};
+}
+.footer-copy{
+	font-size: 12px;
+	text-align: right;
+	margin-top: 25px;
+	display: inline-block;
+	.dev{
+		display: block;
+		opacity: 0.5;
+		span{
+			color: orange;
+		}
+	}
+}
