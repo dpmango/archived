@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- FRONT-END FROM RUSSIA WITH LOVE -.- SERGEY KHMELEVSKOY -.- -->
+	<!-- Follow BEM methodology and SMACSS to manage stylesheets -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>POLIS 812 - Страница не найдена </title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/hamburgers.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	
+	<script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<!-- Scripts can be moved to the bottom -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/moment.js"></script>	
+	<script type="text/javascript" src="js/daterangepicker.js"></script>	
+	<script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/mainpage.js"></script>
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- HEADER :: START -->
+	<header>
+		<div class="header-top hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-4 header-top__navi">
+						<a href="#">О КОМПАНИИ</a>
+						<a href="#">НОВОСТИ</a>
+						<a href="#">ОТЗЫВЫ О НАС</a>
+					</div>
+					<div class="hidden-sm col-md-4 header-top__clients text-center">
+						<i class="ico ico-header-people"></i> 300 000 клиентов по всей России!
+					</div>
+					<div class="col-sm-6 col-md-4 header-top__region text-right">
+						<div class="dropdown">
+							Ваш регион: 
+							<a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span id="selected-region">Санкт-Петербург</span>
+							<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="header-region-toggle">
+							<li><a href="#" data-value="Санкт-Петербург">Санкт-Петербург</a></li>
+							<li><a href="#" data-value="Москва">Москва</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-center hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-md-4">
+						<a href="#">
+						<img src="img/logo.png" class="img-responsive" alt="">
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="header-center__phone">
+							<span>8 800 200-26-12</span>
+							<div class="header-center__phone-location">
+							Бесплатные звонки по всей России
+							</div>
+						</div>
+					</div>
+					<div class="hidden-sm col-sm-3 col-md-3">
+						<div class="header-center__phone" id="region-phone--spb">
+							<span>8 812 93-63-812</span>
+							<div class="header-center__phone-location">
+							Санкт-Петербург
+							</div>
+						</div>
+						<div class="header-center__phone" id="region-phone--moscow">
+							<span>8 495 204-28-12</span>
+							<div class="header-center__phone-location">
+							Москва
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-2 no-pad-l">
+						<a href="#mailer" class="btn btn-trsp popup-with-zoom-anim"><i class="ico ico-hot-offer"></i> рассылка<br> горячих предложений</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-menu hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="header-menu__list">
+							<li><a href="#">ВИЗА ОНЛАЙН</a></li>
+							<li><a href="#">ОФОРМЛЕНИЕ ВИЗ</a></li>
+							<li class="active"><a href="#">ТУРИСТИЧЕСКАЯ СТРАХОВКА</a></li>
+							<li><a href="#">ОСАГО</a></li>
+							<li><a href="#">ЗЕЛЕНАЯ КАРТА</a></li>
+							<li><a href="#">ПОДБОР ТУРА</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mobile visible-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8 text-center">
+						<a href="#">
+						<img src="img/logo.png" class="img-responsive header-mobile__logo" alt="">
+						</a>
+					</div>
+					<div class="col-xs-4 text-right">
+						<button class="hamburger hamburger--collapse" type="button" id="show-me-menu">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="mobile-nav">
+			<ul class="main-navi">
+				<li><a href="#">ВИЗА ОНЛАЙН</a></li>
+				<li><a href="#">ОФОРМЛЕНИЕ ВИЗ</a></li>
+				<li><a href="#">ТУРИСТИЧЕСКАЯ СТРАХОВКА</a></li>
+				<li><a href="#">ОСАГО</a></li>
+				<li><a href="#">ЗЕЛЕНАЯ КАРТА</a></li>
+				<li><a href="#">ПОДБОР ТУРА</a></li>
+			</ul>
+			<div class="mobile-nav-contact">
+				<div class="header-phone"><a href="tel:88002002612">8 800 200-26-12</a></div>
+				<div class="header-adress">Бесплатные звонки по всей России</div>
+			</div>
+		</section>
+	</header>
+	<!-- HEADER :: END -->
+
+	<!-- 404 :: START -->
+	<section class="not-found">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="not-found__wrap">
+						<i class="ico not-found__hand"></i>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="not-found__title">СТРАНИЦА НЕ НАЙДЕНА (404)</div>
+					<div class="not-found__info">Страница которую вы пытаетесь открыть недоступна по этому адрессу</div>
+					<div class="not-found__visit">
+						Не расстраивайтесь, просто вернитесь на <a href="#">главную страницу</a> или воспользуйтесь меню навигации в верхней части страницы
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 404 :: END -->
+
+
+	<!-- FOOTER :: START -->
+	<footer class="footer hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="footer__heading">Страхование</div>
+					<div class="footer__links">
+						<a href="#">КАСКО</a>
+						<a href="#">Туристическая страховка</a>
+						<a href="#">ОСАГО</a>
+						<a href="#">Зеленая карта</a>
+						<a href="#">Проверить КБМ по базе РСА</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer__heading">Горящие туры</div>
+					<div class="footer__links">
+						<a href="#">Подбор тура</a>
+						<a href="#">Горящие туры в Грецию из Санкт-Петербурга</a>
+						<a href="#">Горящие туры в Крым из Санкт-Петербурга</a>
+						<a href="#">Горящие туры в Сочи из Санкт-Петербурга</a>
+						<a href="#">Горящие туры на Кипр из Санкт-Петербурга</a>
+						<a href="#">Билеты на паром</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer__heading">Оформление виз</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Виза в Испанию</a>
+								<a href="#">Виза в Эстонию</a>
+								<a href="#">Виза в Литву</a>
+								<a href="#">Виза в Италию</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Виза в США</a>
+								<a href="#">Виза в Англию</a>
+								<a href="#">Виза в Голландию</a>
+								<a href="#">Виза в Финляндию</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<div class="footer__heading">О компании</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Контакты</a>
+								<a href="#">Обратная связь</a>
+								<a href="#">Реквизиты</a>
+								<a href="#">Способы оплаты</a>
+								<a href="#">Отзывы о нас</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Пользовательское соглашение</a>
+								<a href="#">Условия возврата</a>
+								<a href="#">Отказ от услуги</a>
+								<a href="#">Карта сайта</a>
+							</div>
+						</div>
+					</div>
+					<a href="#mailer" class="footer__mailer popup-with-zoom-anim"><i class="ico ico-hot-offer"></i> <span>рассылка горячих предложений</span></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="under-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="under-footer__copywrite">
+						© 2016 Страховой центр «ПОЛИС»
+					</div>
+				</div>
+				<div class="col-sm-6 text-center">
+					<a href="#">
+						<i class="ico ico-vk"></i>
+					</a>
+					<a href="">
+						<i class="ico ico-fb"></i>
+					</a>
+					<a href="#">
+						<i class="ico ico-youtube"></i>
+					</a>
+					<a href="#">
+						<i class="ico ico-instagram"></i>
+					</a>
+					<a href="">
+						<i class="ico ico-gplus"></i>
+					</a>
+				</div>
+				<div class="col-sm-3 text-right">
+					<div class="under-footer__phone">
+						8 800 200-26-12
+						<span>Поможем с выбором с 10 до 20</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER :: END -->
+
+	<!-- MAILER POPUP :: START -->
+	<div id="mailer" class="zoom-anim-dialog mfp-hide">
+
+		<form accept="" action="">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="subscribe__title">Подпишитесь на рассылку промо-кодов</div>
+					<div class="form-group">
+						<label>Ваш email</label>
+						<input type="text" class="subscribe__control" placeholder="ivan.pupkin@mail.ru">
+						<a href="#" class="btn btn--green">ПОДПИСАТЬСЯ НА РАССЫЛКУ</a>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="subscribe__options-title">
+						По каким категориям вы хотите получать предложения и промо-коды ?
+					</div>
+					<div class="subscribe__chechboxes">
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__1" checked="">
+							<label for="subscribe__opt__modal__1">Оформление виз</label>
+						</div>
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__2" checked="">
+							<label for="subscribe__opt__modal__2">Страховка ВЗР</label>
+						</div>
+
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__3" checked="">
+							<label for="subscribe__opt__modal__3">Зеленая карта</label>
+						</div>
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__4" checked="">
+							<label for="subscribe__opt__modal__4">Страховка ОСАГО</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- MAILER POPUP :: END -->
+
+</body>
+</html>

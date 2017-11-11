@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Glob Succeed index</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/hamburgers.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+	<!--- JUST AN POPUPS --> 
+	<section class="popups">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<a href="#email-reference-popup" class="popup-with-zoom-anim btn-pink">Email Preference</a>
+
+					<a href="#leave-feedback-popup" class="popup-with-zoom-anim btn-pink">Leave feedback</a>
+
+					<a href="#login-popup" class="popup-with-zoom-anim btn-pink">Log IN</a>
+					
+					<a href="#signup-popup" class="popup-with-zoom-anim btn-pink">Sign up</a>
+
+					<a href="#user-registration-popup" class="popup-with-zoom-anim btn-pink">User registration</a>
+
+					<a href="#free-ad-popup" class="popup-with-zoom-anim btn-pink">Free ad</a>
+					<a href="#send-message-popup" class="popup-with-zoom-anim btn-pink">Send message</a>
+
+					<a href="#apply-job-popup" class="popup-with-zoom-anim btn-pink">Apply for job</a>
+
+					<a href="#report-ad-popup" class="popup-with-zoom-anim btn-pink">Report ad</a>
+
+					<a href="#" id="popup-okay" class="btn-pink">Status - OK</a>
+
+					<a href="#" id="popup-failed" class="btn-pink">Status - FAIL</a>
+
+					<a href="#change-pass-popup" class="popup-with-zoom-anim btn-pink">Change password</a>
+
+					<a href="#forget-pass-popup" class="popup-with-zoom-anim btn-pink">Restore password</a>
+
+					<a href="#change-mail-popup" class="popup-with-zoom-anim btn-pink">Change email</a>
+
+					<a href="#upload-cv-popup" class="popup-with-zoom-anim btn-pink">Upload CV</a>
+
+					<a href="#deactivate-account-popup" class="popup-with-zoom-anim btn-pink">Deactivate popup</a>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--- JUST AN POPUPS --> 
+
+<div id="email-reference-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading text-center">Email <span>Preference</span></div>
+		<div class="popup-action text-center">Receive email notifacation:</div>
+		<div class="row popup-switch">
+			<div class="col-xs-6">
+				New company added
+			</div>
+			<div class="col-xs-6 pull-right">
+				<div class="switch">
+					<input type="radio" name="switch-1" id="switch-1-1" class="first" value="yepis" checked>
+					<label for="switch-1-1">Yes</label>
+					<input type="radio" name="switch-1" id="switch-1-2" class="second" value="no">
+					<label for="switch-1-2">No</label>
+				</div>
+			</div>
+		</div>
+		<div class="row popup-switch">
+			<div class="col-xs-6">
+				New ad posted
+			</div>
+			<div class="col-xs-6 pull-right">
+				<div class="switch">
+					<input type="radio" name="switch-2" id="switch-2-1" class="first" value="yepis" checked>
+					<label for="switch-2-1">Yes</label>
+					<input type="radio" name="switch-2" id="switch-2-2" class="second" value="no">
+					<label for="switch-2-2">No</label>
+				</div>
+			</div>
+		</div>
+		<div class="row popup-switch">
+			<div class="col-xs-6">
+				New updates and news 
+			</div>
+			<div class="col-xs-6 pull-right">
+				<div class="switch">
+					<input type="radio" name="switch-3" id="switch-3-1" class="first" value="yepis" >
+					<label for="switch-3-1">Yes</label>
+					<input type="radio" name="switch-3" id="switch-3-2" class="second" value="no"checked>
+					<label for="switch-3-2">No</label>
+				</div>
+			</div>
+		</div>
+		<div class="two-row-btns">
+			<button type="submit" class="btn-pink have-fill">SAVE</button>
+			<button type="" class="btn-blue have-fill">CANCEL</button>
+		</div>
+	</div>
+</div>
+
+<!-- Feedback -->
+
+<div id="leave-feedback-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold text-center">Leave your feedback </div>
+		<form class="contact-form have-pad-150">
+			<div class="form-group">
+				<input type="text" name="" class="form-control ico-name-bg" placeholder="Your first name">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" class="form-control ico-name-bg" placeholder="Your surname">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" class="form-control ico-company-bg" placeholder="Your company">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" class="form-control ico-position-bg" placeholder="Your position">
+			</div>
+			<div class="form-group">
+				<input type="text" name="" class="form-control ico-country-bg" placeholder="Your country">
+			</div>
+			<div class="form-group">
+				<textarea class="form-control ico-say-bg" rows="4" placeholder="Share your experience "></textarea>
+			</div>
+			<div class="text-center">
+				<button type="submit" class="btn-pink btn-large have-fill">SUMBIT</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- LOGIN -->
+
+<div id="login-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<span class="login-nearlogo">Log in to</span>
+		<img src="images/logo2.png" alt="" class="img-responsive not-a-block center-block">
+	</div>
+	<div class="popup-content">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+			<form class="contact-form">
+				<div class="form-group">
+					<input type="text" name="" class="form-control ico-email-bg" placeholder="Your username">
+				</div>
+				<div class="form-group">
+					<input type="text" name="" class="form-control ico-pass-bg" placeholder="Your password">
+				</div>
+				<div class="login-socials">
+					<div class="row">
+						<div class="col-xs-6">
+							<a href="#">
+							<div class="login-with-facebook"><i class="ico ico-loginwith-fb"></i>
+								<span>Log in with facebook</span>
+							</div>
+							</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="#">
+							<div class="login-with-google"><i class="ico ico-loginwith-google"></i>
+								<span>Log in with google</span>
+							</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="text-center pt30">
+					<button type="submit" class="btn-invisible btn-popup-login"><i class="ico ico-login"></i> <span>Login</span></button>
+				</div>
+				<div class="login-helpers">
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="checkbox">
+								<input type="checkbox" name="remember" id="remember">
+								<label for="remember">Remember me</label>
+							</div>
+						</div>
+						<div class="col-xs-6 text-right">
+							<a href="#">Forgot your password</a>
+							<a href="#">Forgot your username</a>
+						</div>
+					</div>
+				</div>
+				<div class="text-center popup-login-newmember">
+					<span>Don’t have an Account?</span>
+					<a href="#" class="align-fix"><i class="ico ico-signup"></i> <span>Sign up</span></a>
+					<span>It’s free!</span>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- SIGN UP -->
+
+<div id="signup-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="img/logo.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-action pb25 text-center">Come join the freewholesalerdirectory.com <br>
+Let’s set up your account</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+			<form class="contact-form">
+				<div class="form-group">
+					<input type="text" name="" class="form-control ico-name-bg" placeholder="Your first name">
+				</div>
+				<div class="form-group">
+					<input type="text" name="" class="form-control ico-name-bg" placeholder="Your last name">
+				</div>
+				<div class="form-group">
+					<input type="text" name="" class="form-control ico-email-bg" placeholder="Your email">
+				</div>
+				<div class="form-group">
+					<input type="text" name="" class="form-control ico-pass-bg" placeholder="Your password">
+				</div>
+				<div class="form-group">
+					<input type="text" name="" class="form-control ico-pass-bg" placeholder="Confirm Password">
+				</div>
+
+				<div class="login-socials">
+					<div class="row">
+						<div class="col-xs-6">
+							<a href="#">
+							<div class="login-with-facebook"><i class="ico ico-loginwith-fb"></i>
+								<span>Log in with facebook</span>
+							</div>
+							</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="#">
+							<div class="login-with-google"><i class="ico ico-loginwith-google"></i>
+								<span>Log in with google</span>
+							</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="text-center pt30">
+					<button type="submit" class="btn-invisible btn-popup-login"><i class="ico ico-signup"></i> <span>Sign up</span></button>
+				</div>
+				<div class="login-helpers text-center have-pad-50">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, inventore dolorum eaque sapient
+				</div>
+				<div class="text-center popup-login-newmember">
+					<span>Already a member?</span>
+					<a href="#" class="align-fix"><i class="ico ico-login"></i> <span>Log in</span></a>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- REGISTER -->
+
+<div id="user-registration-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsivecenter-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold text-center">User registration <span>form</span></div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+				<form class="contact-form">
+					<div class="form-group">
+						<input type="text" name="" class="form-control ico-name-bg" placeholder="Your username" >
+					</div>
+					<div class="form-group">
+						<input type="text" name="" class="form-control ico-name-bg" placeholder="Your First Name" >
+					</div>
+					<div class="form-group">
+						<input type="text" name="" class="form-control ico-name-bg" placeholder="Your Last Name" >
+					</div>
+					<div class="form-group">
+						<input type="text" name="" class="form-control ico-name-bg" placeholder="Your Country" >
+					</div>
+					<div class="form-group">
+						<input type="text" name="" class="form-control ico-lang-bg" placeholder="Languages spoken">
+					</div>
+					<div class="form-group">
+						<div class="fileform">
+							<div id="fileformlabel" class="form-control">Choice Profile Picture</div>
+							<div class="selectbutton">Choose photo</div>
+							<input id="upload" type="file" name="upload" onchange="getName(this.value);" />
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="fileform">
+							<div id="fileformlabel" class="form-control">Choice Cover Photo</div>
+							<div class="selectbutton">Choose photo</div>
+							<input id="upload" type="file" name="upload" onchange="getName(this.value);" />
+						</div>
+					</div>
+					<!---->
+					<div class="form-group">
+						<input type="text" name="" class="form-control ico-phone-bg" placeholder="Your phone number">
+					</div>
+					<div class="form-group">
+						<input type="text" name="" class="form-control ico-email-bg" placeholder="Your e-mail">
+					</div>
+					<div class="form-group">
+						<input type="text" name="" class="form-control ico-email-bg" placeholder="Confirm your email">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control ico-textarea-bg" rows="4" placeholder="Your Description"></textarea>
+					</div>
+					<div class="text-center pt50 pb15">
+						<button type="submit" class="btn-pink btn-large have-fill">SAVE</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Free ad -->
+
+<div id="free-ad-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold popup-heading--blue text-center">Post free ad</div>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+				<div class="selectbox selectbox--blue-gradient">
+					<select>
+						<option>Select  ad category</option>
+						<option>Select  ad category</option>
+					</select>
+				</div>
+
+				<div class="two-row-btns pt130">
+					<button type="submit" class="btn-pink have-fill">CNTINUE</button>
+					<button type="" class="btn-blue have-fill">CANCEL</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Send message ad -->
+
+<div id="send-message-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold popup-heading--blue text-center">Send a message</div>
+		<div class="row">
+			<form class="contact-form">
+			<div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+				<div class="selectbox selectbox--blue-gradient">
+					<select>
+						<option>Select  ad category</option>
+						<option>Select  ad category</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<textarea class="form-control ico-textarea-bg" rows="4" placeholder="Your Description"></textarea>
+				</div>
+				<div class="text-center captcha-popup row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<img src="images/captcha.png" alt="" class="img-responsive" />
+						<div class="form-group">
+							<input type="text" name="" class="form-control small-pad" placeholder="Captcha">
+						</div>
+					</div>
+				</div>
+				<div class="two-row-btns pt20">
+					<button type="submit" class="btn-pink have-fill">SEND</button>
+					<button type="" class="btn-blue have-fill">CANCEL</button>
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Apply for job -->
+
+<div id="apply-job-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold text-center">Job ad title</div>
+		<div class="row">
+			<form class="contact-form">
+			<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+				<div class="form-group">
+					<textarea class="form-control ico-textarea-bg" rows="4" placeholder="Enter your covering later"></textarea>
+				</div>
+				<div class="form-group">
+				Allowed file types: Word, PDF, Richtext. Maximum file size: 6MB
+				</div>
+				<div class="form-group">
+					<div class="fileform">
+						<div id="fileformlabel" class="form-control">No file choicen</div>
+						<div class="selectbutton">Choose files</div>
+						<input id="upload" type="file" name="upload" onchange="getName(this.value);" />
+					</div>
+				</div>
+
+				<div class="text-center captcha-popup row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<img src="images/captcha.png" alt="" class="img-responsive" />
+						<div class="form-group">
+							<input type="text" name="" class="form-control small-pad" placeholder="Captcha">
+						</div>
+					</div>
+				</div>
+				<div class="two-row-btns pt20">
+					<button type="submit" class="btn-pink have-fill">Apply</button>
+					<button type="" class="btn-blue have-fill">CANCEL</button>
+				</div>
+			</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Report ad -->
+
+<div id="report-ad-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold text-center">Report ad</div>
+			<form class="contact-form">
+				<div class="form-group row">	
+					<div class="col-sm-6 col-sm-offset-3 form-group">
+						<div class="radiobox">
+							<input type="radio" name="condition" id="condition_1">
+							<label for="condition_1">Ad is in wrong category</label>
+						</div>
+						<div class="radiobox">
+							<input type="radio" name="condition" id="condition_2">
+							<label for="condition_2">Ad is spam</label>
+						</div>
+						<div class="radiobox">
+							<input type="radio" name="condition" id="condition_3">
+							<label for="condition_3">Ad seems to be fraudulent </label>
+						</div>
+						<div class="radiobox">
+							<input type="radio" name="condition" id="condition_4">
+							<label for="condition_4">Ad is violating Terms & Conditions </label>
+						</div>
+						<div class="radiobox">
+							<input type="radio" name="condition" id="condition_5">
+							<label for="condition_5">Other</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<textarea class="form-control ico-textarea-bg" rows="4" placeholder="Please tell us more why you are reporting this ad "></textarea>
+				</div>
+
+				<div class="two-row-btns pt20">
+					<button type="submit" class="btn-pink have-fill">Report</button>
+					<button type="" class="btn-blue have-fill">CANCEL</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Change pass -->
+
+<div id="change-pass-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold text-center">Forget your <span>Password</span></div>
+			<form class="contact-form">
+				<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="form-group">
+						<input type="password" name="" class="form-control ico-pass-bg--filled" placeholder="Enter Old password">
+					</div>
+					<div class="form-group">
+						<input type="password" name="" class="form-control ico-pass-bg--filled--blue" placeholder="Enter New password">
+					</div>
+					<div class="form-group">
+						<input type="password" name="" class="form-control ico-pass-bg--filled--blue" placeholder="Confirm New password">
+					</div>
+				</div>
+				</div>
+
+				<div class="two-row-btns pt20">
+					<button type="submit" class="btn-pink have-fill">Save</button>
+					<button type="" class="btn-blue have-fill">CANCEL</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Forget pass -->
+
+<div id="forget-pass-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold text-center">Change your <span>Password</span></div>
+		<div class="popup-action">Please enter the email address for your account.  A verification code 
+will be sent to you. Once you have received the verification code, 
+you will be able to choose a new password for your account.</div>
+			<form class="contact-form">
+				<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="form-group">
+						<input type="password" name="" class="form-control ico-email-bg" placeholder="Enter Your email">
+					</div>
+				</div>
+				</div>
+
+				<div class="two-row-btns pt20">
+					<button type="submit" class="btn-pink have-fill">Sumbit</button>
+					<button type="" class="btn-blue have-fill">CANCEL</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Change email -->
+
+<div id="change-mail-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold text-center">Change your <span>email</span></div>
+			<form class="contact-form">
+				<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="form-group">
+						<input type="password" name="" class="form-control ico-email-bg" placeholder="Enter New email">
+					</div>
+					<div class="form-group">
+						<input type="password" name="" class="form-control ico-email-bg" placeholder="Confirm Your email">
+					</div>
+				</div>
+				</div>
+				<div class="popup-action text-center">We will send a verification email to this new address</div>
+				<div class="two-row-btns pt20">
+					<button type="submit" class="btn-pink have-fill">Sumbit</button>
+					<button type="" class="btn-blue have-fill">CANCEL</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- Upload cv -->
+
+<div id="upload-cv-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold text-center">Upload your <span>CV</span></div>
+		<div class="popup-action text-center">Upload your CV and it will be instantly available to send every time you apply for a job.</div>
+			<form class="contact-form">
+				<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<div class="form-group">
+						<div class="fileform">
+							<div id="fileformlabel" class="form-control ico-file-bg">Choice your CV</div>
+							<div class="selectbutton">Choose files</div>
+							<input id="upload" type="file" name="upload" onchange="getName(this.value);" />
+						</div>
+					</div>
+				</div>
+				</div>
+				
+				<div class="two-row-btns pt20">
+					<button type="submit" class="btn-pink have-fill">Save</button>
+					<button type="" class="btn-blue have-fill">CANCEL</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<!-- Deactivate acc -->
+
+<div id="deactivate-account-popup" class="zoom-anim-dialog mfp-hide">
+	<div class="popup-logo text-center">
+		<img src="images/logo2.png" alt="" class="img-responsive center-block">
+	</div>
+	<div class="popup-content">
+		<div class="popup-heading popup-heading--bold text-center">Deactivate your <span>account</span></div>
+		<div class="popup-action text-center">Please let us know why you are deactivating your account </div>
+			<form class="contact-form">
+				<div class="form-group row">	
+					<div class="col-sm-6 col-sm-offset-3 form-group">
+						<div class="radiobox">
+							<input type="radio" name="condition1" id="condition1_1">
+							<label for="condition1_1">I do not have what to sell</label>
+						</div>
+						<div class="radiobox">
+							<input type="radio" name="condition1" id="condition1_2">
+							<label for="condition1_2">I would rather sell somewhere else </label>
+						</div>
+						<div class="radiobox">
+							<input type="radio" name="condition1" id="condition1_3">
+							<label for="condition1_3">I haven’t receive any response to my ad  </label>
+						</div>
+						<div class="radiobox">
+							<input type="radio" name="condition1" id="condition1_4">
+							<label for="condition1_4">I would rather not say</label>
+						</div>
+						<div class="radiobox">
+							<input type="radio" name="condition1" id="condition1_5">
+							<label for="condition1_5">Other</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<textarea class="form-control ico-textarea-bg" rows="4" placeholder="Please tell us more why you are deactivating account"></textarea>
+				</div>
+
+				<div class="two-row-btns pt20">
+					<button type="submit" class="btn-pink have-fill">Deactivate</button>
+					<button type="" class="btn-blue have-fill">CANCEL</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+	<div class="popup-overlay" id="show-ok">
+		<div class="popup-status popup-ok text-center">
+			<div class="popup-status-heading">Success</div>
+			<div class="popup-status-content">A report message has been sent successfully.</div>
+			<a href="#" class="btn-status-btn" id="hide-status-ok">OK</a>
+		</div>
+	</div>
+
+	<div class="popup-overlay" id="show-failed">
+		<div class="popup-status popup-fail text-center">
+			<div class="popup-status-heading">Failed</div>
+			<div class="popup-status-content">A report message has not been sent successfully.
+Try again.</div>
+			<a href="#" class="btn-status-btn btn-fail" id="hide-status-fail">OK</a>
+		</div>
+	</div>
+
+<script type="text/javascript">
+	$('#popup-okay').click(function(){
+		$('#show-ok').show();
+	});
+	$('#popup-failed').click(function(){
+		$('#show-failed').show();
+	});
+	$('#hide-status-ok').click(function(){
+		$('#show-ok').hide();
+	});
+	$('#hide-status-fail').click(function(){
+		$('#show-failed').hide();
+	});
+</script>
+
+
+	<!-- FOOTER: START -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<span class="footer-col">LINK COLOUMN 1</span>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+				</div>
+				<div class="col-sm-2">
+					<span class="footer-col">LINK COLOUMN 1</span>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+				</div>
+				<div class="col-sm-2">
+					<span class="footer-col">LINK COLOUMN 1</span>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+				</div>
+				<div class="col-sm-3 socials">
+					<span class="footer-col">Follow us</span>
+					<a href="#"><i class="ico ico-fb"></i></a>
+					<a href="#"><i class="ico ico-tw"></i></a>
+					<a href="#"><i class="ico ico-gplus"></i></a>
+					<a href="#"><i class="ico ico-youtube"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#"><img src="img/logo-footer.png" class="img-responsive" alt="#"></a>
+					<span class="footer-desc">LoremIpsum is simply dummy text of the printing and typesetting industry. LoremIpsum has been the industry's standard dummy text ever since the 1500s</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="under-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<span class="footer-copywrite">© Freewholesalerdirectory Limited2016. All Rights Reserved</span>
+				</div>
+				<div class="col-sm-6 text-right underfooter-navi">
+					<a href="#">Terms & Conditions</a>
+					<a href="#">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER: END -->
+</body>
+
+</html>

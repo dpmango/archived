@@ -1,0 +1,13 @@
+
+FileETag MTime Size
+<ifmodule mod_expires.c>
+<filesmatch ".(jpg|jpeg|gif|png|ico|css|js|ttf)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 month"
+</filesmatch>
+</ifmodule>
+
+
+php_flag display_errors on
+php_flag display_startup_errors on
+

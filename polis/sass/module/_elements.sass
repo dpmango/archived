@@ -1,0 +1,113 @@
+
+.heading
+	font-size: 32px
+	font-weight: 400
+	@include mq($until: wide)
+		font-size: 30px
+
+	@include mq($until: desktop)
+		font-size: 26px
+	@include mq($until: tablet)
+		font-size: 20px
+		font-weight: 700
+
+.heading--top-border
+	padding-top: 35px
+	margin-top: 35px
+	border-top: 1px solid $borderColor
+	@include mq($until: tablet)
+		border-top: none
+		margin-top: 0
+
+
+.subtitle
+	font-size: 22px
+	font-weight: 400
+	opacity: 0.7
+	margin-top: 18px
+	@include mq($until: desktop)
+		font-size: 20px
+	@include mq($until: tablet)
+		font-size: 16px
+		margin-top: 10px
+
+
+.btn-trsp
+	border: 1px solid $blue
+	border-radius: 6px
+	display: block
+	color: $blue
+	background: transparent
+	outline: none
+	&:hover
+		@include transition(all .4s ease)
+		background: $blue
+		color: white 
+	&:active
+		outline: none
+	&.btn-trsp--inline
+		display: inline-block
+
+.btn--outline
+	border: 1px solid $green
+	background: transparent
+	border-radius: 4px
+	margin: 20px auto 25px auto
+	color: $green
+	font-size: 14px
+	font-family: 'LatoWebBold'
+	text-transform: uppercase
+	padding: 10px 65px
+	text-align: center
+	display: inline-block
+	@include transition(all .4s ease)
+	&:hover
+		background: $green
+		color: white 
+	&:active
+		outline: none
+
+.btn-lg
+	font-size: 15px
+	font-weight: 700
+	padding: 16px 40px 
+	@include mq($until: tablet)
+		font-size: 13px
+		padding: 10px 25px
+
+.btn--absolute-center
+	position: absolute
+	top: 50%
+	left: 35%
+	@include mq($until: desktop)
+		left: 50%
+	@include mq($until: tablet)
+		position: static
+
+
+.btn-slider
+	background: $green
+	border-radius: 0
+	@include border-bottom-radius(6px)
+	color: white
+	text-transform: uppercase
+	font-size: 16px
+	padding: 8px 20px
+	@include transition(all .4s ease)
+	&:hover
+		background: rgba($green, .8)
+		color: white 
+	&:focus
+		outline: none
+
+.ico-tooltip
+	background: url('../img/ico-help.svg') no-repeat 0 0
+	width: 17px
+	height: 17px
+	cursor: pointer
+	vertical-align: -3px
+	margin-left: 5px
+	&:hover
+		@include transition(all .4s ease)
+		@include transform(scale(1.2))
+

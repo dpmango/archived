@@ -1,0 +1,28 @@
+
+// General
+.container{
+	max-width: 1920px;
+	width: 100%; /* responsive mode = on */
+}
+
+
+.banner-top{
+	padding-bottom: 3px;
+	img{
+		margin: 0 auto;
+	}
+}
+
+.header{
+	background-color: $blue;
+	color: white;
+	padding: 8px 0 4px 0;
+}
+
+.content-banner{
+	img{
+		margin: 0 auto;
+		margin-bottom: 10px;
+		max-width: 80% ;
+	}
+}

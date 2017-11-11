@@ -1,0 +1,188 @@
+/******************
+LAYOUT BASIC STYLES
+*******************/
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+}
+
+// Header
+header{
+	padding-top: 15px;
+	padding-bottom: 40px;
+	position: absolute;
+	width: 100%;
+	color: white;
+	@include linear-gradient(to top, transparent, rgba(black, 0.54));
+	z-index: 10;
+
+	@include mq($until: tablet) {padding-top: 7px;}
+}
+
+// Hero image
+.hero{
+	background: url('../img/Hero-desk.jpg') no-repeat 50% 50%;
+	background-size: cover;
+	color: white;
+	padding-top: 150px;
+	position: relative;
+
+	@include mq($until: tablet) {padding-top: 110px;}
+	&:before{
+		background-color: rgba(#000, 0.35);
+		width: 100%;
+		height: 100%;
+		position: absolute; top: 0; left: 0;
+		content: '';
+	}
+}
+
+@media (min-width: 992px) and (min-height: 660px) and (max-height: 760px) {
+	.hero{min-height: 100vh;}
+	.features{position: absolute; bottom: 0; width: 100%;}
+}
+
+// Features
+.features{
+	background-color: rgba(black, 0.4);
+	padding-top: 25px;
+	padding-bottom: 20px;
+
+	@include mq($until: tablet) {padding-top: 15px; padding-bottom: 10px;}
+}
+
+// rating
+.rating{
+	margin-top: 60px;
+	margin-bottom: 50px;
+
+	@include mq($until: tablet) {margin-top: 30px; margin-bottom: 20px;}
+}
+
+// Top authors
+.authors{
+	padding-top: 25px;
+	padding-bottom: 90px;
+	border-top: 1px solid $separator;
+
+	@include mq($until: tablet) {padding-bottom: 35px;}
+}
+
+// Benefits
+.benefits{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	border-top: 1px solid $separator;
+
+	@include mq($until: tablet) {padding-top: 30px; padding-bottom: 0px;}
+}
+
+// Testimonials
+.testimonials{
+	padding-top: 40px;
+	padding-bottom: 85px;
+	border-top: 1px solid $separator;
+
+	@include mq($until: tablet) {padding-top: 20px; padding-bottom: 65px;}
+}
+
+// How-it-works
+.how-it-works{
+	padding-top: 40px;
+	padding-bottom: 50px;
+	border-top: 1px solid $separator;
+
+	@include mq($until: tablet) {padding-top: 20px; padding-bottom: 15px;}
+}
+
+// Secondary CTA
+.secondary-cta{
+	background: url('../img/secondarycta-bg.png') repeat 50% 50%;
+	padding-top: 65px;
+	padding-bottom: 70px;
+
+	@include mq($until: tablet) {padding-top: 25px; padding-bottom: 40px;}
+}
+
+// Examples
+.examples{
+	padding-top: 40px;
+	padding-bottom: 80px;
+
+	@include mq($until: tablet) {padding-top: 30px; padding-bottom: 40px;}
+}
+
+// Footer
+footer{
+	font-size: 12px;
+	color: white;
+	background-color: $grayBG;
+	padding: 30px 0 50px 0;
+
+	@include mq($until: tablet) {font-size: 10px;}
+}
+
+
+
+///////////
+// Inner
+///////////
+
+
+.inner{
+	padding-top: 120px;
+	padding-bottom: 80px;
+
+	@include mq($until: tablet) {padding-top: 90px;}
+}
+
+.spec-essay{
+	@include mq($until: tablet) {padding-top: 60px; padding-bottom: 0;}
+}
+
+.checkout{
+	@include mq($until: tablet) {padding-top: 60px; padding-bottom: 60px;}
+}
+
+.confirmation{
+	@include mq($until: tablet) {padding-top: 60px; padding-bottom: 40px;}
+}
+
+.free-essays{
+	padding-bottom: 70px;
+
+	@include mq($until: tablet) {padding-bottom: 30px;}
+}
+.free-essay{
+	padding-top: 100px;
+	padding-bottom: 70px;
+
+	@include mq($until: tablet) {padding-top: 60px; padding-bottom: 0;}
+}
+
+.writers{
+
+}
+
+.contact-us{
+
+}
+
+.text-page{
+	padding-top: 80px;
+
+	@include mq($until: tablet) {padding-top: 45px;}
+}
+
+
+///////////
+// Common Elements
+///////////
+
+.boxed{
+	border: 1px solid $separator;
+	background-color: white;
+	@include border-radius(3px);
+	padding: 20px 40px 50px 40px;
+}

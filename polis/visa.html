@@ -1,0 +1,1589 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- FRONT-END FROM RUSSIA WITH LOVE -.- SERGEY KHMELEVSKOY -.- -->
+	<!-- Follow BEM methodology and SMACSS to manage stylesheets -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>POLIS 812 - Виза онлайн </title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/hamburgers.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	
+	<script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<!-- Scripts can be moved to the bottom -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/moment.js"></script>	
+	<script type="text/javascript" src="js/daterangepicker.js"></script>	
+	<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+	<script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/dropzone.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/green.js"></script>
+	<script type="text/javascript" src="js/visa.js"></script>
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- HEADER :: START -->
+	<header>
+		<div class="header-top hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-4 header-top__navi">
+						<a href="#">О КОМПАНИИ</a>
+						<a href="#">НОВОСТИ</a>
+						<a href="#">ОТЗЫВЫ О НАС</a>
+					</div>
+					<div class="hidden-sm col-md-4 header-top__clients text-center">
+						<i class="ico ico-header-people"></i> 300 000 клиентов по всей России!
+					</div>
+					<div class="col-sm-6 col-md-4 header-top__region text-right">
+						<div class="dropdown">
+							Ваш регион: 
+							<a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span id="selected-region">Санкт-Петербург</span>
+							<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="header-region-toggle">
+							<li><a href="#" data-value="Санкт-Петербург">Санкт-Петербург</a></li>
+							<li><a href="#" data-value="Москва">Москва</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-center hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-md-4">
+						<a href="#">
+						<img src="img/logo.png" class="img-responsive" alt="">
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="header-center__phone">
+							<span>8 800 200-26-12</span>
+							<div class="header-center__phone-location">
+							Бесплатные звонки по всей России
+							</div>
+						</div>
+					</div>
+					<div class="hidden-sm col-sm-3 col-md-3">
+						<div class="header-center__phone" id="region-phone--spb">
+							<span>8 812 93-63-812</span>
+							<div class="header-center__phone-location">
+							Санкт-Петербург
+							</div>
+						</div>
+						<div class="header-center__phone" id="region-phone--moscow">
+							<span>8 495 204-28-12</span>
+							<div class="header-center__phone-location">
+							Москва
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-2 no-pad-l">
+						<a href="#mailer" class="btn btn-trsp popup-with-zoom-anim"><i class="ico ico-hot-offer"></i> рассылка<br> горячих предложений</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-menu hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="header-menu__list">
+							<li><a href="#">ВИЗА ОНЛАЙН</a></li>
+							<li><a href="#">ОФОРМЛЕНИЕ ВИЗ</a></li>
+							<li class="active"><a href="#">ТУРИСТИЧЕСКАЯ СТРАХОВКА</a></li>
+							<li><a href="#">ОСАГО</a></li>
+							<li><a href="#">ЗЕЛЕНАЯ КАРТА</a></li>
+							<li><a href="#">ПОДБОР ТУРА</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mobile visible-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8 text-center">
+						<a href="#">
+						<img src="img/logo.png" class="img-responsive header-mobile__logo" alt="">
+						</a>
+					</div>
+					<div class="col-xs-4 text-right">
+						<button class="hamburger hamburger--collapse" type="button" id="show-me-menu">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="mobile-nav">
+			<ul class="main-navi">
+				<li><a href="#">ВИЗА ОНЛАЙН</a></li>
+				<li><a href="#">ОФОРМЛЕНИЕ ВИЗ</a></li>
+				<li><a href="#">ТУРИСТИЧЕСКАЯ СТРАХОВКА</a></li>
+				<li><a href="#">ОСАГО</a></li>
+				<li><a href="#">ЗЕЛЕНАЯ КАРТА</a></li>
+				<li><a href="#">ПОДБОР ТУРА</a></li>
+			</ul>
+			<div class="mobile-nav-contact">
+				<div class="header-phone"><a href="tel:88002002612">8 800 200-26-12</a></div>
+				<div class="header-adress">Бесплатные звонки по всей России</div>
+			</div>
+		</section>
+	</header>
+	<!-- HEADER :: END -->
+
+	<!-- CALCULATOR :: START -->
+	<a href="#section-calculator" id="trigger-move-to-calc" style="display: none; visibiliy: hidden; ">
+	<a href="#section-calculator--step3" id="trigger-move-to-calc--step3" style="display: none; visibiliy: hidden; ">
+	<section class="calculator" id="section-calculator">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="calculator__breadcrumbs">
+						<a href="#">Главная</a>  /  <a href="#">Виза онлайн</a>
+					</div>
+					<div class="calculator__title">
+						<a href="#" class="calculator__helper" id="helper--toggle">
+							<i class="ico ico-question--big"></i>
+							<i class="pulse"></i>
+						</a>
+						<h1>Виза онлайн</h1>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="calculator__wrapper green__wrapper step--1">
+						<!-- шагаем -->
+						<!--
+						<div class="calculator__steps">
+							<div class="calculator__steps__relative">
+								<div class="calculator__steps__step calculator__steps__step--1">1. Заполните общие данные анкеты</div>
+								<div class="calculator__steps__step calculator__steps__step--2">2. Введите паспортные данные</div>
+								<div class="calculator__steps__step calculator__steps__step--3">3. Выберите тип доставки и оплатите визу</div>
+							</div>
+						</div>
+						-->
+							
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1">
+
+	<form class="calculator__form regular-input" id="calc__form__step1">
+	<div class="row">
+		<div class="col-sm-8">
+			
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="form-group">
+					<label>Выберите страну</label>
+					<div class="calculator__form__input left-icon input--dropdown calculator__form__input--ico-loc" id="calc__select-location--toggle">
+						<input type="text" placeholder="Выберите страну" disabled>
+					</div>
+					<!-- drop -->
+					<div class="calculator__form__dropdown" id="calc__select-location">
+						<input type="text" name="" class="calculator__form__dropdown__input-text" id="calc__select-location__input" placeholder="Введите название страны">
+						<div class="calculator__form__dropdown__help">
+							Например 
+							<a href="#" data-value="Финляндия">Финляндия</a>
+							<a href="#" data-value="Испания">Испания</a>
+							<a href="#" data-value="Испания">Англия</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="form-group">
+					<label>Количество виз</label>
+					<div class="calculator__form__input calculator__form__contacts__input--ico-person toggable-list-dropdown">
+						<input type="text" class="" name="" placeholder="Кол-во людей" disabled="">
+						<!-- drop -->
+						<div class="calculator__form__dropdown calculator__form__dropdown--no-pad">
+							<ul class="calculator__form__dropdown__custom-select">
+								<li data-value="1 взрослый">1 взрослый</li>
+								<li data-value="2 взрослых">2 взрослых</li>
+								<li data-value="3 взрослых">3 взрослых</li>
+								<li data-value="4 взрослых">4 взрослых</li>
+								<li data-value="5 взрослых">5 взрослых</li>
+							</ul>
+						</div>
+						<!-- drop -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="form-group">
+					<label>Выберите тип услуги</label>
+					<div class="radio-buttons" id="choice-delivery">
+						<div class="radio-buttons__btn">
+							<input type="radio" name="delivery_method" id="delivery_method_1">
+							<label for="delivery_method_1"><span>Полное оформление</span></label>
+						</div>
+						<div class="radio-buttons__btn">
+							<input type="radio" name="delivery_method" id="delivery_method_2">
+							<label for="delivery_method_2"><span>Только подготовка документов</span></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="calculator__form__separator">
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="calculator__form__separator__group-title">Выберите Тип страховки</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label>Страховая компания</label>
+							<div class="calculator__form__input toggable-list-dropdown left-icon input--dropdown calculator__form__input--ico-insurance" id="calc__select-location--toggle">
+								<input type="text" placeholder="Выберите страховую компанию" disabled>
+								<!-- drop -->
+								<div class="calculator__form__dropdown calculator__form__dropdown--no-pad">
+									<ul class="calculator__form__dropdown__custom-select">
+										<li data-value="Альфастрахование">Альфастрахование</li>
+										<li data-value="ERGO">ERGO</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="form-group">
+							<label>Количество дней</label>
+							<div class="calculator__form__input toggable-list-dropdown left-icon input--dropdown calculator__form__input--ico-calendar" id="calc__select-location--toggle">
+								<input type="text" placeholder="дней" disabled>
+								<!-- drop -->
+								<div class="calculator__form__dropdown calculator__form__dropdown--no-pad">
+									<ul class="calculator__form__dropdown__custom-select">
+										<li data-value="30">30</li>
+										<li data-value="45">45</li>
+										<li data-value="60">60</li>
+										<li data-value="90">90</li>
+										<li data-value="180">180</li>
+										<li data-value="365">365</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="form-group">
+							<span class="calculator__form__insurance-price">1 656 <i class="fa fa-rub"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="calculator__form__separator">
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="calculator__form__separator__group-title">Когда бы вы хотели посетить консульство (ВЦ):</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-7">
+				<div class="form-group">
+					<label>Дата и время</label>
+					<div class="calculator__form__input calculator__form__input--ico-calendar" id="calc__select-date-and-time">
+						<input type="text" class="" placeholder="Выбрите время посещения ВЦ" disabled>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="calculator__form__separator">
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-group mt10">
+					<label>Контактный E-mail:</label>
+					<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-email" placeholder="ivan.pupkin@mail.ru">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-group">
+					<div class="calculator__form__filter__checkbox calculator__form__contacts__checkbox calculator__form__checkbox--regular mt35">
+						<input type="checkbox" name="policy__agree" id="policy__agree">
+						<label for="policy__agree">Даю согласие на обработку моих персональных данных </label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="btn btn-calc-cta" type="submit" id="calc__form__submit--step1">РАССЧЕТ СТОИМОСТИ</span></button>	
+
+		</div>
+
+		<!-- SIDEBAR -->
+		<div class="col-sm-4 green-sidebar no-pad-top">
+			<div class="visa-form-help">
+				<div class="visa-form-help__name">Полное оформление визы</div>
+				<div class="visa-form-help__desc">Подготовим, подадим и получим документы за вас. В стоимость входит консульский и сервисный сборы.</div>
+				<div class="visa-form-help__icons">
+					<i class="ico ico-pricing-doc" data-toggle="tooltip" data-placement="bottom" title="Анкета"></i>
+					<i class="ico ico-pricing-photo" data-toggle="tooltip" data-placement="bottom" title="Фото на визу"></i>
+					<i class="ico ico-pricing-insurance" data-toggle="tooltip" data-placement="bottom" title="Страховка на 30 дней"></i>
+					<i class="ico ico-pricing-consul" data-toggle="tooltip" data-placement="bottom" title="Запись в визовый центр"></i>
+					<i class="ico ico-pricing-podacha" data-toggle="tooltip" data-placement="bottom" title="Подача в визовый центр"></i>
+					<i class="ico ico-pricing-sbor" data-toggle="tooltip" data-placement="bottom" title="Визовый сбор 35 евор"></i>
+				</div>
+			</div>
+
+			<div class="visa-form-help">
+				<div class="visa-form-help__name">Подготовка документов для самостоятельной подачи </div>
+				<div class="visa-form-help__desc">Подготавливаем весь пакет документов (анкету, страховку, фото и пр.) и записывам в Визовый центр либо в Консульство для ЛИЧНОЙ ПОДАЧИ</div>
+				<div class="visa-form-help__icons">
+					<i class="ico ico-pricing-doc" data-toggle="tooltip" data-placement="bottom" title="Анкета"></i>
+					<i class="ico ico-pricing-photo" data-toggle="tooltip" data-placement="bottom" title="Анкета"></i>
+					<i class="ico ico-pricing-insurance" data-toggle="tooltip" data-placement="bottom" title="Анкета"></i>
+					<i class="ico ico-pricing-consul" data-toggle="tooltip" data-placement="bottom" title="Анкета"></i>
+				</div>
+			</div>
+			<div class="visa-form-choicen">
+				<ul>
+					<li id="choicen-destination">Финлядия</li>
+					<li id="choicen-type-of-visa">Полное оформление</li>
+					<li id="choicen-persons">1 взрослый, 1 ребенок</li>
+					<li id="choicen-insrance">Альфастраование, 120 дней</li>
+					<li id="choicen-visit">Посещение ВЦ 29.10.2016 10:00-12:00</li>
+
+				</ul>
+				<div class="visa-form-choicen__price">4999 Р</div>
+			</div>
+		</div>
+	</div>
+	</form>
+
+	<!-- STEP 2 -->
+
+	<form class="calculator__form" id="calc__form__step2">
+		<div class="calculator__form__editable-step">
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Тип ТС
+				</span>
+					<span class="calculator__form__editable-step__field not-editable">Легковой автомобиль</span>
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Территория дейтсвия
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">Все страны (Европа + СНГ)</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="Все страны (Европа + СНГ)" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Срок действия
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">15 дней</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="15 дней" class="calculator__form__editable-step__field__editable">
+			</div>
+		</div>
+
+		<div class="row mt60 regular-input" style="position: relative">
+
+			<div class="col-sm-7">
+				<div class="heading">Заполните анкеты 3х заявителей</div>
+				
+				<div class="visa__tabs">
+					<div class="visa__tab active">
+						<i class="ico ico-visa-folder"></i>
+						<span>первый заявитель</span>
+					</div>
+					<div class="visa__tab">
+						<i class="ico ico-visa-folder"></i>
+						<span>второй заявитель</span>
+					</div>
+					<div class="visa__tab">
+						<i class="ico ico-visa-folder ready"></i>
+						<span>второй заявитель</span>
+					</div>
+				</div>
+
+				<div class="visa2__tabs__toggler">
+				<div class="visa2__wrap active">
+					<div class="form-group">
+						<label for="">Полные фамилия, имя и отчество</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-person" id="" name="" placeholder="Иванов Иван Иванович">
+					</div>
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group cl">
+						<label for="">Девечья фамилия или другие имена</label>
+						<div class="calculator__form__single-switch left togable-maden-name">
+							<div class="calculator__form__single-switch__wrap">
+								<div class="toggler"></div>
+								<span class="yes">Нет</span>
+								<span class="no">Да</span>
+							</div>
+							<input type="hidden" value="Нет" />
+						</div>
+					</div>
+					<!-- показываем только если предидущее == да -->
+					<div class="calculator__form__separator toggle-maden-name">
+					</div>
+					<div class="form-group toggle-maden-name">
+						<label for="">Девечья фамилия или другие имена</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-person" id="" name="" placeholder="Введите девечью фамилию или другое имя">
+					</div>
+					<!-- показываем только если предидущее == да -->
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group">
+						<label>Семейное положение</label>
+						<div class="calculator__form__input toggable-list-dropdown left-icon input--dropdown calculator__form__input--ico-family-status" id="calc__select-location--toggle">
+							<input type="text" placeholder="Выберите семейное положение" disabled>
+							<!-- drop -->
+							<div class="calculator__form__dropdown calculator__form__dropdown--no-pad">
+								<ul class="calculator__form__dropdown__custom-select">
+									<li data-value="Женат / Замужем">Женат / Замужем</li>
+									<li data-value="Холост / Не замужем">Холост / Не замужем</li>
+									<li data-value="Разведен / Разведена">Разведен / Разведена</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group">
+						<label for="">Дата рождения</label>
+						<div class="calculator__form__input calculator__form__input--w50 calculator__form__input--ico-calendar" id="calc__select-date-and-time" >
+							<input type="text" class="" placeholder="дд.мм.ггг" id="calc__select-birthdate">
+						</div>
+					</div>
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group">
+						<label>Занятость</label>
+						<div class="calculator__form__input toggable-list-dropdown left-icon input--dropdown calculator__form__input--ico-occupation togable-occupation" id="calc__select-location--toggle">
+							<input type="text" placeholder="Веберите тип занятости" disabled>
+							<!-- drop -->
+							<div class="calculator__form__dropdown calculator__form__dropdown--no-pad">
+								<ul class="calculator__form__dropdown__custom-select">
+									<li data-value="Работаю">Работаю</li>
+									<li data-value="Учусь в ВУЗе">Учусь в ВУЗе</li>
+									<li data-value="Учусь в школе">Учусь в школе</li>
+									<li data-value="Не работаю / не учусь">Не работаю / не учусь</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- показываем только если предидущее == да -->
+					<div class="calculator__form__separator toggle-occupation-work">
+					</div>
+					<div class="form-group toggle-occupation-work">
+						<label for="">Место работы</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__input--ico-occupation" id="" name="" placeholder="ООО РОМАШКА">
+					</div>
+					<div class="form-group toggle-occupation-work">
+						<label for="">Должность на работе</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__input--ico-occupation" id="" name="" placeholder="Менеджер">
+					</div>
+					<div class="form-group toggle-occupation-work">
+						<label for="">Адрес</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-loc" id="" name="" placeholder="полный адрес места работы">
+					</div>
+					<div class="form-group toggle-occupation-work">
+						<label for="">Рабочий телефон</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-phone" id="" name="phone" placeholder="+7(___)-___-__-__">
+					</div>
+					<!-- показываем только если предидущее == да -->
+					<!-- показываем только если предидущее == да -->
+					<div class="calculator__form__separator toggle-occupation-school">
+					</div>
+					<div class="form-group toggle-occupation-school">
+						<label for="">Название учебного заведения</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__input--ico-school" id="" name="" placeholder="Полное название учебного заведения">
+					</div>
+					<div class="form-group toggle-occupation-school">
+						<label for="">Адрес учебного заведения</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-loc" id="" name="" placeholder="полный адрес учебного заведения работы">
+					</div>
+					<div class="form-group toggle-occupation-school">
+						<label for="">Контактный телефон уч. заведения</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-phone" id="" name="phone" placeholder="+7(___)-___-__-__">
+					</div>
+					<!-- показываем только если предидущее == да -->
+
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group cl">
+						<label for="">Сдавали ли Вы биометрические данные  для шенгенской визы за последние 5 лет?</label>
+						<div class="calculator__form__single-switch left">
+							<div class="calculator__form__single-switch__wrap">
+								<div class="toggler"></div>
+								<span class="yes">Нет</span>
+								<span class="no">Да</span>
+							</div>
+							<input type="hidden" value="Нет" />
+						</div>
+					</div>
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group cl">
+						<label for="">Получали ли Вы Шенгенскую визу за последние три года?</label>
+						<div class="calculator__form__single-switch left togable-have-schengen">
+							<div class="calculator__form__single-switch__wrap">
+								<div class="toggler"></div>
+								<span class="yes">Нет</span>
+								<span class="no">Да</span>
+							</div>
+							<input type="hidden" value="Нет" />
+						</div>
+					</div>
+					<!-- показываем только если предидущее == да -->
+					<div class="calculator__form__separator toggle-have-schengen">
+					</div>
+					<div class="form-group toggle-have-schengen">
+						<label for="">Вспоминайте срок действия последней :) </label>
+						<div class="calculator__form__input calculator__form__input--ico-calendar" id="calc__select-date-and-time" >
+							<input type="text" class="" placeholder="дд.мм.гггг - дд.мм.гггг" id="calc__select-schengen-date">
+						</div>
+					</div>
+					<!-- показываем только если предидущее == да -->
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group cl">
+						<label for="">Вы осуществляете поездку</label>
+						<div class="calculator__form__single-switch left">
+							<div class="calculator__form__single-switch__wrap">
+								<div class="toggler"></div>
+								<span class="yes">Самостоятельно</span>
+								<span class="no">По приглашению</span>
+							</div>
+							<input type="hidden" value="Самостоятельно" />
+						</div>
+					</div>
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group cl">
+						<label for="">Ваши расходы на проезд и во время пребывания покрываются</label>
+						<div class="calculator__form__single-switch left">
+							<div class="calculator__form__single-switch__wrap">
+								<div class="toggler"></div>
+								<span class="yes">Самостоятельно</span>
+								<span class="no">Приглашающей стороной</span>
+							</div>
+							<input type="hidden" value="Самостоятельно" />
+						</div>
+					</div>
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group">
+						<label>Где вы будите останавливаться?</label>
+						<div class="calculator__form__input toggable-list-dropdown left-icon input--dropdown calculator__form__input--ico-destination" id="calc__select-location--toggle">
+							<input type="text" placeholder="Выберите место назначения" disabled>
+							<!-- drop -->
+							<div class="calculator__form__dropdown calculator__form__dropdown--no-pad">
+								<ul class="calculator__form__dropdown__custom-select">
+									<li data-value="В отеле">В отеле</li>
+									<li data-value="Частная собственность">Частная собственность</li>
+									<li data-value="еще вариант">еще варианты</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- ВТОРОЙ ЗАЯВИТЕЛЬ-->
+
+
+
+				</div>
+
+			</div>
+	</form>
+			<!-- SIDEBAR --> 
+			<div class="col-sm-5">
+				<div class="visa2__uploaders">
+					<div class="visa2__uploaders__title">
+						ЗАГРУЗИТЕ ДОКУМЕНТЫ
+					</div>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">1</i> Загранпаспорт (1-й разворот с фото)
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите файл со сканом загранпасспорта</span>
+							<div class="dz-message-add">или перетащите его в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">2</i> Российский паспорт
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Главный разворот и страница с пропиской</span>
+							<div class="dz-message-add">или перетащите их в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">3</i> Справка с места работы
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите файл со сканом справки с места работы</span>
+							<div class="dz-message-add">или перетащите его в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">4</i> Последняя шенгенская виза
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите файл со сканом последней визы</span>
+							<div class="dz-message-add">или перетащите его в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">5</i> Бронь отеля
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите файл со сканом подтверждения брони</span>
+							<div class="dz-message-add">или перетащите его в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">6</i> Фотография 4,7 х 3,6 см 
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите файл с вашей фотографией	</span>
+							<div class="dz-message-add">или перетащите его в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="calculator__form__separator mt20">
+					</div>
+					<div class="calculator__form__filter__checkbox calculator__form__contacts__checkbox calculator__form__checkbox--regular mt10 font-11">
+						<input type="checkbox" name="have_no_docs" id="have_no_docs">
+						<label for="have_no_docs">У меня не хватает документов и я хотел бы предоставить их лично в офис компании ПОЛИС или загрузить позднее </label>
+					</div>
+				</div>
+				<div class="visa__helper">
+					<a href="#">
+						<span>Скачать список документов </span>
+						<i class="ico ico-visa-pdf"></i>
+					</a>
+				</div>
+				<div class="visa2__contacts">
+					<div class="form-group">
+						<label for="">Телефон</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-phone" id="" name="phone2" placeholder="+7(910)-___-__-__">
+					</div>
+					<div class="calculator__form__separator">
+					</div>
+					<div class="form-group">
+						<label for="">Фактический адрес проживания</label>
+						<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-loc" id="" name="" placeholder="Санкт-Питербург, Дыбенко, 10/20">
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="text-center mt40">
+					<button class="btn btn-calc-cta" type="submit" id="calc__form__submit--step2">Перейти к доставке</span></button>	
+				</div>
+			</div>
+		</div>
+
+	<!-- STEP 3 -->
+
+	<form class="calculator__form" id="calc__form__step3">
+		<div class="calculator__form__editable-step">
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Тип ТС
+				</span>
+					<span class="calculator__form__editable-step__field not-editable">Легковой автомобиль</span>
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Территория дейтсвия
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">Все страны (Европа + СНГ)</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="Все страны (Европа + СНГ)" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Срок действия
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">15 дней</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="15 дней" class="calculator__form__editable-step__field__editable">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+
+				<div class="calculator__form__editable-step">
+					<div class="calculator__form__editable-step__wrapper">
+						<span class="calculator__form__editable-step__heading">
+							Первый заявитель
+						</span>
+							<span class="calculator__form__editable-step__field not-editable">Иван Иванович</span>
+					</div>
+					<div class="calculator__form__editable-step__wrapper">
+						<span class="calculator__form__editable-step__heading">
+							Второй заявитель
+						</span>
+							<span class="calculator__form__editable-step__field not-editable">Иван Иванович</span>
+					</div>
+					<div class="calculator__form__editable-step__wrapper">
+						<span class="calculator__form__editable-step__heading">
+							Третьий заявитель
+						</span>
+							<span class="calculator__form__editable-step__field not-editable">Иван Иванович</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="section-calculator--step3" class="row mt10 regular-input" style="position: relative">
+
+			<div class="col-sm-8">
+				<div class="heading">Как вы хотите получить визу ? </div>
+
+				<div class="form-group visa3-delivery">
+					<label>Выберите тип доставки</label>
+					<div class="row radio-buttons">
+						<div class="col-sm-7">
+							<div class="radio-buttons__block">
+								<div class="radio-buttons__btn active">
+									<input type="radio" name="delivery_type" id="delivery_type_1" checked>
+									<label for="delivery_type_1"><span>Доставкой по Санкт-Петербургу</span></label>
+								</div>
+							</div>
+							<div class="radio-buttons__block">
+								<div class="radio-buttons__btn">
+									<input type="radio" name="delivery_type" id="delivery_type_2">
+									<label for="delivery_type_2"><span>Доставкой в другой город</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="radio-buttons__block">
+								<div class="radio-buttons__btn">
+									<input type="radio" name="delivery_type" id="delivery_type_3">
+									<label for="delivery_type_3"><span>Заберу в офисе</span></label>
+								</div>
+							</div>
+							<div class="radio-buttons__block">
+								<div class="radio-buttons__btn">
+									<input type="radio" name="delivery_type" id="delivery_type_4">
+									<label for="delivery_type_4"><span>Получить по E-mail</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="togle-visaDelivery--type1">
+						<div class="form-group">
+							<label>Адрес доставки</label>
+							<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-loc" id="" name="" placeholder="125525, Санкт-Питербург, ул. Строителей, дом 5 кв. 124">
+						</div>
+					</div>
+					<!-- Зависит от выбора чекбокса -->
+					<div class="togle-visaDelivery--type2">
+						<div class="form-group">
+							<label>Город и регион</label>
+							<input type="text" class="calculator__form__input calculator__form__input--w50 left-icon calculator__form__contacts__input--ico-loc" id="" name="" placeholder="Балашиха, Московская область ">
+						</div>
+						<div class="form-group">
+							<label>Адрес</label>
+							<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-loc" id="" name="" placeholder="ул. Строителей, дом 5 кв. 124">
+						</div>
+					</div>
+					<!-- Зависит от выбора чекбокса -->
+					<div class="togle-visaDelivery--type3">
+						<div class="row">
+							<div class="col-sm-8">
+								<div class="form-group">
+									<label>В каком офисе ?</label>
+									<div class="radio-buttons">
+										<div class="radio-buttons__block">
+											<div class="radio-buttons__btn active">
+												<input type="radio" name="delivery_office" id="delivery_office_1" checked>
+												<label for="delivery_office_1"><span>проспект Стачек д.55</span></label>
+											</div>
+										</div>
+										<div class="radio-buttons__block">
+											<div class="radio-buttons__btn">
+												<input type="radio" name="delivery_office" id="delivery_office_2">
+												<label for="delivery_office_2"><span>Торф. дорога д. 2, корп 1, ТК «Старая Деревня»</span></label>
+											</div>
+										</div>
+										<div class="radio-buttons__block">
+											<div class="radio-buttons__btn">
+												<input type="radio" name="delivery_office" id="delivery_office_3">
+												<label for="delivery_office_3"><span>пр.Энгельса 124 к1 ТК ВОЯЖ <br> 3 вход, 2 этаж, секция 2.21</span></label>
+											</div>
+										</div>
+										<div class="radio-buttons__block">
+											<div class="radio-buttons__btn">
+												<input type="radio" name="delivery_office" id="delivery_office_4">
+												<label for="delivery_office_4"><span>ул. Ленсовета д.87</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div id="map" class="map mt35" style="height: 230px;"></div>
+		<script type="text/javascript">
+		$(document).ready(function(){
+
+			ymaps.ready(init);
+				function init () {
+					var myMap = new ymaps.Map("map", {
+			            center: [59.9182,30.3056],
+			            zoom: 9,
+			            controls: ['zoomControl'],
+						
+			        }); 
+
+					var myGeoObjects = [];
+						myGeoObjects[0] = new ymaps.Placemark([59.8796,30.2620],{
+			                clusterCaption: 'Метро "Кировский завод"', 
+			                //balloonContentBody: 'Текст в балуне',
+			                },{
+			                // Необходимо указать данный тип макета.
+			                iconLayout: 'default#image',
+			                iconImageHref: 'img/ya-maps/1c.png',
+			                // Размеры метки.
+			                iconImageSize: [46, 30],
+			                // Смещение левого верхнего угла иконки относительно
+			                // её «ножки» (точки привязки).
+			                iconImageOffset: [-3, -42]
+			            });
+			        
+						myGeoObjects[1] = new ymaps.Placemark([59.9893,30.2552],{
+							clusterCaption: 'Метро "Старая деревня"', 
+							//balloonContentBody: 'Текст в балуне',
+							},{
+							// Необходимо указать данный тип макета.
+							iconLayout: 'default#image',
+							iconImageHref: 'img/ya-maps/2c.png',
+							// Размеры метки.
+							iconImageSize: [46, 30],
+							// Смещение левого верхнего угла иконки относительно
+							// её «ножки» (точки привязки).
+							iconImageOffset: [-3, -42]
+			            });
+			        
+						myGeoObjects[2] = new ymaps.Placemark([59.8332,30.3493],{
+			                clusterCaption: ' Метро "Звёздная"', 
+							//balloonContentBody: 'Текст в балуне',
+			                },{
+			                // Необходимо указать данный тип макета.
+			                iconLayout: 'default#image',
+			                iconImageHref: 'img/ya-maps/3c.png',
+			                // Размеры метки.
+			                iconImageSize: [46, 30],
+			                // Смещение левого верхнего угла иконки относительно
+			                // её «ножки» (точки привязки).
+			                iconImageOffset: [-16, -42]
+			            });
+						
+						myGeoObjects[3] = new ymaps.Placemark([60.0372,30.3218],{
+			                clusterCaption: 'Метро "Озерки"', 
+							//balloonContentBody: 'Текст в балуне',
+			                },{
+			                // Необходимо указать данный тип макета.
+			                iconLayout: 'default#image',
+			                iconImageHref: 'img/ya-maps/4c.png',
+			                // Размеры метки.
+			                iconImageSize: [46, 30],
+			                // Смещение левого верхнего угла иконки относительно
+			                // её «ножки» (точки привязки).
+			                iconImageOffset: [-16, -42]
+			            });
+						
+						myGeoObjects[4] = new ymaps.Placemark([55.7613,37.6630],{
+			                clusterCaption: 'Нижний Сусальный переулок дом 5', 
+							//balloonContentBody: 'Текст в балуне',
+			                },{
+			                // Необходимо указать данный тип макета.
+			                iconLayout: 'default#image',
+			                iconImageHref: 'img/ya-maps/4c.png',
+			                // Размеры метки.
+			                iconImageSize: [46, 30],
+			                // Смещение левого верхнего угла иконки относительно
+			                // её «ножки» (точки привязки).
+			                iconImageOffset: [-16, -42]
+			            });
+			        
+						var clusterIcons=[{
+								href:'/images/pointer.png',
+								size:[31,40],
+								offset:[0,0]
+						}];
+			        
+						var clusterer = new ymaps.Clusterer({
+							clusterDisableClickZoom: false,
+							clusterOpenBalloonOnClick: false,
+							// Устанавливаем стандартный макет балуна кластера "Карусель".
+							clusterBalloonContentLayout: 'cluster#balloonCarousel',
+							// Устанавливаем собственный макет.
+							//clusterBalloonItemContentLayout: customItemContentLayout,
+							// Устанавливаем режим открытия балуна. 
+							// В данном примере балун никогда не будет открываться в режиме панели.
+							clusterBalloonPanelMaxMapArea: 0,
+							// Устанавливаем размеры макета контента балуна (в пикселях).
+							clusterBalloonContentLayoutWidth: 300,
+							clusterBalloonContentLayoutHeight: 200,
+							// Устанавливаем максимальное количество элементов в нижней панели на одной странице
+							clusterBalloonPagerSize: 5
+							// Настройка внешего вида нижней панели.
+							// Режим marker рекомендуется использовать с небольшим количеством элементов.
+							// clusterBalloonPagerType: 'marker',
+							// Можно отключить зацикливание списка при навигации при помощи боковых стрелок.
+							// clusterBalloonCycling: false,
+							// Можно отключить отображение меню навигации.
+							// clusterBalloonPagerVisible: false
+						});
+
+				clusterer.add(myGeoObjects);
+				myMap.geoObjects.add(clusterer);
+				myMap.behaviors.disable('scrollZoom');
+			}
+		});
+		</script>
+							</div>
+						</div>
+					</div>
+					<!-- Зависит от выбора чекбокса -->
+					<div class="togle-visaDelivery--type4">
+						<div class="form-group">
+							<label>Ваш email</label>
+							<input type="text" class="calculator__form__input calculator__form__input--w50 left-icon calculator__form__contacts__input--ico-email" placeholder="ivan.pupkin@mail.ru">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- SIDEBAR -->
+			<div class="col-sm-4 green-sidebar green-sidebar--visa-step3 no-pad-top">
+
+				<div class="visa-form-choicen__price left">4725.73 Р</div>
+
+				<div class="visa-form-help">
+					<div class="visa-form-help__name">Полное оформление визы</div>
+					<div class="visa-form-help__desc">
+						<ul>
+							<li>Подать и получить документы за вас</li>
+							<li>Оплатить консульский и сервисный сборы</li>
+							<li>Записать на сканирование отпечатков пальцев</li>
+						</ul>
+					</div>
+				</div>
+				<div class="visa-form-help">
+					<div class="visa-form-help__name">В стоимость включено</div>
+					<div class="visa-form-help__icons">
+						<div class="visa-form-help__icon-row">
+							<i class="ico ico-pricing-sbor"></i>
+							<span>Консульский и сервисный сборы</span>
+						</div>
+						<div class="visa-form-help__icon-row">
+							<i class="ico ico-pricing-photo"></i>
+							<span>Фотография</span>
+						</div>
+						<div class="visa-form-help__icon-row">
+							<i class="ico ico-pricing-insurance"></i>
+							<span>Страховка на 30 дней</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- CALCULATOR :: END -->
+
+	<!-- VISA STEP 2 MODALS :: START -->
+	<div id="visa2-modal-passport" class="zoom-anim-dialog mfp-hide">
+		<div class="visa2__modal__title">Пример загранпасспорта</div>
+		<div class="row">
+			<div class="col-sm-7">
+				<img src="images/modal-zagranpasport.jpg" class="img-responsive" alt="">
+			</div>
+			<div class="col-sm-5">
+				<div class="visa2__modal__text">
+					<p>1. Подготовить документы, необходимые для заполнения формы заявления, а также файл с фотографией для паспорта. </p>
+					<p>2. Необходимо заполнить: Форму заявления, указав информацию о себе, супруге, родителях, о нахождении ранее в иностранном гражданстве, о месте обращения и т.д. </p>
+					<p>3. По окончании внесения данных система выполнит обработку и отправку Вашего запроса в государственные структуры для прохождения этапов регистрации, проверки заявления и принятия окончательного решения. </p>
+					<p>4. В случае успешного выполнения услуги на всех этапах система даст Вам положительный ответ, а государственные структуры проинформируют Вас о необходимости прийти в территориальный орган ведомства для получения документов. В случае отказа на каком-либо этапе оказания услуги система даст отрицательный ответ, а государственные структуры проинформируют Вас о причинах отказа.</p>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- VISA STEP 2 MODALS :: END -->
+
+	<!-- BENEFITS :: START -->
+	<section class="benefits text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="img/benefit-ico-1.svg">
+					<div class="benefit-desc">
+						Самые низкие цены на оформление виз и страхования выезжающих за рубеж
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<img src="img/ico-visa-benefit-2.svg">
+					<div class="benefit-desc">
+						Получите визу с доставкой на дом!<br> Можем подать и получить документы за вас
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<img src="img/ico-visa-benefit-3.svg">
+					<div class="benefit-desc">
+						Грамотные специалисты. <br>Максимально быстрая запись и получение виз
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- BENEFITS :: END -->
+
+	<!-- VIDEO :: START -->
+	<section class="video white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+					<div class="heading">
+						Посмотрите как просто оформить визу
+					</div>
+					<div class="subtitle">
+						Наши специалисты подготовили подробное и понятное видео, которое поможет вам получить ответы на все вопросы.
+					</div>
+
+					<div class="video__wrap">
+						<img src="img/video-play.png" alt="" onclick="loadvideo();">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- VIDEO :: END -->
+
+	<!-- SOCIALS :: START -->
+	<section class="socials">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+					<div class="heading">
+						Получайте бонусы и скидки
+					</div>
+					<div class="subtitle">
+						Присоединяйтесь к нам в социальных сетях и получайте информацию о скидках, бонусах и важных новостях
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-xs-4 col-md-3 col-md-offset-1">
+					<a class="social__button social__button--instagram" href="#">
+						<i class="ico ico-instagram"></i>
+						<span>Подписаться</span>
+					</a>
+					<div class="social__metric">
+						1500 подписчиков в Инстаграм
+					</div>
+				</div>
+				<div class="col-xs-4 col-md-4">
+					<a class="social__button social__button--vk" href="#">
+						<i class="ico ico-vk"></i>
+						<span>Подписаться</span>
+					</a>
+					<div class="social__metric">
+						15 000 подписчиков ВКОНТАКЕ
+					</div>
+				</div>
+				<div class="col-xs-4 col-md-3">
+					<a class="social__button social__button--youtube" href="#">
+						<i class="ico ico-youtube"></i>
+						<span>Подписаться</span>
+					</a>
+					<div class="social__metric">
+						500 подписчиков в YouTube
+					</div>
+				</div>
+			</div>
+			<!-- SUBSCRIBE :: START -->
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<div class="subscribe white-bg">
+						<form accept="" action="">
+							<div class="row">
+								<div class="col-sm-8">
+									<div class="subscribe__title">Подпишитесь на рассылку горячих предложений</div>
+									<div class="form-group">
+										<label>Ваш email</label>
+										<input type="text" class="subscribe__control" placeholder="ivan.pupkin@mail.ru">
+										<a href="#" class="btn btn--green">ПОДПИСАТЬСЯ НА РАССЫЛКУ</a>
+									</div>
+								</div>
+								<div class="col-sm-4 no-pad-l">
+									<div class="subscribe__options-title">
+										По каким категориям вы хотите получать предложения и промо-коды ?
+									</div>
+									<div class="subscribe__chechboxes">
+										<div class="row">
+											<div class="col-sm-6 ">
+												<div class="calculator__form__filter__checkbox">
+													<input type="checkbox" name="calc__filter" id="subscribe__opt__1" checked="">
+													<label for="subscribe__opt__1">Оформление виз</label>
+												</div>
+												<div class="calculator__form__filter__checkbox">
+													<input type="checkbox" name="calc__filter" id="subscribe__opt__2" checked="">
+													<label for="subscribe__opt__2">Страховка ВЗР</label>
+												</div>
+											</div>
+											<div class="col-sm-6 no-pad-l no-pad-r">
+												<div class="calculator__form__filter__checkbox">
+													<input type="checkbox" name="calc__filter" id="subscribe__opt__3" checked="">
+													<label for="subscribe__opt__3">Зеленая карта</label>
+												</div>
+												<div class="calculator__form__filter__checkbox">
+													<input type="checkbox" name="calc__filter" id="subscribe__opt__4" checked="">
+													<label for="subscribe__opt__4">Страховка ОСАГО</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- SUBSCRIBE :: END -->
+		</div>
+	</section>
+	<!-- SOCIALS :: END -->
+
+	<!-- PRESS :: START -->
+	<section class="press white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="heading">
+						Пресса о нас
+					</div>
+				</div>
+				<div class="owl-carousel" id="press-carousel">
+				<div class="col-sm-4">
+					<div class="press__image">
+						<img src="images/commersant.png" alt="">
+					</div>
+					<div class="press__title">
+						Компания «Полис»: финская шенгенская виза - это просто
+					</div>
+					<div class="press__short">
+						Цены на услуги не просто ниже средних, а одни из самых низких в России. Кроме того, компания широко использует систему бонусов и скидок, которые позволяют сэкономить больше.
+					</div>
+					<div class="press__link">
+						<a href="#">Подробнее на <span>kommersant.ru</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="press__image">
+						<img src="images/metro.png" alt="">
+					</div>
+					<div class="press__title">
+						Компания, за ценовую политику которой ее не любят конкуренты
+					</div>
+					<div class="press__short">
+						Полноценная и всестороння консультация и поддержка в режиме онлайн дает широкие возможности при оформлении любого полиса.
+					</div>
+					<div class="press__link">
+						<a href="#">Подробнее на <span>metronews.ru</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="press__image">
+						<img src="images/dpru.png" alt="">
+					</div>
+					<div class="press__title">
+						Как быстро и выгодно оформить туристическую страховку?
+					</div>
+					<div class="press__short">
+						Перспективная и быстроразвивающаяся компания готова сотрудничать с населением не только в реальном, но и в интернет-пространстве.
+					</div>
+					<div class="press__link">
+						<a href="#">Подробнее на <span>dp.ru</span></a>
+					</div>
+				</div>	
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="heading heading--top-border">
+						Отзывы наших клиентов <i class="ico ico-vk--heading"></i>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="owl-carousel" id="testimonials-carousel">
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Пользуюсь услугами "Полис 812" уже несколько лет. Еще с тех пор когда их офис был на ул. Сикейроса 6 корп.1 Делаю у них финские визы и страховки. Цены одни из самых низких по городу.Девушки работающие там всегда помогут в возникающих вопросах.
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Заказывали страховку для визы через интернет. Все быстро и удобно. Спасибо. Все лучшие👍
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Пользуюсь Вашими услугами уже не первый раз. Оформление страховки занимает всего пару минут, присланный на эл. почту полис никаких вопросов в посольстве не вызывает. Страховки выгоднее чем у Вас я не нашел, да еще и с промокодом
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+							</div>
+						</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- PRESS :: END -->
+
+
+	<!-- NEWS :: START -->
+	<section class="news text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading">
+						Новости страхового центра Полис
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<a class="news__card" href="#">
+						<div class="news__card__title">
+							Стоимость зеленой карты с 15 сентября уменьшиться
+						</div>
+						<div class="news__card__short">
+							Легковой автомобиль на 15 дней 2450 руб на 30 дней 4670 руб на 1 год 22240 руб
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a class="news__card" href="#">
+						<div class="news__card__title">
+							Режим работы 12 июня
+						</div>
+						<div class="news__card__short">
+							12 июня только офис у м. Звездная с 12 до 17 13 июня в режиме выходного дня с 11 до 18 ( офис у м.Кировский Завод до 17-00)
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a class="news__card" href="#">
+						<div class="news__card__title">
+							График на майские праздники
+						</div>
+						<div class="news__card__short">
+							1 мая - выходной 9 мая - выходной
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- NEWS :: END -->
+
+
+	<!-- FOOTER :: START -->
+	<footer class="footer hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="footer__heading">Страхование</div>
+					<div class="footer__links">
+						<a href="#">КАСКО</a>
+						<a href="#">Туристическая страховка</a>
+						<a href="#">ОСАГО</a>
+						<a href="#">Зеленая карта</a>
+						<a href="#">Проверить КБМ по базе РСА</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer__heading">Горящие туры</div>
+					<div class="footer__links">
+						<a href="#">Подбор тура</a>
+						<a href="#">Горящие туры в Грецию из Санкт-Петербурга</a>
+						<a href="#">Горящие туры в Крым из Санкт-Петербурга</a>
+						<a href="#">Горящие туры в Сочи из Санкт-Петербурга</a>
+						<a href="#">Горящие туры на Кипр из Санкт-Петербурга</a>
+						<a href="#">Билеты на паром</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer__heading">Оформление виз</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Виза в Испанию</a>
+								<a href="#">Виза в Эстонию</a>
+								<a href="#">Виза в Литву</a>
+								<a href="#">Виза в Италию</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Виза в США</a>
+								<a href="#">Виза в Англию</a>
+								<a href="#">Виза в Голландию</a>
+								<a href="#">Виза в Финляндию</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<div class="footer__heading">О компании</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Контакты</a>
+								<a href="#">Обратная связь</a>
+								<a href="#">Реквизиты</a>
+								<a href="#">Способы оплаты</a>
+								<a href="#">Отзывы о нас</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Пользовательское соглашение</a>
+								<a href="#">Условия возврата</a>
+								<a href="#">Отказ от услуги</a>
+								<a href="#">Карта сайта</a>
+							</div>
+						</div>
+					</div>
+					<a href="#mailer" class="footer__mailer popup-with-zoom-anim"><i class="ico ico-hot-offer"></i> <span>рассылка горячих предложений</span></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="under-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="under-footer__copywrite">
+						© 2016 Страховой центр «ПОЛИС»
+					</div>
+				</div>
+				<div class="col-sm-6 text-center">
+					<a href="#">
+						<i class="ico ico-vk"></i>
+					</a>
+					<a href="">
+						<i class="ico ico-fb"></i>
+					</a>
+					<a href="#">
+						<i class="ico ico-youtube"></i>
+					</a>
+					<a href="#">
+						<i class="ico ico-instagram"></i>
+					</a>
+					<a href="">
+						<i class="ico ico-gplus"></i>
+					</a>
+				</div>
+				<div class="col-sm-3 text-right">
+					<div class="under-footer__phone">
+						8 800 200-26-12
+						<span>Поможем с выбором с 10 до 20</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER :: END -->
+
+	<!-- VZR-HELPER :: START -->
+	<div class="container absolute-container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="helper__general" id="show-helper">
+					<div class="pull-right"><i class="fa fa-times-circle-o" id="close-helper"></i></div>
+					Если у вас возникли сложности в приобритении полиса ВЗР, данный помошник поможет вам пошагово совершить покупку
+					<div class="helper__general__pagination">
+						<a href="#">
+							<i class="fa fa-arrow-left" id="helper__prev"></i>
+						</a>
+						<div class="helper__general__pagination__step">
+							1/7. <span>Выбор места путешествия</span>
+						</div>
+						<a href="#">
+							<i class="fa fa-arrow-right" id="helper__next"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- VZR-HELPER :: END -->
+
+	<!-- MAILER POPUP :: START -->
+	<div id="mailer" class="zoom-anim-dialog mfp-hide">
+
+		<form accept="" action="">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="subscribe__title">Подпишитесь на рассылку промо-кодов</div>
+					<div class="form-group">
+						<label>Ваш email</label>
+						<input type="text" class="subscribe__control" placeholder="ivan.pupkin@mail.ru">
+						<a href="#" class="btn btn--green">ПОДПИСАТЬСЯ НА РАССЫЛКУ</a>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="subscribe__options-title">
+						По каким категориям вы хотите получать предложения и промо-коды ?
+					</div>
+					<div class="subscribe__chechboxes">
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__1" checked="">
+							<label for="subscribe__opt__modal__1">Оформление виз</label>
+						</div>
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__2" checked="">
+							<label for="subscribe__opt__modal__2">Страховка ВЗР</label>
+						</div>
+
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__3" checked="">
+							<label for="subscribe__opt__modal__3">Зеленая карта</label>
+						</div>
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__4" checked="">
+							<label for="subscribe__opt__modal__4">Страховка ОСАГО</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- MAILER POPUP :: END -->
+
+</body>
+</html>

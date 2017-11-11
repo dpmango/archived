@@ -1,0 +1,309 @@
+.clevered.default {
+    margin: 0px;
+    padding: 0px;
+}
+.clevered.default label {
+    color: grey;
+}
+.clevered.default .hidden {
+    opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    position: absolute;
+    
+}
+.clevered.default .jClever-element {
+    outline: none;
+    /*margin: 10px;*/
+
+    font-size: 15px;
+    color: #454545;
+    position: relative;
+}
+.clevered.default .jClever-element.error {
+}
+.clevered.default .jClever-element * {
+    outline: none;
+}
+/*
+.clevered.default .focused .jClever-element-select-center {
+    background: #EFEEEC;
+    color: #000;
+}
+/*
+.clevered.default .focused .jClever-element-checkbox-twins {
+    /*-moz-box-shadow: inset 0 0 5px #000; /* Для Firefox */
+    /*-webkit-box-shadow: inset 0 0 5px #000; /* Для Safari и Chrome */
+    /*box-shadow: inset 0 0 5px #000; /* Параметры тени */
+/*}
+*/
+.clevered.default .row {
+    vertical-align: middle;
+}
+.clevered.default .row>label {
+    display:-moz-inline-box; display:inline-block; *zoom: 1; *display:inline;
+    vertical-align: middle;
+}
+.clevered.default .row>.jClever-element {
+    display:-moz-inline-box; display:inline-block; *zoom: 1; *display:inline;
+    vertical-align: middle;    
+}
+
+/*
+ *
+ *   SELECT
+ *
+ */ 
+.clevered.default .jClever-element-select-wrapper {
+    position: relative;
+    width: 300px;
+    border: 1px solid #bfbfbf;
+    cursor: pointer;
+    height: 40px;
+}
+.clevered.default .jClever-element-select-wrapper select {
+    display: none;
+}
+.clevered.default .jClever-element select {
+    display: none;
+}
+.clevered.default .jClever-element-select-center {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    line-height: 40px;
+    padding: 0 10px;
+}
+.clevered.default .jClever-element-select-right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline;
+    font-weight: bold;
+    background-image: url(../img/jClever/arrow-down.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.clevered.default .jClever-element-select-list-wrapper {
+    position: absolute;
+    border: 1px solid #bfbfbf;
+    border-top: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    top: 39px;
+    left: -1px;
+    background: #fff;
+
+    display: none;
+
+    
+}
+
+.clevered.default .jClever-element-select-list-wrapper-- {
+    min-height: 110px;
+    max-height: 150px;
+}
+
+.clevered.default .jClever-element-select-list {
+    white-space: nowrap;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.clevered.default .jClever-element-select-list>li {
+    padding: 0 10px;
+    margin: 3px 0;
+}
+.clevered.default .jClever-element-select-list>li.active {
+    font-weight: bold;
+}
+.clevered.default .jClever-element-select-list>li:hover, .clevered.default .jClever-element-select-list>li.selected {
+    background: #bfbfbf;
+    color: #fff;
+}
+.clevered.default .jClever-element-select-list>li>span {
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    position: relative;
+    height: 100%;
+    white-space: normal;
+}
+.clevered.default .jClever-element-select-list>li>span>i {
+    font-style: normal;
+}
+
+
+/*
+ *
+ *   CHECKBOX
+ *
+ */
+
+
+.clevered.default .jClever-element-checkbox-twins {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/jClever/checkbox.png) no-repeat left bottom;
+    float: left;
+    padding-right: 10px;
+}
+.clevered.default .jClever-element-checkbox-twins.checked {
+    background-position: left top;
+}
+
+
+/*
+ *
+ *   RADIO
+ *
+ */
+
+.clevered.default .jClever-element-radio-twins {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/jClever/radio.png) no-repeat left bottom;
+}
+.clevered.default .jClever-element-radio-twins.checked {
+    background-position: left top;
+}
+
+/*
+ *
+ *   BUTTON
+ *
+ */
+ /*
+.clevered.default button.styled {
+    background: none;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+.clevered.default button.styled>span {
+    display:-moz-inline-box; display:inline-block; *zoom: 1; *display:inline;
+    border: 1px solid #c0c0c0;    
+}
+.clevered.default button.styled:hover>span {
+    background: #c0c0c0;
+    color: #fff;
+}
+.clevered.default button.styled>span>span {
+    display:-moz-inline-box; display:inline-block; *zoom: 1; *display:inline;
+    padding: 5px 15px;
+}
+/*
+ *
+ *   input`s
+ *
+ */
+ /*
+.clevered.default .input-type-text {
+    border: 1px solid #c0c0c0;
+    line-height: 20px;
+    padding: 0 4px;
+    color: #c0c0c0;
+} 
+
+/*
+ *
+ *   textarea`s
+ *
+ */
+ /*
+.clevered.default form.jClever textarea {
+    border: 1px solid #c0c0c0;
+    padding: 0 4px;
+    color: #c0c0c0;
+    resize: none;
+} 
+
+
+/*
+ *
+ *   file input
+ *
+ */
+.clevered.default .jClever-element-file {
+    width: 300px;
+    height: 40px;
+    overflow: hidden;
+    /*position: relative;*/
+    margin-top: -10px;
+} 
+.clevered.default .jClever-element .hidden-file {
+    opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    padding: 0px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -210px;
+    font-size: 20px;
+}
+.clevered.default .jClever-element .jClever-element-file-name {
+    display: block;
+    width: 198px;
+    height: 40px;
+    float: left;
+    /*border-bottom: 1px solid #c0c0c0;*/
+    line-height: 40px;
+    overflow: hidden;
+    /*background: url(../img/jClever/file-input.png) repeat-y right top;*/
+    margin-left: 100px;
+    padding-top: 5px;
+}
+
+.clevered.default .jClever-element .jClever-element-file-button {
+    display: block;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    /*background: url(../img/jClever/file.png) no-repeat left top;*/
+    text-align: center;
+        margin: 3px 0 0 0;
+    border: 1px solid #bfbfbf;
+    position: absolute;
+}
+.clevered.default .input-file-helper {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    z-index: 100;
+    margin-left: 141px;
+    margin-top: 4px;
+}
+/*
+.clevered.default .jClever-element.focused .jClever-element-file-name {
+    -moz-box-shadow: inset 0 0 5px #000; /* Для Firefox */
+    /*-webkit-box-shadow: inset 0 0 5px #000; /* Для Safari и Chrome */
+    /*box-shadow: inset 0 0 5px #000; /* Параметры тени */
+/*}
+*/
+.clevered.default .jClever-error-label {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-left: 100%;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    background: #EA1010;
+    display: none;
+}
+.clevered.default .jClever-element.error .jClever-error-label {
+    display:-moz-inline-box; display:inline-block; *zoom: 1; *display:inline;
+}

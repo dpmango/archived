@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="191px" height="324px" viewBox="0 0 191 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>шсщт</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M165.052514,159.145774 C164.816425,153.630496 168.280506,148.924934 172.776335,148.63647 L223.359202,145.390939 C227.86104,145.10209 231.701837,149.337735 231.937979,154.854226 L231.937979,154.854226 C232.174068,160.369504 228.709987,165.075066 224.214157,165.36353 L173.631291,168.609061 C169.129453,168.89791 165.288655,164.662265 165.052514,159.145774 L165.052514,159.145774" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="66.9082365" height="23.2459968" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M164.058945,179.45979 C163.805156,173.392983 167.52242,168.217294 172.359749,167.89969 L229.767887,164.13046 C234.606083,163.8128 238.733896,168.47207 238.987741,174.54021 L238.987741,174.54021 C239.241529,180.607017 235.524266,185.782706 230.686937,186.10031 L173.278799,189.86954 C168.440603,190.1872 164.312789,185.52793 164.058945,179.45979 L164.058945,179.45979" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="74.9533144" height="25.7697292" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <path d="M166.052514,200.145774 C165.816425,194.630496 169.280506,189.924934 173.776335,189.63647 L224.359202,186.390939 C228.86104,186.10209 232.701837,190.337735 232.937979,195.854226 L232.937979,195.854226 C233.174068,201.369504 229.709987,206.075066 225.214157,206.36353 L174.631291,209.609061 C170.129453,209.89791 166.288655,205.662265 166.052514,200.145774 L166.052514,200.145774" id="path-5"></path>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="66.9082365" height="23.2459968" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <path d="M167.045798,218.331758 C166.845122,213.643772 169.792791,209.643839 173.612372,209.398765 L216.849859,206.624533 C220.677154,206.378964 223.942878,209.989794 224.143146,214.668242 L224.143146,214.668242 C224.343822,219.356228 221.396152,223.356161 217.576571,223.601235 L174.339085,226.375467 C170.51179,226.621036 167.246065,223.010206 167.045798,218.331758 L167.045798,218.331758" id="path-7"></path>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="57.1166845" height="19.774573" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+    </defs>
+    <g id="статика" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="polis812_404" transform="translate(-294.000000, -305.000000)">
+            <g id="шсщт" transform="translate(199.000000, 304.000000)">
+                <g id="Group-5" transform="translate(0.000000, 206.000000)" fill="#FEAF75">
+                    <polygon id="Rectangle-2" points="185 7 234 -1 262.5 128 201 128"></polygon>
+                </g>
+                <path d="M187,226 L239,226 L240.5,235.282992 C240.5,235.282992 221.928607,244.139517 215.5,244.5 C206.5937,244.999419 189,242.5 189,242.5 L187,226 Z" id="Rectangle-9" fill="#EAA067"></path>
+                <path d="M198.206439,134.417656 C198.920853,128.388001 204.073035,121.646067 209.697009,119.366077 L208.73645,119.755493 C213.852567,117.681392 220.271734,119.858343 223.078513,124.625412 L233.64618,142.573672 C242.402003,157.444673 243.664116,182.213892 236.462277,197.903613 L235.5,200.000002 L240.842281,213.482901 C243.690811,220.672047 240.339081,229.189085 233.225665,232.231881 C233.225665,232.231881 226.981376,236.119435 218,236.500002 C207.31471,236.952768 187,229 187,229 L198.206439,134.417656 Z" id="Rectangle-8" fill="#FEAF75"></path>
+                <g id="ефиду" transform="translate(95.000000, 0.000000)">
+                    <rect id="Rectangle-3" fill="#964A30" transform="translate(95.591594, 82.951724) rotate(-5.000000) translate(-95.591594, -82.951724) " x="81.091594" y="0.951723513" width="29" height="164" rx="14.5"></rect>
+                    <rect id="Rectangle-3-Copy" fill="#964A30" transform="translate(105.591594, 171.951724) rotate(-5.000000) translate(-105.591594, -171.951724) " x="91.091594" y="89.9517235" width="29" height="164" rx="14.5"></rect>
+                    <rect id="Rectangle-4" fill="#FFFFFF" transform="translate(95.179720, 64.364214) rotate(-5.000000) translate(-95.179720, -64.364214) " x="3.17971981" y="23.8642136" width="184" height="81"></rect>
+                    <text id="УПС!" opacity="0.758453825" transform="translate(93.873197, 45.419249) rotate(-5.000000) translate(-93.873197, -45.419249) " font-family="Lato-Regular, Lato" font-size="28" font-weight="normal" fill="#303030">
+                        <tspan x="61.7011965" y="56.4192485">УПС!</tspan>
+                    </text>
+                    <text id="ОШИБКА" opacity="0.758453825" transform="translate(97.736206, 79.556855) rotate(-5.000000) translate(-97.736206, -79.556855) " font-family="Lato-Regular, Lato" font-size="28" font-weight="normal" fill="#303030">
+                        <tspan x="33.2362057" y="90.5568553">ОШИБКА</tspan>
+                    </text>
+                </g>
+                <use id="Rectangle-6" stroke="#EAA067" mask="url(#mask-2)" stroke-width="2" fill="#FEAF75" transform="translate(198.495246, 157.000000) rotate(-5.000000) translate(-198.495246, -157.000000) " xlink:href="#path-1"></use>
+                <use id="Rectangle-6-Copy" stroke="#EAA067" mask="url(#mask-4)" stroke-width="2" fill="#FEAF75" transform="translate(201.523343, 177.000000) rotate(-5.000000) translate(-201.523343, -177.000000) " xlink:href="#path-3"></use>
+                <use id="Rectangle-6-Copy-2" stroke="#EAA067" mask="url(#mask-6)" stroke-width="2" fill="#FEAF75" transform="translate(199.495246, 198.000000) rotate(-5.000000) translate(-199.495246, -198.000000) " xlink:href="#path-5"></use>
+                <use id="Rectangle-6-Copy-3" stroke="#EAA067" mask="url(#mask-8)" stroke-width="2" fill="#FEAF75" transform="translate(195.594472, 216.500000) rotate(-5.000000) translate(-195.594472, -216.500000) " xlink:href="#path-7"></use>
+                <path d="M164.933923,225.80985 C162.893519,223.200606 162.07523,218.534423 163.105938,215.388514 L164.037724,212.544529 L164.037724,212.544529 C160.631855,206.842458 160.863965,197.269543 164.037724,192.020287 L164.037724,192.020287 L163.645444,191.543784 C159.107486,186.031532 158.98005,176.998299 163.376487,171.347338 L164.037724,170.497416 C164.037724,170.497416 162.992723,166.675327 162.992723,161.431247 C162.992723,156.187166 163.213064,156.922998 163.213064,156.922998 C163.668512,153.649288 166.732506,150.995422 170.031464,150.995422 L182.037724,150.995422 L186.028401,227.995422 L172.557188,228.849915 C169.796842,229.025006 166.180065,227.403402 164.473345,225.220869 L164.933923,225.80985 Z" id="Rectangle-10" fill="#FEAF75" transform="translate(173.093660, 189.929140) rotate(-5.000000) translate(-173.093660, -189.929140) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

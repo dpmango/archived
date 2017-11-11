@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /includes
+Disallow: /content/plugins
+
+User-agent: Yandex
+
+Disallow: /includes
+Disallow: /content/plugins
+
+Host: http://xn--80aajiovfeda7bip.xn--p1ai

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!--Made with Love by Mango Digital Production-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<title>Title</title>
+	<meta name="Description" content="">
+
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/slidebars.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.hc-sticky.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/slidebars.min.js"></script>	
+	<script type="text/javascript" src="js/stacktable.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<link rel="stylesheet" href="css/demo.css" type="text/css" />
+
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="inner">
+	<header class="hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 logo">
+					<img src="img/logo.png" />
+				</div>
+				<div class="col-sm-4 contacts">
+					<i class="ico-phone"></i>
+					<div class="city">г. Москва</div>
+					<div class="ph">+7<span>(977)</span>858-34-77</div>
+					<div class="zvonki">Прием заказов с 8:00 - 21:00</div>
+				</div>
+				<div class="col-sm-1 col-sm-offset-3 cart">
+					<div id="shopCart" class="shop-cart">
+						<div id="cartInner" class="empty">
+							<div class="shop-cart-body">
+								<i class="ico-cart"></i>
+								<span class="count">0</span> 
+							</div>
+							<div id="cartEmpty">Корзина</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12 top-navigation">
+					<ul class="menu">
+						<li class="active"><a href="http://best-vape.ru/" title="Главная" >Главная</a></li>
+						<li><a href="/dostavka" title="Доставка и оплата" >Доставка</a></li>
+						<li><a href="/akczii" title="Акции" >Акции</a></li>
+						<li><a href="/kontaktyi" title="Контакты" >Контакты</a></li>
+						<li class="last"><a href="/stati" title="Статьи" >Статьи</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	
+	<section class="mobile-header visible-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="navi">
+						<div class="hamburger">
+							<i class="Htop"></i><i class="Hmiddle"></i><i class="Hbottom"></i>
+						</div>
+					</div>
+					<img src="img/mlogo.png" />
+					<div class="Mcontacts">
+						<a href="tel:+7(977)8583477"><i class="fa fa-phone fa-2x"></i></a>
+						<a href="tel:"><i class="fa fa-shopping-cart fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="Mobilemenu">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="menu">
+						<li><a href="http://best-vape.ru/" title="Главная" >Главная</a></li>
+						<li><a href="/dostavka" title="Доставка и оплата" >Доставка</a></li>
+						<li><a href="/akczii" title="Акции" >Акции</a></li>
+						<li><a href="/kontaktyi" title="Контакты" >Контакты</a></li>
+						<li class="last"><a href="/stati" title="Статьи" >Статьи</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-3 sidebar">
+							<form id="ajaxSearch_form" action="poisk" method="post">
+							    <input id="ajaxSearch_input" class="cleardefault search" type="text" name="search" placeholder="Запрос для поиска..." />
+							    <button id="ajaxSearch_submit" type="submit" name="sub" value=" " /></button>
+							</form>
+							
+							<span class="catalogHeading">Каталог</span>
+							<ul class="catalogMenu">
+								<li class="topLvl"><a href="#">Моды</a></li>
+								<li class="topLvl"><a href="#">Моды</a><i class="exp"></i>
+									<ul>
+										<li class=""><a href="#">Аккумуляторные моды</a></li>
+										<li class=""><a href="#">Мехмоды</a></li>
+									</ul>
+								</li>
+								<li class="topLvl opened"><a href="#">Автомайзеры</a><i class="exp"></i>
+									<ul>
+										<li class=""><a href="#">Аккумуляторные моды</a></li>
+										<li class=""><a href="#">Мехмоды</a></li>
+									</ul>
+								</li>
+								<li class="topLvl"><a href="#">Электронные кальяны</a></li>
+								<li class="topLvl"><a href="#">Аккумуляторы</a></li>
+								<li class="topLvl"><a href="#">Жидкость</a><i class="exp"></i>
+									<ul>
+										<li class=""><a href="#">Аккумуляторные моды</a></li>
+										<li class=""><a href="#">Мехмоды</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="col-sm-9">
+							<div class="breadcrumbs">
+								<a href="#">Главная</a> >> <a href="#">Готовые наборы</a> >> SUBVOD MEGA KIT KANGERTECH
+							</div>
+							<h1>Набор SUBVOD MEGA KIT KANGERTECH</h1>
+							
+							<div class="row shop-stuff shk-item categoryItems">
+								<div class="col-sm-4 picture">
+									<a href="http://best-vape.ru/assets/images/SIGELEI-SGL-TC150W/150-.jpg"><img class="shk-image img-responsive image-popup-no-margins" src="http://best-vape.ru/assets/cache/images/SIGELEI-SGL-TC150W/264x264-150-.303.jpg" alt=""></a>
+								</div>
+								<div class="col-sm-2 picture mini">
+									<a href="http://best-vape.ru/assets/images/SIGELEI-SGL-TC150W/Sigelei-150W-500x500%5B1%5D.jpg"><img src="http://best-vape.ru/assets/images/SIGELEI-SGL-TC150W/Sigelei-150W-500x500%5B1%5D.jpg" alt="" class="image-popup-no-margins" title="" /></a>
+									<a href="http://best-vape.ru/assets/images/SIGELEI-SGL-TC150W/150w-.jpg"><img src="http://best-vape.ru/assets/images/SIGELEI-SGL-TC150W/150w-.jpg" alt="" class="image-popup-no-margins" title="" /></a>
+								</div>
+								
+								<div class="col-sm-5 col-sm-offset-1">
+									<span class="priceHead">Цена</span>
+									<span class="amount">Кол-во</span>
+									<div class="pricer">
+										<span class="priceVal">9990 <span>руб</span></span>
+										<div class="shs-count">
+											<input name="shk-count" type="text" value="1" size="5">
+											<span class="plus"><i class="ico"></i></span>
+											<span class="minus"><i class="ico"></i></span>
+										</div>
+									</div>
+									
+									<span class="stock">Наличие товара<span class="yes">В наличии</span></span>
+									<button class="submit"><i class="fa fa-shopping-cart fa-2x"></i>В корзину</button>
+									
+								</div>
+							</div>
+
+
+						<ul class="tabsSelect">
+							<li class="active"><a href="#">Описание</a></li>
+							<li class=""><a href="#">Характеристики</a></li>
+							<li class=""><a href="#">Отзывы</a></li>
+						</ul>
+						
+						<div class="tabsItemContent">
+							<div class="boxItem visible">
+<p>Электронная сигарета Eleaf iJust 2 – последняя новинка 2015 года. Изысканный внешний вид, небольшая длина и малый вес этого устройства сочетаются с серьезной начинкой сигареты.</p>
+
+<p>Устройство выполнено в серебристом цвете из нержавеющей стали, что обеспечивает надежность в эксплуатации. Уменьшение длины сигареты стало возможным благодаря внедрению специальной микросхемы повышенной компактности (плата PCB).</p>
+
+<p>В комплект входят аккумулятор и танк. Аккумулятор устройства встроенный, его мощность составляет 2600 mAh. При самом активном использовании сигареты такого объема батареи гарантированно хватит на целый день. В зависимости от уровня эксплуатации, заряд может держаться и дольше – от 2-х до 5 дней. Необходимые для такого объема аккумулятора испарители – от 0,3 Ом. Разъемная пружина аккумулятора обеспечивает высокую технологичность устройства.</p>
+
+<p>Кнопка активации электронной сигареты располагается в верхней части аккумуляторного блока, оснащена индикатором (светодиодным). </p>
+
+<p>Объем клиромайзера устройства вмещает 5,5 мл жидкости. Такой показатель на сегодняшнем рынке практически близок к рекордному. Стены танка изготовлены из прозрачного ударопрочного стекла, что не только повышают прочность изделия, но и позволяет видеть уровень расхода смеси.</p>
+
+<p>Чтобы начать использовать электронную сигарету, следует только заправить жидкость в устройство и закрутить аккумулятор и атомайзер. Заправочный отсек на клиромайзере расположен в этом устройстве снизу. Для того чтобы осуществить заправку, необходимо перевернуть сигарету мундштуком вниз, затем открутить основную часть корпуса от базы. После этого жидкость медленно и аккуратно заливается в резервуар. Нужно избегать попадания жидкости в воздуховод. Любые дополнительные настройки этому устройству не нужны. Однако эта кажущаяся простота в использовании обманчива: несмотря на это, электронная сигарета выдает значительное количество густого приятного пара и превосходно передает вкус жидкости.</p>
+
+<p>Электронная сигарета снабжена фитилем из натурального хлопка, что способствует лучшему воспроизведению выбранного для парения аромата. </p>
+
+<p>Работает электронная сигарета с использованием оригинальных сменных испарителей, которые можно менять. Возможно, выбрать из двух вариантов испарителей: </p>
+<ul>
+<li>сопротивление 0,3 Ом (будет работать в диапазоне 30-80 Вт);</li>
+<li>сопротивление 0,5 Ом (диапазон работы 30-100 Вт).</li>
+</ul>
+<p>Устройство традиционно имеет все необходимые функции защиты: от короткого замыкания, от переразряда и низкого напряжения.</p>
+
+<p>Кроме того, база сигареты имеет радиаторные ребра, которые призваны способствовать лучшему рассеиванию тепла. Корпус базы снабжен четырьмя отверстиями для обдува. При этом обычное кольцо регулировки обдува отсутствует, а налаживание силы тяги и обдува происходит с помощью силиконового кольца (тип – съемный), которое входит в базовый комплект устройства. </p>
+
+<p>Зарядка устройства происходит через USB-порт на боковой стороне батареи. Продолжительность зарядки обычно составляет 3-3,5 часа. Используется адаптер 1А, 5В, который необходимо приобрести отдельно, так как он не входит в базовую комплектацию устройства.</p>
+
+<p>Электронная сигарета снабжена дрип-типом стандартного размера, который фиксируется в месте своей посадки с помощью двух колец-уплотнителей. Эти кольца обеспечивают плотную посадку дрип-типа.</p>
+
+<p>Комплектация устройства:</p>
+
+<ul>
+<li>аккумулятор iJust 2;</li>
+<li>танк iJust 2 (+дрип-тип);</li>
+<li>сменный испаритель;</li>
+<li>силиконовое кольцо;</li>
+<li>кабель USB;</li>
+<li>инструкция;</li>
+<li>подарочная упаковка.</li>
+</ul>
+<p>Электронная сигарета Eleaf iJust 2 отличается, с одной стороны, простотой и удобством в использовании, а с другой – высоким качеством производства и работы. Подойдет как начинающим пользователям, так и тем, кто уже обладает немалым опытом.</p>
+							</div>
+							
+							<div class="boxItem">
+								<h3>Технические характристики</h3>
+								<table>
+									<tr><td>Встроенный аккумулятор</td><td>Да</td></tr>
+									<tr><td>Емкость аккумулятора</td><td>2600 mAh</td></tr>
+									<tr><td>Регулировка мощности</td><td>Да</td></tr>
+									<tr><td>Мощность мин</td><td>Да</td></tr>
+									<tr><td>Мощность макс</td><td>Да</td></tr>
+									<tr><td>Сопротивление мин</td><td>Да</td></tr>
+								</table>
+							</div>
+							
+							<div class="boxItem">
+								<form method="post" action="/katalog/gotovyie-naboryi1/ijust-2#jf901e1183" class="jot-form">
+
+									<div class="form-group">
+										<input class="form-control" tabindex="7245" name="title" type="text" size="40" value="" placeholder="Заголовок (необязательно)" />
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" tabindex="7246" name="content" cols="50" rows="6" id="content-901e1183" placeholder="Введите текст отзыва..."></textarea>
+									</div>
+									
+									<div class="form-group" style="width: 50%">
+										<div class="input-group">
+											<div class="input-group-addon"><i class="fa fa-user"></i></div>
+											<input class="form-control" tabindex="7243" name="name" type="text" size="40" value="" placeholder="Ваше имя" title="Ваше имя" />
+										</div>
+									</div>
+									<div class="form-group" style="width: 50%">
+										<div class="input-group">
+											<div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+											<input class="form-control" tabindex="7244" name="email" type="text" size="40" value="" placeholder="Email (не публикуется)" title="Email (не публикуется)" />
+										</div>
+									</div>
+									
+									<button tabindex="7247" class="btn btn-primary" type="submit">Отправить</button>
+										
+									<div class="checkbox">	
+										<label>
+											<input type="checkbox" name="subscribe" value="1" /> Уведомлять меня о новых комментариях по E-mail
+												
+										</label>
+									</div>
+							
+								</form>
+							</div>
+						</div>
+						
+						<h3>С этим товаром покупают</h3>
+						
+						</div>
+						
+						<ul class="tabs">
+							<li class="active"><a>Хиты продаж</a></li>
+							<li class=""><a>Новинки</a></li>
+							<li class=""><a>Акции</a></li>
+						</ul>
+						
+						<div class="tabsContent">
+							<div class="box visible">
+								<span class="s-title">Хиты продаж</span>
+								
+								<div class="row carousel owl-carousel">
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="box">
+								<span class="s-title">Новинки</span>
+								
+								<div class="row carousel owl-carousel">
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="box">
+								<span class="s-title">Акции</span>
+								
+								<div class="row carousel owl-carousel">
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+								</div>
+							</div>							
+						</div>
+						
+						<div class="footerText">
+							<p>Приятных покупок!</p>
+							<p>ИП Архипов Владимир Павлович, ИНН: 772875471109, ОГРНИП: 315774600261673</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="links">
+						<a href="#">Главная</a>
+						<a href="#">Доставка</a>
+						<a href="#">Акции</a>
+						<a href="#">Контакты</a>
+						<a href="#">Статьи</a>
+					</div>
+					<div class="copy">
+						© 2016 г. Москва интернет магазин “Best-Vape”
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4 Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="30" cy="30" rx="30" ry="30"></ellipse>
+    </defs>
+    <g id="статика" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="polis812_about" transform="translate(-535.000000, -1021.000000)">
+            <g id="viza_price_v2" transform="translate(0.000000, 508.000000)">
+                <g id="seo" transform="translate(135.000000, 131.000000)">
+                    <g id="Group-4-Copy-3" transform="translate(401.000000, 383.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Oval-3" stroke="#E3E6E7" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <g id="sports" mask="url(#mask-2)">
+                            <g id="Layer_1">
+                                <circle id="Oval" fill="#FEE187" cx="30" cy="30" r="30"></circle>
+                                <rect id="Rectangle-path" fill="#808183" x="13.3333594" y="15.2525391" width="33.3332812" height="6.66667969"></rect>
+                                <rect id="Rectangle-path" fill="#59595B" x="30" y="15.2525391" width="16.6666406" height="6.66667969"></rect>
+                                <polygon id="Shape" fill="#272525" points="46.6666406 24.7137891 26.6329688 45.2525391 26.6329688 35.7912891 46.6666406 15.2525391"></polygon>
+                                <polygon id="Shape" fill="#3A3838" points="13.3333594 24.7137891 33.3670312 45.2525391 33.3670312 35.7912891 13.3333594 15.2525391"></polygon>
+                                <ellipse id="Oval" fill="#C92F00" cx="30" cy="40.2019922" rx="8.58585937" ry="8.58585938"></ellipse>
+                                <path d="M38.5858594,40.2019922 C38.5858594,35.4601172 34.741875,31.6161328 30,31.6161328 L30,48.7878516 C34.741875,48.7878516 38.5858594,44.9438672 38.5858594,40.2019922 L38.5858594,40.2019922 Z" id="Shape" fill="#930000"></path>
+                                <ellipse id="Oval" fill="#FFC61B" cx="30" cy="40.2019922" rx="6.76464844" ry="6.76464844"></ellipse>
+                                <path d="M36.7646484,40.2019922 C36.7646484,36.4660547 33.7359375,33.4373437 30,33.4373437 L30,46.9666406 C33.7359375,46.9666406 36.7646484,43.9379297 36.7646484,40.2019922 L36.7646484,40.2019922 Z" id="Shape" fill="#EAA22F"></path>
+                                <path d="M30,44.4967969 C29.3864063,44.4967969 28.8889453,43.9992188 28.8889453,43.3857422 L28.8889453,37.0183594 C28.8889453,36.4047656 29.3865234,35.9073047 30,35.9073047 C30.6135938,35.9073047 31.1110547,36.4048828 31.1110547,37.0183594 L31.1110547,43.385625 C31.1110547,43.9992188 30.6135938,44.4967969 30,44.4967969 L30,44.4967969 Z" id="Shape" fill="#FF7F4F"></path>
+                                <path d="M30,35.9073047 L30,44.4967969 C30.6135937,44.4967969 31.1110547,43.9992188 31.1110547,43.3857422 L31.1110547,37.0183594 C31.1110547,36.4048828 30.6135937,35.9073047 30,35.9073047 L30,35.9073047 Z" id="Shape" fill="#D35933"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

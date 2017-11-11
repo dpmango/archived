@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!--Made with Love by Mango Digital Production-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<title>Title</title>
+	<meta name="Description" content="">
+
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/slidebars.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.hc-sticky.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/slidebars.min.js"></script>	
+	<script type="text/javascript" src="js/stacktable.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<link rel="stylesheet" href="css/demo.css" type="text/css" />
+
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="inner">
+	<header class="hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 logo">
+					<img src="img/logo.png" />
+				</div>
+				<div class="col-sm-4 contacts">
+					<i class="ico-phone"></i>
+					<div class="city">г. Москва</div>
+					<div class="ph">+7<span>(977)</span>858-34-77</div>
+					<div class="zvonki">Прием заказов с 8:00 - 21:00</div>
+				</div>
+				<div class="col-sm-1 col-sm-offset-3 cart">
+					<div id="shopCart" class="shop-cart">
+						<div id="cartInner" class="empty">
+							<div class="shop-cart-body">
+								<i class="ico-cart"></i>
+								<span class="count">0</span> 
+							</div>
+							<div id="cartEmpty">Корзина</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12 top-navigation">
+					<ul class="menu">
+						<li class="active"><a href="http://best-vape.ru/" title="Главная" >Главная</a></li>
+						<li><a href="/dostavka" title="Доставка и оплата" >Доставка</a></li>
+						<li><a href="/akczii" title="Акции" >Акции</a></li>
+						<li><a href="/kontaktyi" title="Контакты" >Контакты</a></li>
+						<li class="last"><a href="/stati" title="Статьи" >Статьи</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	
+	<section class="mobile-header visible-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="navi">
+						<div class="hamburger">
+							<i class="Htop"></i><i class="Hmiddle"></i><i class="Hbottom"></i>
+						</div>
+					</div>
+					<img src="img/mlogo.png" />
+					<div class="Mcontacts">
+						<a href="tel:+7(977)8583477"><i class="fa fa-phone fa-2x"></i></a>
+						<a href="tel:"><i class="fa fa-shopping-cart fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="Mobilemenu">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="menu">
+						<li><a href="http://best-vape.ru/" title="Главная" >Главная</a></li>
+						<li><a href="/dostavka" title="Доставка и оплата" >Доставка</a></li>
+						<li><a href="/akczii" title="Акции" >Акции</a></li>
+						<li><a href="/kontaktyi" title="Контакты" >Контакты</a></li>
+						<li class="last"><a href="/stati" title="Статьи" >Статьи</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-3 sidebar">
+							<form id="ajaxSearch_form" action="poisk" method="post">
+							    <input id="ajaxSearch_input" class="cleardefault search" type="text" name="search" placeholder="Запрос для поиска..." />
+							    <button id="ajaxSearch_submit" type="submit" name="sub" value=" " /></button>
+							</form>
+							
+							<span class="catalogHeading">Каталог</span>
+							<ul class="catalogMenu">
+								<li class="topLvl"><a href="#">Моды</a></li>
+								<li class="topLvl"><a href="#">Моды</a><i class="exp"></i>
+									<ul>
+										<li class=""><a href="#">Аккумуляторные моды</a></li>
+										<li class=""><a href="#">Мехмоды</a></li>
+									</ul>
+								</li>
+								<li class="topLvl opened"><a href="#">Автомайзеры</a><i class="exp"></i>
+									<ul>
+										<li class=""><a href="#">Аккумуляторные моды</a></li>
+										<li class=""><a href="#">Мехмоды</a></li>
+									</ul>
+								</li>
+								<li class="topLvl"><a href="#">Электронные кальяны</a></li>
+								<li class="topLvl"><a href="#">Аккумуляторы</a></li>
+								<li class="topLvl"><a href="#">Жидкость</a><i class="exp"></i>
+									<ul>
+										<li class=""><a href="#">Аккумуляторные моды</a></li>
+										<li class=""><a href="#">Мехмоды</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="col-sm-9">
+							<div class="breadcrumbs">
+								<a href="#">Главная</a> >> Конечная ссылка
+							</div>
+								
+							<h1>Стартовые наборы электронных сигарет</h1>
+							
+							<div class="filters">
+								<form id="sortForm" method='get' action="">
+									<span class="sortby">Сортировать по:
+									<div class="styled-select">
+										<select name="orderBy" class="sNUm2" onchange="$.sortChange()">
+											<option value="pagetitle ASC" >наименованию (возрастание)</option>
+											<option value="pagetitle DESC" >наименованию (убывание)</option>
+											<option value="price ASC" >цене (возрастание)</option>
+											<option value="price DESC" >цене (убывание)</option>
+										</select>
+									</div>
+									</span>
+									
+									<span class="prePage">Товаров на странице: 
+										<div class="styled-select short">
+											<select class="sNUm" name="display" onchange="$.sortChange()">
+												<option value="15" >15</option>
+												<option value="30" >30</option>
+												<option value="60" >60</option>
+											</select>
+										</div>
+									</span>
+								</form>
+							</div>
+							
+							<div class="row categoryItems">
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<div class="cItem">
+										<a href="#"><img class="shk-image" src="http://best-vape.ru/assets/cache/images/SUBVOD-MEGA-KIT-KANGERTECH/172x171-3643-kanger-tech-subvod-mega-tc-kit-stal-500x500%5B1%5D.c4e.jpg" title="SUBVOD MEGA KIT KANGERTECH" alt=""></a>
+										<div class="line"></div>
+										<a href="#" title="" class="cName">SUBVOD MEGA KIT KANGERTECH</a>
+										<div class="shk-price">
+											<span class="price">3290<span>&nbsp;руб.</span></span>
+											<div class="shs-count">
+												<input name="shk-count" type="text" value="1" size="5">
+												<span class="plus"><i class="ico"></i></span>
+												<span class="minus"><i class="ico"></i></span>
+											</div>
+										</div>
+										<div class="button">
+											<button type="submit" class="buyMe"><i class="fa fa-shopping-cart fa-2x"></i> В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<div class="cItem">
+										<a href="#"><img class="shk-image" src="http://best-vape.ru/assets/cache/images/SUBVOD-MEGA-KIT-KANGERTECH/172x171-3643-kanger-tech-subvod-mega-tc-kit-stal-500x500%5B1%5D.c4e.jpg" title="SUBVOD MEGA KIT KANGERTECH" alt=""></a>
+										<div class="line"></div>
+										<a href="#" title="" class="cName">SUBVOD MEGA KIT KANGERTECH</a>
+										<div class="shk-price">
+											<span class="price">3290<span>&nbsp;руб.</span></span>
+											<div class="shs-count">
+												<input name="shk-count" type="text" value="1" size="5">
+												<span class="plus"><i class="ico"></i></span>
+												<span class="minus"><i class="ico"></i></span>
+											</div>
+										</div>
+										<div class="button">
+											<button type="submit" class="buyMe"><i class="fa fa-shopping-cart fa-2x"></i> В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<div class="cItem">
+										<a href="#"><img class="shk-image" src="http://best-vape.ru/assets/cache/images/SUBVOD-MEGA-KIT-KANGERTECH/172x171-3643-kanger-tech-subvod-mega-tc-kit-stal-500x500%5B1%5D.c4e.jpg" title="SUBVOD MEGA KIT KANGERTECH" alt=""></a>
+										<div class="line"></div>
+										<a href="#" title="" class="cName">SUBVOD MEGA KIT KANGERTECH</a>
+										<div class="shk-price">
+											<span class="price">3290<span>&nbsp;руб.</span></span>
+											<div class="shs-count">
+												<input name="shk-count" type="text" value="1" size="5">
+												<span class="plus"><i class="ico"></i></span>
+												<span class="minus"><i class="ico"></i></span>
+											</div>
+										</div>
+										<div class="button">
+											<button type="submit" class="buyMe"><i class="fa fa-shopping-cart fa-2x"></i> В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<div class="cItem">
+										<a href="#"><img class="shk-image" src="http://best-vape.ru/assets/cache/images/SUBVOD-MEGA-KIT-KANGERTECH/172x171-3643-kanger-tech-subvod-mega-tc-kit-stal-500x500%5B1%5D.c4e.jpg" title="SUBVOD MEGA KIT KANGERTECH" alt=""></a>
+										<div class="line"></div>
+										<a href="#" title="" class="cName">SUBVOD MEGA KIT KANGERTECH</a>
+										<div class="shk-price">
+											<span class="price">3290<span>&nbsp;руб.</span></span>
+											<div class="shs-count">
+												<input name="shk-count" type="text" value="1" size="5">
+												<span class="plus"><i class="ico"></i></span>
+												<span class="minus"><i class="ico"></i></span>
+											</div>
+										</div>
+										<div class="button">
+											<button type="submit" class="buyMe"><i class="fa fa-shopping-cart fa-2x"></i> В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<div class="cItem">
+										<a href="#"><img class="shk-image" src="http://best-vape.ru/assets/cache/images/SUBVOD-MEGA-KIT-KANGERTECH/172x171-3643-kanger-tech-subvod-mega-tc-kit-stal-500x500%5B1%5D.c4e.jpg" title="SUBVOD MEGA KIT KANGERTECH" alt=""></a>
+										<div class="line"></div>
+										<a href="#" title="" class="cName">SUBVOD MEGA KIT KANGERTECH</a>
+										<div class="shk-price">
+											<span class="price">3290<span>&nbsp;руб.</span></span>
+											<div class="shs-count">
+												<input name="shk-count" type="text" value="1" size="5">
+												<span class="plus"><i class="ico"></i></span>
+												<span class="minus"><i class="ico"></i></span>
+											</div>
+										</div>
+										<div class="button">
+											<button type="submit" class="buyMe"><i class="fa fa-shopping-cart fa-2x"></i> В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<div class="cItem">
+										<a href="#"><img class="shk-image" src="http://best-vape.ru/assets/cache/images/SUBVOD-MEGA-KIT-KANGERTECH/172x171-3643-kanger-tech-subvod-mega-tc-kit-stal-500x500%5B1%5D.c4e.jpg" title="SUBVOD MEGA KIT KANGERTECH" alt=""></a>
+										<div class="line"></div>
+										<a href="#" title="" class="cName">SUBVOD MEGA KIT KANGERTECH</a>
+										<div class="shk-price">
+											<span class="price">3290<span>&nbsp;руб.</span></span>
+											<div class="shs-count">
+												<input name="shk-count" type="text" value="1" size="5">
+												<span class="plus"><i class="ico"></i></span>
+												<span class="minus"><i class="ico"></i></span>
+											</div>
+										</div>
+										<div class="button">
+											<button type="submit" class="buyMe"><i class="fa fa-shopping-cart fa-2x"></i> В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<div class="cItem">
+										<a href="#"><img class="shk-image" src="http://best-vape.ru/assets/cache/images/SUBVOD-MEGA-KIT-KANGERTECH/172x171-3643-kanger-tech-subvod-mega-tc-kit-stal-500x500%5B1%5D.c4e.jpg" title="SUBVOD MEGA KIT KANGERTECH" alt=""></a>
+										<div class="line"></div>
+										<a href="#" title="" class="cName">SUBVOD MEGA KIT KANGERTECH</a>
+										<div class="shk-price">
+											<span class="price">3290<span>&nbsp;руб.</span></span>
+											<div class="shs-count">
+												<input name="shk-count" type="text" value="1" size="5">
+												<span class="plus"><i class="ico"></i></span>
+												<span class="minus"><i class="ico"></i></span>
+											</div>
+										</div>
+										<div class="button">
+											<button type="submit" class="buyMe"><i class="fa fa-shopping-cart fa-2x"></i> В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<div class="cItem">
+										<a href="#"><img class="shk-image" src="http://best-vape.ru/assets/cache/images/SUBVOD-MEGA-KIT-KANGERTECH/172x171-3643-kanger-tech-subvod-mega-tc-kit-stal-500x500%5B1%5D.c4e.jpg" title="SUBVOD MEGA KIT KANGERTECH" alt=""></a>
+										<div class="line"></div>
+										<a href="#" title="" class="cName">SUBVOD MEGA KIT KANGERTECH</a>
+										<div class="shk-price">
+											<span class="price">3290<span>&nbsp;руб.</span></span>
+											<div class="shs-count">
+												<input name="shk-count" type="text" value="1" size="5">
+												<span class="plus"><i class="ico"></i></span>
+												<span class="minus"><i class="ico"></i></span>
+											</div>
+										</div>
+										<div class="button">
+											<button type="submit" class="buyMe"><i class="fa fa-shopping-cart fa-2x"></i> В корзину</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-12 pull-right text-right pagination">
+									<span class="ditto_currentpage">1</span><a href="/katalog/gotovyie-naboryi1?page=2" class="ditto_page">2</a> <a href="/katalog/gotovyie-naboryi1?page=2" class="ditto_next_link">&nbsp;</a></span>
+								</div>
+							</div>
+
+							
+							<div class="textBlock">
+								<p>Уникальная новинка &ndash; электронная сигарета, курить или &laquo;парить&raquo; которую разрешено даже в общественном месте продолжительное время. Наш специализированный <strong>магазин электронных сигарет в Москве </strong>предлагает большой выбор стартовых наборов и отдельных аксессуаров. Наборы готовы к эксплуатации, достаточно только заправить жидкостью для парения с выбранным вкусом и ароматом.</p>
+				<p>&nbsp;</p>
+							</div>
+						</div>
+
+						<ul class="tabs">
+							<li class="active"><a>Хиты продаж</a></li>
+							<li class=""><a>Новинки</a></li>
+							<li class=""><a>Акции</a></li>
+						</ul>
+						
+						<div class="tabsContent">
+							<div class="box visible">
+								<span class="s-title">Хиты продаж</span>
+								
+								<div class="row carousel owl-carousel">
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="box">
+								<span class="s-title">Новинки</span>
+								
+								<div class="row carousel owl-carousel">
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="box">
+								<span class="s-title">Акции</span>
+								
+								<div class="row carousel owl-carousel">
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+								</div>
+							</div>							
+						</div>
+						
+						<div class="footerText">
+							<p>Приятных покупок!</p>
+							<p>ИП Архипов Владимир Павлович, ИНН: 772875471109, ОГРНИП: 315774600261673</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="links">
+						<a href="#">Главная</a>
+						<a href="#">Доставка</a>
+						<a href="#">Акции</a>
+						<a href="#">Контакты</a>
+						<a href="#">Статьи</a>
+					</div>
+					<div class="copy">
+						© 2016 г. Москва интернет магазин “Best-Vape”
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

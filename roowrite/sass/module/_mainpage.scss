@@ -1,0 +1,453 @@
+
+/*******
+HEADER
+*******/
+
+header img{
+	@include mq($until: tablet) {@include transform(scale(0.6)); margin: -1px 0 0 -30px;}
+}
+.header-links{
+	padding-top: 3px;
+	a{
+		display: inline-block;
+		font-size: 16px;
+		padding-right: 30px;
+		@include mq($until: tablet) {display: none;}
+	}
+	.btn{
+		margin-top: -4px;
+		background-color: $green;
+		line-height: 33px;
+		height: 33px;
+		padding: 0px 20px;
+		@include mq($until: tablet) {font-size: 12px; line-height: 25px; height: 25px; padding: 0 10px;}
+	}
+}
+
+.mobile-menu{
+	outline: none; background-color: transparent; border: none;
+	display: inline-block; margin: 0px 10px 0 0;
+	float: right;
+	position: relative;
+	&:hover{
+		opacity: 0.8;
+	}
+	.burger-line{
+		display: block;
+		content: ' ';
+		width: 24px; height: 4px;
+		background: white;
+		margin-bottom: 4px;
+	}
+	&.active{
+		margin-top: 8px;
+		.burger-line.top{@include transform(rotate(45deg)); position: absolute; width: 28px; @include transition(all 500ms ease);}
+		.burger-line.middle{display:none;}
+		.burger-line.bottom{@include transform(rotate(-45deg)); width: 28px; @include transition(all 500ms ease);}
+	}
+}
+.have-burger{
+	.btn{
+		float: right;
+		margin-top: -2px;
+	}
+}
+
+.menu-xs{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 160px;
+	text-align: center;
+	&.active{display: block;}
+	&:before{
+		content: ' '; display: block;
+		position: absolute; top: 0; left: 0;
+		width: 100%; height: 100%;
+		background-color: rgba(#000,0.6);
+		z-index: 1;}
+	.menu-xs-links{
+		opacity: 1; z-index: 11; position: absolute; top: 30px; left: 50%; @include transform(translateX(-50%));
+		a{display: block; color: #fff !important; font-size: 18px; &:hover{@include transition(all 0.5ms ease); color: $green;}}
+	}
+}
+/*******
+MAINPAGE
+*******/
+
+.hero-title{
+	font-size: 40px;
+
+	@include mq($until: tablet) {font-size: 26px; line-height: 30px; text-align: center; display: inline-block;}
+}
+
+.hero-features{
+	font-size: 20px;
+	padding-left: 20px;
+	list-style: none;
+	list-style-position: outside;
+
+	@include mq($until: tablet) {font-size: 14px; line-height: 20px; margin-top: 15px;}
+	li:before{
+		display: inline-block;
+		content: ' '; 
+		background: url('../img/checkmark.png') no-repeat 0 0; 
+		width: 16px; height: 16px; 
+		margin-right: 10px; }
+}
+
+.hero-cta button{
+	font-size: 24px;
+	line-height: 54px;
+	height: 54px;
+	padding: 0 70px;
+	background-color: $green;
+
+	@include mq($until: tablet) {font-size: 20px; line-height: 37px; height: 37px;}
+}
+
+.features{
+	text-align: center;
+	margin-top: 100px;
+	@include mq($until: tablet) {font-size: 10px;}
+	.col-xs-3{
+		border-right: 1px solid $borderColor;
+		@include mq($until: tablet) {padding-left: 5px; padding-right: 5px; min-height: 120px;}
+		&:last-child{border-right: none;}
+	}
+	.ico{
+		display: inline-block;
+		@include mq($until: tablet) {@include transform(scale(0.8));}
+	}
+	.ico-1{background: url('../img/ico-checked.png') no-repeat 0 0; width: 40px; height: 40px;}
+	.ico-2{background: url('../img/ico-list.png') no-repeat 0 0; width: 32px; height: 40px;}
+	.ico-3{background: url('../img/ico-user.png') no-repeat 0 0; width: 32px; height: 40px;}
+	.ico-4{background: url('../img/ico-time.png') no-repeat 0 0; width: 40px; height: 40px;}
+}
+.feature-name{
+	font-weight: 700;
+	font-style: bold;
+	display: block;
+
+	@include mq($until: tablet) {text-align: center;}
+}
+
+.feature-desc{
+	font-size: 12px;
+	line-height: 14px;
+	display: inline-block;
+}
+
+// Rating
+.rating{font-size: 0;}
+.star-svg{
+	margin-right: 10px;
+	&.last{margin-right: 0}
+	@include mq($from: mobileLand, $until: tablet) {@include transform(scale(0.7)); margin: -3px -3px 0 -10px;}
+	@include mq($until: mobileLand) {@include transform(scale(0.5)); margin: -3px -3px 0 -5px; }
+}
+.rating-score{
+	display: block;
+	font-size: 24px;
+
+	@include mq($until: tablet) {font-size: 14px;}
+
+	span{
+		font-weight: 700;
+		font-style: bold;
+	}
+}
+
+// authors
+
+.heading{
+	display: inline-block;
+	font-size: 40px;
+	display: block;
+	line-height: 47px;
+	margin-bottom: 10px;
+
+	@include mq($until: tablet) {font-size: 30px; line-height: 24px;}
+}
+.heading-sub{
+	font-size: 18px;
+	margin-bottom: 45px;
+	display: inline-block;
+
+	@include mq($until: tablet) {font-size: 14px; line-height: 24px;}
+}
+
+.author-card{
+	background-color: white;
+	padding: 15px 10px 25px 10px;
+	border: 1px solid $separator;
+	@include border-radius(3px);
+	margin-bottom: 30px;
+
+	@include mq($until: tablet) {padding: 7px 5px 15px 5px; margin-bottom: 15px;}
+
+	.img-responsive{
+		width: 100%;
+		@include mq($from: mobileLand, $until: tablet) {width: 70%; margin: 0 auto; text-align: center;}
+	}
+}
+
+.author-chars{
+	margin-top: 10px;
+	position: relative;
+
+	@include mq($until: tablet) {margin-top: 5px; font-size: 10px;}
+}
+.author-name{
+	font-size: 16px;
+	font-weight: 700;
+	font-style: bold;
+	display: block;
+	margin-top: 10px;
+
+	@include mq($until: desktop) {font-size: 14px;}
+	@include mq($until: tablet) {margin-top: 5px; font-size: 10px;}
+
+}
+.author-location{
+	display: block;
+}
+.author-gpa{
+	display: inline-block;
+	margin-right: 10px;
+}
+.author-rating{
+	position: absolute;
+	top: 0; right: 0;
+	color: #ADADAD;
+
+	@include mq($until: desktop) {@include transform(scale(0.7)); margin: 0px -15px 0 0;}
+	@include mq($until: tablet) {@include transform(scale(0.6)); margin: 0px -15px 0 0;}
+}
+
+
+// Benefits
+.benefits .heading {
+	margin-bottom: 25px;
+
+	@include mq($until: tablet) {font-size: 26px; line-height: 32px;}
+}
+.benefits-list{
+	list-style: none;
+	list-style-position: outside;
+	font-size: 18px;
+	text-align: left;
+	margin-left: 40px;
+	@include mq($from: mobileLand, $until: tablet) {font-size: 14px; line-height: 18px; margin-left: 0;}
+	@include mq($until: mobileLand) {font-size: 12px; line-height: 14px; margin-left: 0;}
+	li{
+		display: inline-block;
+		position: relative;
+		margin-bottom: 30px;
+
+		span{
+			padding-left: 50px;
+			display: block;
+
+			@include mq($until: tablet) {padding-left: 40px;}
+		}
+		&:before{
+			position: absolute;
+			display: inline-block;
+			content: '';
+			background: url('../img/success.png') no-repeat 0 0;
+			width: 37px; height: 37px;
+			left: 0; top: 0;
+
+			@include mq($until: tablet) {@include transform(scale(0.65)); margin: -5px 0 0 0;}
+		}
+	}
+}
+
+// Testemonials
+
+.testimonials .heading{
+	@include mq($until: tablet) {font-size: 28px; line-height: 32px;}
+}
+.slide{
+	margin-top: 30px;
+
+	@include mq($until: tablet) {margin-top: 25px;}
+
+	img{
+		width: auto !important;
+		margin: 0 auto;
+		max-width: 120px;
+	}
+}
+.testimonial-content{
+	font-size: 18px;
+	line-height: 35px;
+	position: relative;
+	padding-top: 15px;
+
+	@include mq($until: tablet) {font-size: 12px; line-height: 26px; padding-top: 25px; padding-right: 20px;}
+
+	span{
+		display: block;
+		padding-left: 70px;
+		@include mq($until: tablet) {padding-left: 40px;}
+	}
+	&:before{
+		position: absolute;
+		left: 0; top: 15px;
+		content: ' ';
+		display: inline-block;
+		background: url('../img/quote.png') no-repeat 0 0;
+		width: 39px; height: 31px;
+
+		@include mq($until: tablet) {@include transform(scale(0.6));}
+	}
+}
+
+.testimonial-author{
+	font-size: 18px;
+	margin-top: 5px;
+	margin-right: 30px;
+
+	@include mq($until: tablet) {font-size: 14px; margin-right: 40px;}
+	b {display: block;}
+}
+
+// How it works
+
+.how-it-works{
+	.heading{
+		display: inline-block;
+		margin-bottom: 10px;
+
+		@include mq($until: tablet) {font-size: 26px; line-height: 32px;}
+	}
+	p{
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: 20px;
+
+	@include mq($until: tablet) {font-size: 12px; line-height: 14px; margin-top: 0px;}
+	}
+
+	.how-steps{
+		list-style: none;
+		text-align: left;
+		margin-top: 20px;
+		li{
+			font-size: 18px; line-height: 20px; display: inline-block;
+			padding-left: 40px; position: relative;
+			margin-bottom: 25px;
+
+			@include mq($until: tablet) {font-size: 12px; line-height: 14px; margin-bottom: 15px; padding-left: 30px;}
+			&:last-child{margin-bottom: 0;}
+			&:before{
+				display: inline-block; position: absolute; left: 0; top: -5px;
+				width: 30px; height: 30px; padding: 4px 0 0 9px; 
+				font-size: 18px; color: #3F93D2; border: 1px solid #3F93D2; 
+				@include border-radius(20px);
+
+				@include mq($until: tablet) {font-size: 14px; width: 23px; height: 23px; padding: 3px 0 0 6px; top: 0;}
+			}
+		}
+		li:nth-child(1):before{content: '1'};
+		li:nth-child(2):before{content: '2'};
+		li:nth-child(3):before{content: '3'};
+		li:nth-child(4):before{content: '4'};
+	}
+}
+
+.features-icons{
+	margin-top: 55px;
+
+	@include mq($until: tablet) {margin-top: 30px;}
+	.col-sm-4{
+		padding-left: 50px;
+		padding-right: 50px;
+
+		@include mq($until: tablet) {margin-bottom: 30px;}
+	}
+	.ico{display: inline-block;}
+	.ico-location{background: url('../img/ico-location.png') no-repeat 0 0; width: 50px; height: 50px;}
+	.ico-file{background: url('../img/ico-file.png') no-repeat 0 0; width: 42px; height: 50px;}
+	.ico-compose{background: url('../img/ico-compose.png') no-repeat 0 0; width: 50px; height: 50px;}
+	.feature-i-name{
+		font-size: 18px;
+		font-weight: 700;
+		font-style: bold;
+		display: block;
+
+		@include mq($until: tablet) {font-size: 12px; line-height: 16px; margin-top: 5px;}
+	}
+	.feature-i-desc{
+		font-size: 16px;
+		line-height: 22px;
+
+		@include mq($until: tablet) {font-size: 12px; line-height: 16px;}
+	}
+}
+
+
+// Secondary CTA
+
+.secondary-cta{
+	.heading{
+		color: white;
+		font-weight: 700;
+		font-style: bold;
+		font-size: 36px;
+		line-height: 45px;
+
+		@include mq($until: wide) {font-size: 30px; line-height: 40px;}
+		@include mq($until: tablet) {font-size: 24px; line-height: 29px;}
+	}
+	.btn{
+		font-style: bold;
+		font-weight: 700;
+		padding: 0 70px;
+		height: 54px; 
+		line-height: 54px;
+		font-size: 24px;
+		margin-top: 20px;
+
+		@include mq($until: tablet) {font-size: 20px; line-height: 40px; height: 40px; padding: 0 45px;}
+	}
+}
+
+
+// Examples
+
+.examples{
+	.heading{
+		@include mq($until: tablet) {font-size: 24px; line-height: 35px;}
+	}
+	a{
+		color: $linkColor;
+		display: block;
+
+		@include mq($until: tablet) {font-size: 11px;}
+	}
+}
+.example-links{
+	text-align: left;
+	margin-top: 22px;
+
+	@include mq($until: tablet) {text-align: center;}
+}
+
+
+/*******
+FOOTER
+*******/
+
+footer a{
+	display: block;
+	color: white;
+	font-weight: 400 !important;
+}
+.copywrite{
+	display: block;
+	color: #8D8D8D;
+	padding-left: 20px;
+}

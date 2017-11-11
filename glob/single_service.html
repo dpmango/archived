@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Glob Succeed index</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/hamburgers.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- HEADER START -->
+	<header class="hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 header-pad-l">
+					<a href="#" class="header-logo">
+						<img src="img/logo.png" class="img-responsive" alt="Logo">
+					</a>
+				</div>
+				<div class="col-sm-6 header-pad-r text-right">
+					<a href="#" class="header-banner-top">
+						<img src="images/banner-header.png" class="img-responsive" alt="Banner">
+					</a>
+					<div class="header-login text-right">
+						<a href="#"><i class="ico ico-login"></i> <span>Log in</span></a>
+						<a href="#"><i class="ico ico-signup"></i> <span>Sign up</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="row pt15">
+				<div class="col-sm-6 header-pad-l">
+					<form class="header-search-form">
+						<div class="form-inline">
+							<div class="multiple-form">
+								<input type="text" name="" placeholder="I am looking for ..." class="text-search">
+								<div class="select">
+									<select>
+										<option>All</option>
+										<option>Some</option>
+										<option>Some</option>
+									</select>
+								</div>
+							</div>
+							<input type="text" name="" placeholder="Location" class="loc-search">
+							<button type="submit" name="">GO</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-sm-6 header-pad-r text-right">
+					<a href="#" class="btn-pink">Add company</a>
+					<a href="#" class="btn-pink">Post free ad</a>
+					<a href="#" class="btn-pink">Contact us</a>
+					<a href="#" class="btn-pink">How it works</a>
+					<a href="#" class="btn-pink">Help</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="header-menu hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="header-menu-list">
+						<li><a href="#">COMPANIES</a></li>
+						<li><a href="#">Wholesale</a></li>
+						<li><a href="#">STUFF FOR SALE</a></li>
+						<li class="have-ul"><a href="#">Services</a>
+						<ul class="header-submenu-list">
+							<div class="row">
+								<div class="col-sm-2">
+									<span class="header-submenu-category">Category</span>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+								</div>
+								<div class="col-sm-2">
+									<span class="header-submenu-category">Category</span>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+								</div>
+								<div class="col-sm-2">
+									<span class="header-submenu-category">Category</span>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+								</div>
+								<div class="col-sm-2">
+									<span class="header-submenu-category">Category</span>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+								</div>
+								<div class="col-sm-2">
+									<span class="header-submenu-category">Category</span>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+								</div>
+								<div class="col-sm-2">
+									<span class="header-submenu-category">Category</span>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+									<a href="#">Subcategory</a>
+								</div>
+							</div>
+						</ul>
+						</li>
+						<li><a href="#">Jobs</a></li>
+						<li><a href="#">Motors</a></li>
+						<li><a href="#">Properties</a></li>
+						<li><a href="#">Pets</a></li>
+						<li><a href="#">Neighbourhood</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- mobile header -->
+	<header class="mobile-header visible-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</div>
+				<div class="col-xs-6 text-center">
+					<a href="/"><span class="header-logo header-logo--mobile"></span></a>
+				</div>
+
+				<!--<div class="col-xs-3 text-right">
+					<div id="sb-search" class="sb-search">
+						<form class="mobile-header-search-form" id="demo-2">
+							<input type="search" placeholder="Search">
+						</form>
+					</div>
+				</div>-->
+				<div class="col-xs-3 text-right">
+					<div class="ico-search-header-xs-wrap">
+						<i class="ico ico-search-header-ico--xs" id="show-mobile-searchbar"></i>
+					</div>
+				</div>
+				<div class="mobile-search col-xs-12">
+					<form class="header-search-form mobile-header-search-form">
+						<div class="form-inline">
+							<div class="multiple-form">
+								<input type="text" name="" placeholder="I am looking for ..." class="text-search">
+								<div class="select">
+									<select>
+										<option>All</option>
+										<option>Some</option>
+										<option>Some</option>
+									</select>
+								</div>
+							</div>
+							<input type="text" name="" placeholder="Location" class="loc-search">
+							<button type="submit" name="">GO</button>
+						</div>
+						<!--<input type="search" placeholder="Search" class="mobile-search-form">-->
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="mobile-nav">
+		<ul class="main-navi">
+			<li><a href="#">COMPANIES</a></li>
+			<li><a href="#">Wholesale</a></li>
+			<li><a href="#">STUFF FOR SALE</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Jobs</a></li>
+			<li><a href="#">Motors</a></li>
+			<li><a href="#">Properties</a></li>
+			<li><a href="#">Pets</a></li>
+			<li><a href="#">Neighbourhood</a></li>
+		</ul>
+	</section>
+	<!-- HEADER: END -->
+
+	<!-- TOP BANNER -->
+	<section class="banner-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 text-center">
+					<a href="#"><img src="images/banner-top.png" alt="" class="img-responsive center-block"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- TOP BANNER -->
+
+
+	<!-- CONTENT -->
+	<section class="single-ad">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 have-pad-50">
+					<div class="content-holder no-pad-b">
+						<div class="row">
+							<div class="col-sm-8">
+								<div class="ad-titles single-title">
+									I will clean your house
+									<div class="signle-id">
+										Ad ID: 1174082387 
+									</div>
+								</div>
+								<div class="ad-reviews single-reviews">
+									<i class="ico ico-star"></i> <i class="ico ico-star"></i> <i class="ico ico-star"></i> <i class="ico ico-star ico-star--half"></i> <i class="ico ico-star ico-star--blank"></i>
+									<span class="ad-reviews-rating">4.8</span>
+									<span class="ad-reviews-counter"> (4 reviews) </span>
+									<a href="#" class="ad-rew">Add your Review</a>
+								</div>
+								<div class="ad-category single-category">
+									<i class="ico ico-category"></i> Listed in <a href="#">Jobs Index</a>
+								</div>
+								<div class="ad-posted-ago single-posted-ago">
+									<i class="ico ico-posted-ago--plus"></i> Posted:<span> 1 day ago</span>
+									<div class="single-showonmap">
+									<a href="#"><i class="ico ico-location--big"></i> Map</a>
+									</div>
+								</div>
+
+								<div class="single-gallery">
+									<div class="gal-main-img owl-carousel" id="single-gallery" data-slider-id="1">
+										<div>
+										<img src="images/single-mainimg.png" class="img-responsive" />
+										</div>
+										<div>
+										<img src="images/single-mainimg.png" class="img-responsive" />
+										</div>
+										<div>
+										<img src="images/single-mainimg.png" class="img-responsive" />
+										</div>
+										<div>
+										<img src="images/single-mainimg.png" class="img-responsive" />
+										</div>
+										<div>
+										<img src="images/single-mainimg.png" class="img-responsive" />
+										</div>
+										<div>
+										<img src="images/single-mainimg.png" class="img-responsive" />
+										</div>
+										<div>
+										<img src="images/single-mainimg.png" class="img-responsive" />
+										</div>
+									</div>
+									<div class="gal-thumbs owl-thumbs" id="single-gallery-thumbs" data-slider-id="1">
+										<div class="owl-thumb-item"><img src="images/single-thumb.png" class="img-responsive" /></div>
+										<div class="owl-thumb-item"><img src="images/single-thumb.png" class="img-responsive" /></div>
+										<div class="owl-thumb-item"><img src="images/single-thumb.png" class="img-responsive" /></div>
+										<div class="owl-thumb-item"><img src="images/single-thumb.png" class="img-responsive" /></div>
+										<div class="owl-thumb-item"><img src="images/single-thumb.png" class="img-responsive" /></div>
+										<div class="owl-thumb-item"><img src="images/single-thumb.png" class="img-responsive" /></div>
+										<div class="owl-thumb-item"><img src="images/single-thumb.png" class="img-responsive" /></div>
+									</div>
+								</div>
+								<div class="single-controls">
+									<a href="#"><i class="ico ico-favourite"></i> Add to favorites</a>
+									<div class="single-report">
+										<a href="#"><i class="ico ico-report"></i> Report Ad</a>
+									</div>
+								</div>
+								<div class="row single-chars">
+									<div class="col-sm-8 col-sm-offset-2">
+										<div class="single-char-line">
+											<i class="ico ico-location"></i> Location: <span>Coventry, UK</span>
+										</div>
+										<div class="single-char-line">
+											<i class="ico ico-single-price"></i> Price: <span>£20 per hour</span>
+											<i class="ico ico-open-to-offers ml30"></i><span>Open to offers</span>
+										</div>
+									</div>
+									<div class="col-sm-4">
+
+									</div>
+								</div>
+
+								<div class="single-description">
+									<p><span>Description:</span>  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
+									</p>
+								</div>
+
+								<!-- single ad -->
+								<div class="single-similar-heading">SIMILAR ADS</div>
+								<div class="row owl-carousel" id="similar-items">
+									<!-- next -->
+									<div class="col-xs-12">
+										<div class="similar-container">
+											<div class="single-heading text-center">Title</div>
+											<div class="single-img-holder">
+												<img src="images/ad-poster1.jpg" class="img-responsive" alt="" />
+											</div>
+											<div class="similar-price text-center">
+												<i class="ico ico-price"></i> Price: 100$
+											</div>
+											<div class="similar-added-by text-center">
+												<span>Added by: </span>
+												<a href="#">Adrianne</a>
+											</div>
+										</div>
+									</div>
+									<!-- next -->
+									<!-- next -->
+									<div class="col-xs-12">
+										<div class="similar-container">
+											<div class="single-heading text-center">Title</div>
+											<div class="single-img-holder">
+												<img src="images/ad-poster1.jpg" class="img-responsive" alt="" />
+											</div>
+											<div class="similar-price text-center">
+												<i class="ico ico-price"></i> Price: 100$
+											</div>
+											<div class="similar-added-by text-center">
+												<span>Added by: </span>
+												<a href="#">Adrianne</a>
+											</div>
+										</div>
+									</div>
+									<!-- next -->
+									<div class="col-xs-12">
+										<div class="similar-container">
+											<div class="single-heading text-center">Title</div>
+											<div class="single-img-holder">
+												<img src="images/ad-poster1.jpg" class="img-responsive" alt="" />
+											</div>
+											<div class="similar-price text-center">
+												<i class="ico ico-price"></i> Price: 100$
+											</div>
+											<div class="similar-added-by text-center">
+												<span>Added by: </span>
+												<a href="#">Adrianne</a>
+											</div>
+										</div>
+									</div>
+									<!-- next -->
+									<!-- next -->
+									<div class="col-xs-12">
+										<div class="similar-container">
+											<div class="single-heading text-center">Title</div>
+											<div class="single-img-holder">
+												<img src="images/ad-poster1.jpg" class="img-responsive" alt="" />
+											</div>
+											<div class="similar-price text-center">
+												<i class="ico ico-price"></i> Price: 100$
+											</div>
+											<div class="similar-added-by text-center">
+												<span>Added by: </span>
+												<a href="#">Adrianne</a>
+											</div>
+										</div>
+									</div>
+									<!-- next -->
+									<div class="col-xs-12">
+										<div class="similar-container">
+											<div class="single-heading text-center">Title</div>
+											<div class="single-img-holder">
+												<img src="images/ad-poster1.jpg" class="img-responsive" alt="" />
+											</div>
+											<div class="similar-price text-center">
+												<i class="ico ico-price"></i> Price: 100$
+											</div>
+											<div class="similar-added-by text-center">
+												<span>Added by: </span>
+												<a href="#">Adrianne</a>
+											</div>
+										</div>
+									</div>
+									<!-- next -->
+									<!-- next -->
+									<div class="col-xs-12">
+										<div class="similar-container">
+											<div class="single-heading text-center">Title</div>
+											<div class="single-img-holder">
+												<img src="images/ad-poster1.jpg" class="img-responsive" alt="" />
+											</div>
+											<div class="similar-price text-center">
+												<i class="ico ico-price"></i> Price: 100$
+											</div>
+											<div class="similar-added-by text-center">
+												<span>Added by: </span>
+												<a href="#">Adrianne</a>
+											</div>
+										</div>
+									</div>
+									<!-- next -->
+
+								</div>
+							</div>
+							<div class="col-sm-4 single-sidebar border-left--gradient">
+								<div class="text-center contact-socials">
+									<div class="single-sidebar-heading">SHARE</div>
+									<a href="#"><i class="ico ico-fb--grayscale"></i></a>
+									<a href="#"><i class="ico ico-tw--grayscale"></i></a>
+									<a href="#"><i class="ico ico-gplus--grayscale"></i></a>
+									<a href="#"><i class="ico ico-youtube--grayscale"></i></a>
+									<a href="#"><i class="ico ico-insta--grayscale"></i></a>
+								</div>
+
+								<div class="single-sidebar-profile-pic text-center">
+									<div class="profile-header-wrap">
+										<img src="images/profile-header-img.png" class="img-responsive img-circle" alt="" />
+									</div>
+									<div class="single-sidebar-heading--big">User’s name</div>
+								</div>
+								
+								<div class="single-sidebar-icons">
+									<div class="single-sidebar-ico-row">
+										<i class="ico ico-company"></i> Company
+									</div>
+									<div class="single-sidebar-ico-row">
+										<i class="ico ico-country"></i> Country
+									</div>
+									<div class="single-sidebar-ico-row">
+										<i class="ico ico-online"></i> Online
+									</div>
+									<div class="single-sidebar-ico-row">
+										<i class="ico ico-email"></i> <a href="#">info@yourdomain.com</a>
+									</div>
+									<div class="single-sidebar-ico-row">
+										<i class="ico ico-chat"></i>
+										Tel: 01303 680311
+									</div>
+									<div class="single-sidebar-ico-row">
+										<i class="ico ico-response-time"></i>
+										Response time
+									</div>
+									<div class="single-sidebar-ico-row">
+										<i class="ico ico-language"></i>Languages
+									</div>
+									<div class="single-sidebar-ico-row">
+										<i class="ico ico-person"></i> <a href="#">Contact Me</a>
+									</div>
+								</div>
+
+								<!-- split-->
+								<div class="single-sidebar-desc">
+								<p><span>Description:</span>  simply dummy text of the printing and typesetting industry. LoremIpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer   </p>
+								<a href="#" class="read-more">Read more</a>
+								</div>
+								<Div class="single-sidebar-note">
+									<div class="single-sidebar-heading blue">Safety advice note</div>
+									<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+								</Div>
+								<div class="single-sidebar-banners">
+									<a href="#"><img src="images/ad-right-sidebar-202.png" alt="" class="img-responsive"></a>
+									<a href="#"><img src="images/ad-right-sidebar-96.png" alt="" class="img-responsive"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--- CONTENT --> 
+
+
+	<!-- FOOTER: START -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<span class="footer-col">LINK COLOUMN 1</span>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+				</div>
+				<div class="col-sm-2">
+					<span class="footer-col">LINK COLOUMN 1</span>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+				</div>
+				<div class="col-sm-2">
+					<span class="footer-col">LINK COLOUMN 1</span>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+					<a href="#">ABOUT US</a>
+					<a href="#">OUR BLOG</a>
+				</div>
+				<div class="col-sm-3 socials">
+					<span class="footer-col">Follow us</span>
+					<a href="#"><i class="ico ico-fb"></i></a>
+					<a href="#"><i class="ico ico-tw"></i></a>
+					<a href="#"><i class="ico ico-gplus"></i></a>
+					<a href="#"><i class="ico ico-youtube"></i></a>
+				</div>
+				<div class="col-sm-3">
+					<a href="#"><img src="img/logo-footer.png" class="img-responsive" alt="#"></a>
+					<span class="footer-desc">LoremIpsum is simply dummy text of the printing and typesetting industry. LoremIpsum has been the industry's standard dummy text ever since the 1500s</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="under-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<span class="footer-copywrite">© Freewholesalerdirectory Limited2016. All Rights Reserved</span>
+				</div>
+				<div class="col-sm-6 text-right underfooter-navi">
+					<a href="#">Terms & Conditions</a>
+					<a href="#">Privacy Policy</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER: END -->
+</body>
+
+</html>

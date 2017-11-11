@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- FRONT-END FROM RUSSIA WITH LOVE -.- SERGEY KHMELEVSKOY -.- -->
+	<!-- Follow BEM methodology and SMACSS to manage stylesheets -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>POLIS 812 - страховка VZR </title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/hamburgers.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	
+	<!-- Scripts can be moved to the bottom -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/moment.js"></script>	
+	<script type="text/javascript" src="js/daterangepicker.js"></script>	
+	<script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- HEADER :: START -->
+	<header>
+		<div class="header-top hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-4 header-top__navi">
+						<a href="#">О КОМПАНИИ</a>
+						<a href="#">НОВОСТИ</a>
+						<a href="#">ОТЗЫВЫ О НАС</a>
+					</div>
+					<div class="hidden-sm col-md-4 header-top__clients text-center">
+						<i class="ico ico-header-people"></i> 300 000 клиентов по всей России!
+					</div>
+					<div class="col-sm-6 col-md-4 header-top__region text-right">
+						<div class="dropdown">
+							Ваш регион: 
+							<a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span id="selected-region">Санкт-Питербург</span>
+							<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="header-region-toggle">
+							<li><a href="#" data-value="Санкт-Питербург">Санкт-Питербург</a></li>
+							<li><a href="#" data-value="Москва">Москва</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-center hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-md-4">
+						<a href="#">
+						<img src="img/logo.png" class="img-responsive" alt="">
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="header-center__phone">
+							<span>8 800 200-26-12</span>
+							<div class="header-center__phone-location">
+							Бесплатные звонки по всей России
+							</div>
+						</div>
+					</div>
+					<div class="hidden-sm col-sm-3 col-md-3">
+						<div class="header-center__phone" id="region-phone--spb">
+							<span>8 812 93-63-812</span>
+							<div class="header-center__phone-location">
+							Санкт-Питербург
+							</div>
+						</div>
+						<div class="header-center__phone" id="region-phone--moscow">
+							<span>8 495 204-28-12</span>
+							<div class="header-center__phone-location">
+							Москва
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-2 no-pad-l">
+						<a href="#" class="btn btn-trsp">онлайн-консультант</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-menu hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="header-menu__list">
+							<li><a href="#">ВИЗА ОНЛАЙН</a></li>
+							<li><a href="#">ОФОРМЛЕНИЕ ВИЗ</a></li>
+							<li class="active"><a href="#">ТУРИСТИЧЕСКАЯ СТРАХОВКА</a></li>
+							<li><a href="#">ОСАГО</a></li>
+							<li><a href="#">ЗЕЛЕНАЯ КАРТА</a></li>
+							<li><a href="#">ПОДБОР ТУРА</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mobile visible-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8 text-center">
+						<a href="#">
+						<img src="img/logo.png" class="img-responsive header-mobile__logo" alt="">
+						</a>
+					</div>
+					<div class="col-xs-4 text-right">
+						<button class="hamburger hamburger--collapse" type="button" id="show-me-menu">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="mobile-nav">
+			<ul class="main-navi">
+				<li><a href="#">ВИЗА ОНЛАЙН</a></li>
+				<li><a href="#">ОФОРМЛЕНИЕ ВИЗ</a></li>
+				<li><a href="#">ТУРИСТИЧЕСКАЯ СТРАХОВКА</a></li>
+				<li><a href="#">ОСАГО</a></li>
+				<li><a href="#">ЗЕЛЕНАЯ КАРТА</a></li>
+				<li><a href="#">ПОДБОР ТУРА</a></li>
+			</ul>
+			<div class="mobile-nav-contact">
+				<div class="header-phone"><a href="tel:88002002612">8 800 200-26-12</a></div>
+				<div class="header-adress">Бесплатные звонки по всей России</div>
+			</div>
+		</section>
+	</header>
+	<!-- HEADER :: END -->
+
+	<!-- CALCULATOR :: START -->
+	<a href="#section-calculator" id="trigger-move-to-calc" style="display: none; visibiliy: hidden; ">
+	<a href="#section-calculator--step3" id="trigger-move-to-calc--step3" style="display: none; visibiliy: hidden; ">
+	<section class="calculator" id="section-calculator">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="calculator__breadcrumbs">
+						<a href="#">Главная</a>  /  <a href="#">Страхование ВЗР</a>
+					</div>
+					<div class="calculator__title">
+						<a href="#" class="calculator__helper" id="helper--toggle">
+							<i class="ico ico-question--big"></i>
+							<i class="pulse"></i>
+						</a>
+						<h1>Туристическая страховка</h1>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="calculator__wrapper step--1">
+						<!-- шагаем -->
+						<div class="calculator__steps">
+							<div class="calculator__steps__relative">
+								<div class="calculator__steps__step calculator__steps__step--1">1. Рассчет стоимости</div>
+								<div class="calculator__steps__step calculator__steps__step--2">2. Выбор программы страхования</div>
+								<div class="calculator__steps__step calculator__steps__step--3">3. Оплата и получение полиса</div>
+							</div>
+						</div>
+							
+						<div class="row">
+							<div class="col-sm-10 col-sm-offset-1">
+
+	<form class="calculator__form" id="calc__form__step1">
+		<!-- поиск места -->
+		<div class="calculator__form__holder--w50">
+			<div class="calculator__form__input calculator__form__input--ico-loc" id="calc__select-location--toggle" data-toggle="tooltip" data-placement="top" title="Эу.. ты куды собрался? Скажи по брацки! :)"><!-- для валиадтора накидываем .not-valid сюда и пишем ошибку в стилe bootstrap tooltip-->
+				<input type="text" placeholder="Куда вы собираетесь путешествовать?" disabled>
+			</div>
+			<!-- drop -->
+			<div class="calculator__form__dropdown" id="calc__select-location">
+				<input type="text" name="" class="calculator__form__dropdown__input-text" id="calc__select-location__input" placeholder="Введите название страны">
+				<div class="calculator__form__dropdown__help">
+					Например 
+					<a href="#" data-value="Шенген">Шенген</a>
+					<a href="#" data-value="Весь мир">Весь мир</a>
+					<a href="#" data-value="Финляндия">Финляндия</a>
+					<a href="#" data-value="Испания">Испания</a>
+				</div>
+			</div>
+			<!-- help --> 
+			<div class="helper__info" id="helper__step-1">
+				Введите название страны в которую вы собираетесь путешествовать. <br>
+				Для стран Шенгенского соглашения можно выбрать "Шенген"
+			</div>
+		</div>
+
+		<!-- тип программы -->
+
+		<div class="calculator__form__holder--w50 calculator__form__holder--float-right">
+			<div class="calculator__form__input calculator__form__input--ico-globe" id="calc__select-program--toggle">
+				<input type="text" placeholder="Кол-во застрахованных и тип программы" id="calc__select-program-show" disabled>
+			</div>
+			<!-- drop -->
+			<div class="calculator__form__dropdown" id="calc__select-program">
+				<div class="calculator__form__dropdown__program-people">
+					<span>Взрослые</span>
+					<div class="calculator__form__dropdown__number-input">
+						<span class="number-input-minus"></span>
+						<input type="number" name="" class="" placeholder="0" max="10">
+						<span class="number-input-plus"></span>
+					</div>
+				</div>
+				<div class="calculator__form__dropdown__program-people">
+					<span>Дети до 18 лет </span>
+					<div class="calculator__form__dropdown__number-input">
+						<span class="number-input-minus"></span>
+						<input type="number" name="" class="" placeholder="0" max="10">
+						<span class="number-input-plus"></span>
+					</div>
+				</div>
+				<div class="calculator__form__dropdown__program-people">
+					<span>Взрослые от 65 лет</span>
+					<div class="calculator__form__dropdown__number-input">
+						<span class="number-input-minus"></span>
+						<input type="number" name="" class="" placeholder="0" max="10">
+						<span class="number-input-plus"></span>
+					</div>
+				</div>
+
+				<div class="calculator__form__dropdown__program-switch">
+					<div class="calculator__form__dropdown__switch">
+						<input type="checkbox" class="calculator__form__dropdown__switch__toggler" id="program__sport" />
+						<label for="program__sport">«Спорт»</label>
+
+						<i class="ico ico-tooltip" data-toggle="tooltip" data-placement="top" title="Небольшой текст помошника"></i>
+					</div>
+					<div class="calculator__form__dropdown__switch">
+						<input type="checkbox" class="calculator__form__dropdown__switch__toggler" id="program__extrime-sport" />
+						<label for="program__extrime-sport">«Экстремальный Спорт»</label>
+
+						<i class="ico ico-tooltip" data-toggle="tooltip" data-placement="top" title="Небольшой текст помошника"></i>
+					</div>
+					<div class="calculator__form__dropdown__switch">
+						<input type="checkbox" class="calculator__form__dropdown__switch__toggler" id="program__driving" />
+						<label for="program__driving">«Управление мотоциклом / мопедом»</label>
+
+						<i class="ico ico-tooltip" data-toggle="tooltip" data-placement="top" title="Небольшой текст помошника"></i>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- даты -->
+
+		<div class="calculator__form__holder--w50">
+			<div class="calculator__form__input calculator__form__input--w50 calculator__form__input--ico-calendar" id="calc__select-startdate">
+				<input type="text" class="" placeholder="Туда" disabled>
+				<!--<div class="calculator__form__dropdown" id="calc__drop__select-startdate">
+					на 5 дней
+				</div>-->
+			</div>
+			<div class="calculator__form__input calculator__form__input--w50 calculator__form__holder--float-right calculator__form__input--ico-calendar" id="calc__select-enddate">
+				<input type="text" class="" placeholder="Обратно" disabled>
+				<!--<div class="calculator__form__dropdown" id="calc__drop__select-enddate">
+					на 5 дней
+				</div>-->
+			</div>
+		</div>
+
+		<!-- выберите тип -->
+
+		<div class="calculator__form__holder--w50 calculator__form__holder--float-right">
+			<div class="calculator__form__input calculator__form__input--no-pad">
+				<div class="calculator__form__input--dropdown" id="calc__select-timeframe--toggle">
+					<input type="text" placeholder="сколько дней?" class="" id="calc__select-datetime__input" disabled>
+					<div class="calculator__form__dropdown calculator__form__dropdown--no-pad" id="calc__select-datetype">
+						<ul class="calculator__form__dropdown__custom-select">
+							<li data-value="15">15 дней</li>
+							<li data-value="30">30 дней</li>
+							<li data-value="45">45 дней</li>
+							<li data-value="60">60 дней</li>
+							<li data-value="90">90 дней</li>
+						</ul>
+					</div>
+				</div>
+				<div class="calculator__form__input--dropdown disabled" id="calc__select-timeframe--toggle--single">
+					<input type="text" placeholder="calc-diff" class="" id="calc__select-datetime__input" disabled>
+				</div>
+
+				<div class="calculator__form__datetype__wrap">
+					<div class="calculator__form__datetype">
+						<input type="radio" id="calc__form__datetype__single" name="calc__form__datetype">
+						<label for="calc__form__datetype__single">Однократная</label>
+					</div>
+					<div class="calculator__form__datetype">
+						<input type="radio" id="calc__form__datetype__multi" name="calc__form__datetype" checked>
+						<label for="calc__form__datetype__multi">Многократная<span> (multi)</span></label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="calculator__form__promocode">
+			<a href="#" id="have-promo-trigger">У вас есть промокод?</a>
+			<div id="have-promo">
+			<input type="text" class="calculator__form__promocode__input" placeholder="Введите промокод">
+			</div>
+		</div>
+		<div class="text-center">
+			<button class="btn btn-calc-cta" type="submit" id="calc__form__submit--step1">РАССЧЕТ СТОИМОСТИ</button>
+			
+			<!-- удалить это -->
+			<div class="div">
+			<a href="#" id="simulate-validation" style="font-size: 12px; color: white;">Симуляция ошибки валидатора</a>
+			</div>
+			<!-- удалить это -->				
+		</div>
+
+	</form>
+
+	<!-- STEP 2 -->
+
+	<form class="calculator__form" id="calc__form__step2">
+		<div class="calculator__form__editable-step">
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Зона покрытия
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">Шенген</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="Шенген" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Застрахованные
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">2 взрослых, 1 ребенок</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="2 взрослых, 1 ребенок" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Начало поездки
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">22.09.2016</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="22.09.2016" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Конец поездки
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">23.09.2016</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="23.09.2016" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Программа
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">Стандартная</span>
+					<i class="ico ico-edit"></i>
+				</a>
+					<input type="text" placeholder="Стандартная" class="calculator__form__editable-step__field__editable">
+			</div>
+		</div>
+
+		<div class="heading text-center">Выберите программу страхования</div>
+		<div class="row" style="position: relative">
+
+			<div class="col-sm-12 col-lg-10" id="calc__all-offers">
+
+
+				<div class="calculator__form__insurance">
+					<div class="row">
+						<div class="col-sm-3 no-pad-r">
+							<div class="calculator__form__insurance__left">
+								<div class="calculator__form__insurance__left__logo">
+									<img src="images/ergo-small-logo.png" alt="" class="ergo">
+								</div>
+								<ul class="calculator__form__insurance__left__tabs">
+									<li class="active">Программы страхования</li>
+									<li>Ассистанс</li>
+									<li>Франшиза</li>
+									<li>Правила страхования</li>
+									<li>Образец полиса</li>
+								</ul>
+							</div>
+						</div>
+						<div class="calculator__form__insurance__tabs active">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<div class="row calculator__form__insurance__price-helpers">
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-r">
+											<div><i class="ico ico-ambulance"></i> 3 000 € </div>
+											<div><i class="ico ico-teeth"></i> 3 000 € </div>
+											<div><i class="ico ico-fly"></i> 3 000 € </div>
+											<div><i class="ico ico-scales"></i> 3 000 € </div>
+										</div>
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-l no-pad-l-md ">
+											<div><i class="ico ico-caput"></i> 3 000 € </div>
+											<div><i class="ico ico-message"></i> 3 000 € </div>
+											<div><i class="ico ico-pass"></i> 3 000 € </div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card calculator__form__insurance__card--featured">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<div class="row calculator__form__insurance__price-helpers">
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-r">
+											<div><i class="ico ico-ambulance"></i> 3 000 € </div>
+											<div><i class="ico ico-teeth"></i> 3 000 € </div>
+											<div><i class="ico ico-fly"></i> 3 000 € </div>
+											<div><i class="ico ico-scales"></i> 3 000 € </div>
+										</div>
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-l no-pad-l-md">
+											<div><i class="ico ico-caput"></i> 3 000 € </div>
+											<div><i class="ico ico-message"></i> 3 000 € </div>
+											<div><i class="ico ico-pass"></i> 3 000 € </div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad-l">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (C)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<div class="row calculator__form__insurance__price-helpers">
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-r">
+											<div><i class="ico ico-ambulance"></i> 3 000 € </div>
+											<div><i class="ico ico-teeth"></i> 3 000 € </div>
+											<div><i class="ico ico-fly"></i> 3 000 € </div>
+											<div><i class="ico ico-scales"></i> 3 000 € </div>
+										</div>
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-l no-pad-l-md">
+											<div><i class="ico ico-caput"></i> 3 000 € </div>
+											<div><i class="ico ico-message"></i> 3 000 € </div>
+											<div><i class="ico ico-pass"></i> 3 000 € </div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card calculator__form__insurance__card--featured">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad-l">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (C)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card calculator__form__insurance__card--featured">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad-l">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (C)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card calculator__form__insurance__card--featured">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad-l">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (C)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+				<!-- NEXT CARD (ERGO MULTI) -->
+
+				<div class="calculator__form__insurance">
+					<div class="row">
+						<div class="col-sm-3 no-pad-r">
+							<div class="calculator__form__insurance__left">
+								<div class="calculator__form__insurance__left__logo">
+									<img src="images/ergo-small-logo.png" alt="" class="ergo">
+								</div>
+								<div class="calculator__form__insurance__left__multi">
+									Multi
+									<i class="ico ico-tooltip" data-toggle="tooltip" data-placement="bottom" title="Идеально для многократных поездок"></i>
+									<ul class="calculator__form__insurance__left__multi__list">
+										<li><a href="#">15</a></li>
+										<li><a href="#">30</a></li>
+										<li class="active"><a href="#">45</a></li>
+										<li><a href="#">60</a></li>
+										<li><a href="#">90</a></li>
+									</ul>
+								</div>
+								<ul class="calculator__form__insurance__left__tabs">
+									<li>Ассистанс</li>
+									<li>Франшиза</li>
+									<li>Правила страхования</li>
+									<li>Образец полиса</li>
+								</ul>
+							</div>
+						</div>
+						<div class="calculator__form__insurance__tabs active">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<div class="row calculator__form__insurance__price-helpers">
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-r">
+											<div><i class="ico ico-ambulance"></i> 3 000 € </div>
+											<div><i class="ico ico-teeth"></i> 3 000 € </div>
+											<div><i class="ico ico-fly"></i> 3 000 € </div>
+											<div><i class="ico ico-scales"></i> 3 000 € </div>
+										</div>
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-l no-pad-l-md">
+											<div><i class="ico ico-caput"></i> 3 000 € </div>
+											<div><i class="ico ico-message"></i> 3 000 € </div>
+											<div><i class="ico ico-pass"></i> 3 000 € </div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<div class="row calculator__form__insurance__price-helpers">
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-r">
+											<div><i class="ico ico-ambulance"></i> 3 000 € </div>
+											<div><i class="ico ico-teeth"></i> 3 000 € </div>
+											<div><i class="ico ico-fly"></i> 3 000 € </div>
+											<div><i class="ico ico-scales"></i> 3 000 € </div>
+										</div>
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-l no-pad-l-md">
+											<div><i class="ico ico-caput"></i> 3 000 € </div>
+											<div><i class="ico ico-message"></i> 3 000 € </div>
+											<div><i class="ico ico-pass"></i> 3 000 € </div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad-l">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (C)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<div class="row calculator__form__insurance__price-helpers">
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-r">
+											<div><i class="ico ico-ambulance"></i> 3 000 € </div>
+											<div><i class="ico ico-teeth"></i> 3 000 € </div>
+											<div><i class="ico ico-fly"></i> 3 000 € </div>
+											<div><i class="ico ico-scales"></i> 3 000 € </div>
+										</div>
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-l no-pad-l-md">
+											<div><i class="ico ico-caput"></i> 3 000 € </div>
+											<div><i class="ico ico-message"></i> 3 000 € </div>
+											<div><i class="ico ico-pass"></i> 3 000 € </div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad-l">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (C)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad-l">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (C)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad-l">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (C)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<!-- NEXT CARD (ALPHA) -->
+				<div class="calculator__form__insurance">
+					<div class="row">
+						<div class="col-sm-3 no-pad-r">
+							<div class="calculator__form__insurance__left">
+								<div class="calculator__form__insurance__left__logo">
+									<img src="images/alpha-small-logo.png" alt="" class="">
+								</div>
+								<ul class="calculator__form__insurance__left__tabs">
+									<li class="active">Программы страхования</li>
+									<li>Ассистанс</li>
+									<li>Франшиза</li>
+									<li>Правила страхования</li>
+									<li>Образец полиса</li>
+								</ul>
+							</div>
+						</div>
+						<div class="calculator__form__insurance__tabs active">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<div class="row calculator__form__insurance__price-helpers">
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-r">
+											<div><i class="ico ico-ambulance"></i> 3 000 € </div>
+											<div><i class="ico ico-teeth"></i> 3 000 € </div>
+											<div><i class="ico ico-fly"></i> 3 000 € </div>
+											<div><i class="ico ico-scales"></i> 3 000 € </div>
+										</div>
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-l no-pad-l-md">
+											<div><i class="ico ico-caput"></i> 3 000 € </div>
+											<div><i class="ico ico-message"></i> 3 000 € </div>
+											<div><i class="ico ico-pass"></i> 3 000 € </div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<div class="row calculator__form__insurance__price-helpers">
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-r">
+											<div><i class="ico ico-ambulance"></i> 3 000 € </div>
+											<div><i class="ico ico-teeth"></i> 3 000 € </div>
+											<div><i class="ico ico-fly"></i> 3 000 € </div>
+											<div><i class="ico ico-scales"></i> 3 000 € </div>
+										</div>
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-l no-pad-l-md">
+											<div><i class="ico ico-caput"></i> 3 000 € </div>
+											<div><i class="ico ico-message"></i> 3 000 € </div>
+											<div><i class="ico ico-pass"></i> 3 000 € </div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (Б)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+				
+				<!-- NEXT CARD (ALPHA MULTI) -->
+				<div class="calculator__form__insurance">
+					<div class="row">
+						<div class="col-sm-3 no-pad-r">
+							<div class="calculator__form__insurance__left">
+								<div class="calculator__form__insurance__left__logo">
+									<img src="images/alpha-small-logo.png" alt="" class="">
+								</div>
+								<div class="calculator__form__insurance__left__multi">
+									Multi
+									<i class="ico ico-tooltip" data-toggle="tooltip" data-placement="bottom" title="Идеально для многократных поездок"></i>
+									<ul class="calculator__form__insurance__left__multi__list">
+										<li><a href="#">15</a></li>
+										<li><a href="#">30</a></li>
+										<li class="active"><a href="#">45</a></li>
+										<li><a href="#">60</a></li>
+										<li><a href="#">90</a></li>
+									</ul>
+								</div>
+								<ul class="calculator__form__insurance__left__tabs">
+									<li>Ассистанс</li>
+									<li>Франшиза</li>
+									<li>Правила страхования</li>
+									<li>Образец полиса</li>
+								</ul>
+							</div>
+						</div>
+						<div class="calculator__form__insurance__tabs active">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<div class="row calculator__form__insurance__price-helpers">
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-r">
+											<div><i class="ico ico-ambulance"></i> 3 000 € </div>
+											<div><i class="ico ico-teeth"></i> 3 000 € </div>
+											<div><i class="ico ico-fly"></i> 3 000 € </div>
+											<div><i class="ico ico-scales"></i> 3 000 € </div>
+										</div>
+										<div class="col-xs-6 col-sm-12 col-md-6 no-pad-l no-pad-l-md">
+											<div><i class="ico ico-caput"></i> 3 000 € </div>
+											<div><i class="ico ico-message"></i> 3 000 € </div>
+											<div><i class="ico ico-pass"></i> 3 000 € </div>
+										</div>
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>
+						<!-- next tab -->
+						<div class="calculator__form__insurance__tabs">
+							<div class="col-sm-3 no-pad">
+								<div class="calculator__form__insurance__card">
+									<div class="calculator__form__insurance__card__name">
+										Программа (А)
+									</div>
+									<div class="calculator__form__insurance__card__price">
+										<span>Страховая сумма</span>
+										30 000 €
+									</div>
+									<a href="#" class="btn btn-calc-cta btn--insurance-card">Заказать <span>6 958 <i class="fa fa-rub"></i></span></a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+
+			</div>
+
+
+			<!-- FILTERS -->
+
+			<div class="col-sm-12 col-lg-2" id="calc__floating__sidebar">
+				<i class="ico ico-toggle-sidebar-md"></i>
+				<div class="calculator__form__filter">
+					<div class="calculator__form__filter__heading">
+						Дополнительные опции
+					</div>
+					<div class="calculator__form__filter__checkbox">
+						<input type="checkbox" name="calc__filter" id="calc__filter_1">
+						<label for="calc__filter_1">Стоматологическая помощь</label>
+					</div>
+					<div class="calculator__form__filter__checkbox">
+						<input type="checkbox" name="calc__filter" id="calc__filter_2">
+						<label for="calc__filter_2">Утрата документов</label>
+					</div>
+					<div class="calculator__form__filter__checkbox">
+						<input type="checkbox" name="calc__filter" id="calc__filter_3">
+						<label for="calc__filter_3">Юридическая помощь</label>
+					</div>
+					<div class="calculator__form__filter__checkbox">
+						<input type="checkbox" name="calc__filter" id="calc__filter_4">
+						<label for="calc__filter_4">Отмена поездки</label>
+					</div>
+					<div class="calculator__form__filter__checkbox">
+						<input type="checkbox" name="calc__filter" id="calc__filter_5">
+						<label for="calc__filter_5">Страхование багажа</label>
+					</div>
+					<div class="calculator__form__filter__checkbox">
+						<input type="checkbox" name="calc__filter" id="calc__filter_6">
+						<label for="calc__filter_6">Гражданская отвественность</label>
+					</div>
+					<div class="calculator__form__filter__checkbox">
+						<input type="checkbox" name="calc__filter" id="calc__filter_7">
+						<label for="calc__filter_7">Несчастный случай</label>
+					</div>
+					<hr>
+					<div class="calculator__form__filter__checkbox">
+						<input type="checkbox" name="calc__filter" id="calc__filter_8">
+						<label for="calc__filter_8">Я уже путешествую</label>
+						<i class="ico ico-tooltip" data-toggle="tooltip" data-placement="left" title="Выберите если вы уже находитесь за границей. В противном случае страховые выплаты могут быть не выплачены"></i>
+					</div>
+					<div class="calculator__form__filter__checkbox">
+						<input type="checkbox" name="calc__filter" id="calc__filter_9">
+						<label for="calc__filter_9">Я не гражданин России</label>
+						<i class="ico ico-tooltip" data-toggle="tooltip" data-placement="left" title="Выберите если вы гражданин другой страны"></i>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</form>
+
+	<!-- STEP 3 -->
+
+	<form class="calculator__form" id="calc__form__step3">
+		<div class="calculator__form__editable-step">
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Зона покрытия
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">Шенген</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="Шенген" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Застрахованные
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">2 взрослых, 1 ребенок</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="2 взрослых, 1 ребенок" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Начало поездки
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">22.09.2016</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="22.09.2016" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Конец поездки
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">23.09.2016</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="23.09.2016" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Программа
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">Стандартная</span>
+					<i class="ico ico-edit"></i>
+				</a>
+					<input type="text" placeholder="Стандартная" class="calculator__form__editable-step__field__editable">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<div class="calculator__form__editable-step">
+					<div class="calculator__form__editable-step__wrapper">
+						<span class="calculator__form__editable-step__heading">
+							Выбранная программа страхования
+						</span>
+						Эконом (B) + страхование багажа
+					</div>
+					<div class="calculator__form__editable-step__wrapper calculator__form__editable-step__wrapper--logo">
+						<img src="images/alpha-small-logo.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<div class="heading text-center" id="section-calculator--step3">Заполните пасспортные данные</div>
+
+	<div class="text-center">
+		<div class="alert">Имя и фамилия вводятся на латинице, как в загранпаспорте.</div>
+	</div>
+
+	<div class="calculator__form__contacts">
+		<div class="calculator__form__contacts__heading">
+			<i class="ico ico-num">1</i> Данные первого застрахованного
+		</div>
+		<div class="row mb20">
+			<div class="col-sm-7">
+				<div class="col-half">
+					<label>Имя / First name</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--ico-person" name="" placeholder="Vasiliy">
+				</div>
+				<div class="col-half">
+					<label>Фамилия / Last name</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--ico-person" name="" placeholder="Petrov">
+				</div>
+			</div>
+			<div class="col-sm-5 no-pad-l">
+				<div class="col-half">
+					<label>Дата рождения</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--short calculator__form__contacts__input--ico-calendar" name="" placeholder="1.01.1970">
+					<!--  id="calc__select-birthdate" если нужен калькулятор -->
+				</div>
+				<div class="col-half">
+					<label>Номер загранпаспорта</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--short calculator__form__contacts__input--ico-passport" name="" placeholder="4654 000000000">
+				</div>
+			</div>
+
+		</div>
+		<!-- следующий застрахованный -->
+		<div class="calculator__form__contacts__heading">
+			<i class="ico ico-num">2</i> Данные второго застрахованного
+		</div>
+		<div class="row mb20">
+			<div class="col-sm-7">
+				<div class="col-half">
+					<label>Имя / First name</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--ico-person" name="" placeholder="Vasiliy">
+				</div>
+				<div class="col-half">
+					<label>Фамилия / Last name</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--ico-person" name="" placeholder="Petrov">
+				</div>
+			</div>
+			<div class="col-sm-5 no-pad-l">
+				<div class="col-half">
+					<label>Дата рождения</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--short calculator__form__contacts__input--ico-calendar" name="" placeholder="1.01.1970">
+					<!--  id="calc__select-birthdate" если нужен калькулятор -->
+				</div>
+				<div class="col-half">
+					<label>Номер загранпаспорта</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--short calculator__form__contacts__input--ico-passport" name="" placeholder="4654 000000000">
+				</div>
+			</div>
+
+		</div>
+		<!-- следующий застрахованный -->
+		<div class="calculator__form__contacts__heading">
+			<i class="ico ico-num">3</i> Данные третьего застрахованного
+		</div>
+		<div class="row mb20">
+			<div class="col-sm-7">
+				<div class="col-half">
+					<label>Имя / First name</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--ico-person" name="" placeholder="Vasiliy">
+				</div>
+				<div class="col-half">
+					<label>Фамилия / Last name</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--ico-person" name="" placeholder="Petrov">
+				</div>
+			</div>
+			<div class="col-sm-5 no-pad-l">
+				<div class="col-half">
+					<label>Дата рождения</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--short calculator__form__contacts__input--ico-calendar" name="" placeholder="1.01.1970">
+					<!--  id="calc__select-birthdate" если нужен калькулятор -->
+				</div>
+				<div class="col-half">
+					<label>Номер загранпаспорта</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--short calculator__form__contacts__input--ico-passport" name="" placeholder="4654 000000000">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Данные получения -->
+	<div class="heading mt20 text-center">Данные для получения полиса</div>
+
+	<div class="calculator__form__contacts">
+		<div class="row mb20">
+			<div class="col-sm-7">
+				<div class="col-half">
+					<label>Email для отправки полиса</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--ico-person" name="" placeholder="my@mail.ru">
+				</div>
+				<div class="col-half">
+					<label>Номер телефона</label>
+					<input type="text" class="calculator__form__contacts__input calculator__form__contacts__input--ico-phone phone-input--mask" name="" placeholder="+7 (916) ___ - __ - __">
+				</div>
+			</div>
+			<div class="col-sm-5 no-pad-l">
+				<div class="calculator__form__filter__checkbox calculator__form__contacts__checkbox">
+					<input type="checkbox" name="calc__contacts" id="calc__contacts_send_by_post">
+					<label for="calc__contacts_send_by_post">Отправить полис на почтовый адрес</label>
+					<i class="ico ico-tooltip hidden-inline-xs" data-toggle="tooltip" data-placement="left" title="Выберите если вы уже находитесь за границей. В противном случае страховые выплаты могут быть не выплачены"></i>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="calc__contacts_send_by_post--toggleble">
+			<div class="col-sm-12">
+				<div class="calc__contacts_send_by_post__form">
+					<div class="text-center">
+						<div class="heading heading--small">
+							Укажите ваши почтовые данные для получения полиса:
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">
+							<label>Индекс</label>
+							<input type="text" class="calculator__form__contacts__input" name="" placeholder="Индекс">
+						</div>
+						<div class="col-sm-4">
+							<label>Страна, регион, город</label>
+							<input type="text" class="calculator__form__contacts__input" name="" placeholder="Россия, Санкт-Питербург">
+						</div>
+						<div class="col-sm-6">
+							<label>Улица, дом, квартира</label>
+							<input type="text" class="calculator__form__contacts__input" name="" placeholder="Дыбенко, 13/20">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="text-center">
+		<a href="#" id="calc__go-to__prev-step">Предидущий шаг</a>
+		<button class="btn btn-calc-cta" type="submit" id="calc__form__submit--step3">ПЕРЕЙТИ К ОПЛАТЕ</button>
+	</div>
+
+	</form>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- CALCULATOR :: END -->
+
+	<!-- BENEFITS :: START -->
+	<section class="benefits text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="img/benefit-ico-1.svg">
+					<div class="benefit-desc">
+						Самые низкие цены на страхование для выезжающих за рубеж
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<img src="img/benefit-ico-2.svg">
+					<div class="benefit-desc">
+						Подходит для подачи <br>во все консульства и визовые центры!
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<img src="img/benefit-ico-3.svg">
+					<div class="benefit-desc">
+						Лучшие страховые компании <br>Без франшизы и подводных камней
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- BENEFITS :: END -->
+
+
+	<!-- INSURANCES :: START -->
+	<section class="heading heading--outside-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">Подробная информация о страховке</div>
+			</div>
+		</div>
+	</section>
+	<section class="insurances white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="insurance__heading">
+						<img src="images/alpha.png" title="" alt="">
+						<span>Альфастрахование</span>
+					</div>
+					<div class="insurance__description">
+						<span class="insurance__description--visible">
+						Группа «АльфаСтрахование» – одна из крупнейших российских страховых компаний с универсальным портфелем услуг, включающим как комплексные программы защиты интересов бизнеса, так и широкий спектр страховых продуктов для частных лиц. Согласно лицензии, компания предлагает более 100 продуктов, включая продукты по страхованию жизни.
+						</span>
+
+						<a href="#" class="insurance__description__more"">Подробнее</a>
+
+						<span class="insurance__description--hidden">
+						Группа «АльфаСтрахование» – одна из крупнейших российских страховых компаний с универсальным портфелем услуг, включающим как комплексные программы защиты интересов бизнеса, так и широкий спектр страховых продуктов для частных лиц. Согласно лицензии, компания предлагает более 100 продуктов, включая продукты по страхованию жизни.
+						</span>
+					</div>
+					<div class="insurance__assist toggable-mobile">
+						<div class="insurance__title">Ассист компания</div>
+						<div class="insurance__assist__images">
+						<img src="images/savitar-logo.png" alt="" class="img-responsive">
+						</div>
+					</div>
+					<div class="insurance__docs toggable-mobile">
+						<div class="insurance__title">Образцы полисов</div>
+						<a href="#" class="insurance__docs__link">MULTI</a>
+						<a href="#" class="insurance__docs__link">Эконом B</a>
+						<a href="#" class="insurance__docs__link">Эконом A</a>
+					</div>
+					<div class="insurance__docs toggable-mobile">
+						<div class="insurance__title">Документация</div>
+						<a href="#" class="insurance__docs__link insurance__docs__link--with-ico">Правила страхования</a>
+						<a href="#" class="insurance__docs__link insurance__docs__link--with-ico">Описание программ</a>
+						<a href="#" class="insurance__docs__link insurance__docs__link--with-ico">Особые условия</a>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="insurance__heading">
+						<img src="images/ergo.png" title="" alt="">
+						<span>ERGO</span>
+					</div>
+					<div class="insurance__description">
+						<span class="insurance__description--visible">
+						Группа ERGO – одна из крупнейших страховых групп в Германии и Европе. Ежегодные страховые сборы группы составляют в среднем около €17 млрд. ERGO представлена более чем в 30 странах, фокусируется на рынках Европы и Азии. В Германии ERGO занимает лидирующие позиции на всех сегментах страхового рынка. В группе ERGO работает более 50 тыс. человек, включая штатных сотрудников и внештатных страховых агентов.
+						</span>
+
+						<a href="#" class="insurance__description__more"">Подробнее</a>
+
+						<span class="insurance__description--hidden">
+						Группа «АльфаСтрахование» – одна из крупнейших российских страховых компаний с универсальным портфелем услуг, включающим как комплексные программы защиты интересов бизнеса, так и широкий спектр страховых продуктов для частных лиц. Согласно лицензии, компания предлагает более 100 продуктов, включая продукты по страхованию жизни.
+						</span>
+					</div>
+					<div class="insurance__assist toggable-mobile">
+						<div class="insurance__title">
+							Ассист компания на выбор!
+							<i class="ico ico-tooltip" data-toggle="tooltip" data-placement="right" title="Уникальная возможность выбора ассистанс компании"></i>
+						</div>
+						<div class="insurance__assist__images">
+						<img src="images/savitar-logo.png" alt="" class="img-responsive">
+						<img src="images/axa-logo.png" alt="" class="img-responsive">
+						<img src="images/europ-logo.png" alt="" class="img-responsive">
+						
+						</div>
+					</div>
+					<div class="insurance__docs toggable-mobile">
+						<div class="insurance__title">Образцы полисов</div>
+						<a href="#" class="insurance__docs__link">MULTI</a>
+						<a href="#" class="insurance__docs__link">Эконом B</a>
+						<a href="#" class="insurance__docs__link">Эконом A</a>
+					</div>
+					<div class="insurance__docs toggable-mobile">
+						<div class="insurance__title">Документация</div>
+						<a href="#" class="insurance__docs__link insurance__docs__link--with-ico">Правила страхования</a>
+						<a href="#" class="insurance__docs__link insurance__docs__link--with-ico">Описание программ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- INSURANCES :: END -->
+
+
+	<!-- SEO TEXT :: START -->
+	<section class="promo-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="promo-text__paragraph">
+						<h2 class="h2">Страховка для визы</h2>
+						<p>ВЗР, как вид добровольного страхования или страхование выезжающих за рубеж, представляет собой полное покрытие затрат застрахованного гражданина, возникающие при пребывании его на территории иного иностранного государства или страны.</p>
+						<p>Хотя данный вид страхования и называется добровольным, у вас просто не будет возможности выехать за границу по работе, на отдых или по любым другим делам без оформленного полиса. Поэтому данный вид страхования можно с легкостью отнести к принудительно-добровольному страхованию, благодаря чему и отмечается его достаточно широкая популярность среди населения.</p>
+					</div>
+					<div class="promo-text__paragraph">
+						<h2 class="h2">Стоимость медицинского полиса для шенгенской визы</h2>
+						<div class="promo-text__paragraph__table">
+							<div class="promo-text__paragraph__table__row">
+								<span>15 дней</span>
+								<span>от 499 руб</span>
+							</div>
+							<div class="promo-text__paragraph__table__row">
+								<span>30 дней</span>
+								<span>от 599 руб</span>
+							</div>
+							<div class="promo-text__paragraph__table__row">
+								<span>60 дней</span>
+								<span>от 1099 руб</span>
+							</div>
+							<div class="promo-text__paragraph__table__row">
+								<span>90 дней</span>
+								<span>от 1599 руб</span>
+							</div>
+							<div class="promo-text__paragraph__table__row">
+								<span>180 дней</span>
+								<span>от 2799 руб</span>
+							</div>
+							<div class="promo-text__paragraph__table__row">
+								<span>365 дней</span>
+								<span>от 4999 руб</span>
+							</div>
+						</div>
+						<a href="#section-calculator" class="btn btn-trsp btn-trsp--inline btn-lg btn--absolute-center hidden-xs">Рассчет стоимости онлайн</a>
+					</div>
+					<div class="promo-text__paragraph">
+						<h2 class="h2">Как получить страховку?</h2>
+						<p>Вы можете получить полис по e-mail*, доставкой курьером (при стоимости от 1000 руб) или у нас в офисах*для того, чтобы получить полис по e-mail , Вам надо оплатить его через сайт . Страховка онлайн для визы в Финляндию. Такая услуга как страхование по шенгенской визы поможет покрыть непредвиденные затраты во время пребывания за границей.</p>
+						
+					</div>
+					<div class="promo-text__paragraph">
+						<h2 class="h2">Что предоставляется в рамках страховки?</h2>
+						<p>Страховка Шенген полноценно обеспечивает застрахованному лицу оплату всех основных видов медицинских услуг, то есть квалифицированную медицинскую помощь. Да и стоимость страховки в Финляндию, как и любую другую страну, будет вполне лояльной и возможно только незначительное варьирование в зависимости от стоимости поездки.</p>
+						<p>Стандартный набор услуг, который входит в стоимость страховки для шенгенской визы, предусматривает не только оплату предоставленных медицинских услуг, но и стоимость медицинской транспортировки. Так что в случае болезни, можно быть уверенным в том, что Вы не будете оставлены без помощи посреди незнакомого города в чужом государстве, она также является государством шенгенской зоны, предусматривает и экстренную стоматологическую помощь.</p>
+						<p>Что входит - оплата срочных сообщений, которая учтена при заключении страхового полиса, как и иного государства этой зоны - предусматривает и такой вариант услуг как репатриация при смертельном исходе. И это ещё далеко не весть список обстоятельств, в которых приобретённый полис гарантирует помощь и компенсацию.Страховые  компании Альфастрахование и ERGO аккредитованы во всех консульствах. При необходимости предоставленный список можно расширить, исходя из Ваших потребностей. С полной уверенностью можно утверждать, что это включают в свою стоимость и оказание юридических услуг, в которых может возникнуть потребность у лиц плохо ориентирующихся в тонкостях законодательства иного государства. Да и возможные транспортные расходы, как и помощь в результате утери или хищения документов - тоже предусмотрены для застрахованных лиц.Страховка для выезда за границуМед полис для выезда за границу учитывает и возможность компенсации в результате порчи личного транспортного средства из-за ДТП или же его поломки, как и ответственность перед третьими лицами, и страхование багажа. Даже потери от отмены поездки - учтены страхованием.</p>
+						
+					</div>
+					<div class="promo-text__paragraph">
+						<h2 class="h2">Процедура оформления медецинского полиса</h2>
+						<p>Если вы решили выехать за рубеж и нуждаетесь в туристической страховке, вам достаточно обратиться за помощью к нашему онлайн-консультанту либо просто позвонить по телефону (812) 930-35-40.</p>
+						<p>Если нужно составить приемлемую программу страхования для любого клиента, будь то страховка для финской визы или иного государства, как и подобрать наилучшую страховую компанию - обратитесь к нам.</p>
+						<p>Для того, чтобы своевременно была получена услуга, нужно договориться с представителями нашей компании о встрече в удобное для Вас время.Заполнив специальную форму в виде анкеты, каждый клиент может рассчитывать на полное содействие компании, которая обязательно с ним свяжется - и страховка для выезда за границу будет получена своевременно и на самых выгодных условиях.</p>
+						<p>Мы с радостью составим специально для вас наиболее приемлемую программу страховки выезжающих за рубеж, также подберем подходящую страховую компанию.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SEO TEXT :: END -->
+
+
+	<!-- VIDEO :: START -->
+	<section class="video white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+					<div class="heading">
+						Посмотрите как просто оформить визу
+					</div>
+					<div class="subtitle">
+						Наши специалисты подготовили подробное и понятное видео, которое поможет вам получить ответы на все вопросы.
+					</div>
+
+					<div class="video__wrap">
+						<img src="img/video-play.png" alt="" onclick="loadvideo();">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- VIDEO :: END -->
+
+
+	<!-- SOCIALS :: START -->
+	<section class="socials">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+					<div class="heading">
+						Получайте бонусы и скидки
+					</div>
+					<div class="subtitle">
+						Присоединяйтесь к нам в социальных сетях и получайте информацию о скидках, бонусах и важных новостях
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-xs-4 col-md-3 col-md-offset-1">
+					<a class="social__button social__button--instagram" href="#">
+						<i class="ico ico-instagram"></i>
+						<span>Подписаться</span>
+					</a>
+					<div class="social__metric">
+						1500 подписчиков в Инстаграм
+					</div>
+				</div>
+				<div class="col-xs-4 col-md-4">
+					<a class="social__button social__button--vk" href="#">
+						<i class="ico ico-vk"></i>
+						<span>Подписаться</span>
+					</a>
+					<div class="social__metric">
+						15 000 подписчиков ВКОНТАКЕ
+					</div>
+				</div>
+				<div class="col-xs-4 col-md-3">
+					<a class="social__button social__button--youtube" href="#">
+						<i class="ico ico-youtube"></i>
+						<span>Подписаться</span>
+					</a>
+					<div class="social__metric">
+						500 подписчиков в YouTube
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SOCIALS :: END -->
+
+
+	<!-- PRESS :: START -->
+	<section class="press white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="heading">
+						Пресса о нас
+					</div>
+				</div>
+				<div class="owl-carousel" id="press-carousel">
+				<div class="col-sm-4">
+					<div class="press__image">
+						<img src="images/commersant.png" alt="">
+					</div>
+					<div class="press__title">
+						Компания «Полис»: финская шенгенская виза - это просто
+					</div>
+					<div class="press__short">
+						Цены на услуги не просто ниже средних, а одни из самых низких в России. Кроме того, компания широко использует систему бонусов и скидок, которые позволяют сэкономить больше.
+					</div>
+					<div class="press__link">
+						<a href="#">Подробнее на <span>kommersant.ru</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="press__image">
+						<img src="images/metro.png" alt="">
+					</div>
+					<div class="press__title">
+						Компания, за ценовую политику которой ее не любят конкуренты
+					</div>
+					<div class="press__short">
+						Полноценная и всестороння консультация и поддержка в режиме онлайн дает широкие возможности при оформлении любого полиса.
+					</div>
+					<div class="press__link">
+						<a href="#">Подробнее на <span>metronews.ru</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="press__image">
+						<img src="images/dpru.png" alt="">
+					</div>
+					<div class="press__title">
+						Как быстро и выгодно оформить туристическую страховку?
+					</div>
+					<div class="press__short">
+						Перспективная и быстроразвивающаяся компания готова сотрудничать с населением не только в реальном, но и в интернет-пространстве.
+					</div>
+					<div class="press__link">
+						<a href="#">Подробнее на <span>dp.ru</span></a>
+					</div>
+				</div>	
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="heading heading--top-border">
+						Отзывы наших клиентов <i class="ico ico-vk--heading"></i>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="owl-carousel" id="testimonials-carousel">
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Пользуюсь услугами "Полис 812" уже несколько лет. Еще с тех пор когда их офис был на ул. Сикейроса 6 корп.1 Делаю у них финские визы и страховки. Цены одни из самых низких по городу.Девушки работающие там всегда помогут в возникающих вопросах.
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Заказывали страховку для визы через интернет. Все быстро и удобно. Спасибо. Все лучшие👍
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Пользуюсь Вашими услугами уже не первый раз. Оформление страховки занимает всего пару минут, присланный на эл. почту полис никаких вопросов в посольстве не вызывает. Страховки выгоднее чем у Вас я не нашел, да еще и с промокодом
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+							</div>
+						</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- PRESS :: END -->
+
+
+	<!-- NEWS :: START -->
+	<section class="news text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading">
+						Новости страхового центра Полис
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<a class="news__card" href="#">
+						<div class="news__card__title">
+							Стоимость зеленой карты с 15 сентября уменьшиться
+						</div>
+						<div class="news__card__short">
+							Легковой автомобиль на 15 дней 2450 руб на 30 дней 4670 руб на 1 год 22240 руб
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a class="news__card" href="#">
+						<div class="news__card__title">
+							Режим работы 12 июня
+						</div>
+						<div class="news__card__short">
+							12 июня только офис у м. Звездная с 12 до 17 13 июня в режиме выходного дня с 11 до 18 ( офис у м.Кировский Завод до 17-00)
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a class="news__card" href="#">
+						<div class="news__card__title">
+							График на майские праздники
+						</div>
+						<div class="news__card__short">
+							1 мая - выходной 9 мая - выходной
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- NEWS :: END -->
+
+
+	<!-- FOOTER :: START -->
+	<footer class="footer hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="footer__heading">Страхование</div>
+					<div class="footer__links">
+						<a href="#">КАСКО</a>
+						<a href="#">Туристическая страховка</a>
+						<a href="#">ОСАГО</a>
+						<a href="#">Зеленая карта</a>
+						<a href="#">Проверить КБМ по базе РСА</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer__heading">Горящие туры</div>
+					<div class="footer__links">
+						<a href="#">Подбор тура</a>
+						<a href="#">Горящие туры в Грецию из Санкт-Петербурга</a>
+						<a href="#">Горящие туры в Крым из Санкт-Петербурга</a>
+						<a href="#">Горящие туры в Сочи из Санкт-Петербурга</a>
+						<a href="#">Горящие туры на Кипр из Санкт-Петербурга</a>
+						<a href="#">Билеты на паром</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer__heading">Оформление виз</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Виза в Испанию</a>
+								<a href="#">Виза в Эстонию</a>
+								<a href="#">Виза в Литву</a>
+								<a href="#">Виза в Италию</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Виза в США</a>
+								<a href="#">Виза в Англию</a>
+								<a href="#">Виза в Голландию</a>
+								<a href="#">Виза в Финляндию</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<div class="footer__heading">О компании</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Контакты</a>
+								<a href="#">Обратная связь</a>
+								<a href="#">Реквизиты</a>
+								<a href="#">Способы оплаты</a>
+								<a href="#">Отзывы о нас</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Пользовательское соглашение</a>
+								<a href="#">Условия возврата</a>
+								<a href="#">Отказ от услуги</a>
+								<a href="#">Карта сайта</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="under-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="under-footer__copywrite">
+						© 2016 Страховой центр «ПОЛИС»
+					</div>
+				</div>
+				<div class="col-sm-6 text-center">
+					<a href="#">
+						<i class="ico ico-vk"></i>
+					</a>
+					<a href="#">
+						<i class="ico ico-youtube"></i>
+					</a>
+					<a href="#">
+						<i class="ico ico-instagram"></i>
+					</a>
+				</div>
+				<div class="col-sm-3 text-right">
+					<div class="under-footer__phone">
+						8 800 200-26-12
+						<span>Поможем с выбором с 10 до 20</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER :: END -->
+
+	<!-- VZR-HELPER :: START -->
+	<div class="container absolute-container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="helper__general" id="show-helper">
+					<div class="pull-right"><i class="fa fa-times-circle-o" id="close-helper"></i></div>
+					Если у вас возникли сложности в приобритении полиса ВЗР, данный помошник поможет вам пошагово совершить покупку
+					<div class="helper__general__pagination">
+						<a href="#">
+							<i class="fa fa-arrow-left" id="helper__prev"></i>
+						</a>
+						<div class="helper__general__pagination__step">
+							1/7. <span>Выбор места путешествия</span>
+						</div>
+						<a href="#">
+							<i class="fa fa-arrow-right" id="helper__next"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- VZR-HELPER :: END -->
+
+
+</body>
+</html>

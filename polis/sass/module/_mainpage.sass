@@ -1,0 +1,76 @@
+
+// Slider
+.main-slider
+	background: #F1F5F9
+	.owl-nav
+		position: absolute
+		bottom: 70px
+		left: 0
+		font-size: 0
+		.owl-prev, .owl-next
+			border: 1px solid #D4D7D8
+			height: 48px
+			width: 48px
+			display: inline-block
+			content: ' '
+			background-color: #F1F5F9
+			background-repeat: no-repeat
+			background-position: center
+			@include transition(all .4s ease)
+			&:hover
+				border-color: darken(#D4D7D8, 20%)
+		.owl-prev
+			background-image: url('../img/owl-prev.svg')
+			@include border-left-radius(4px)
+		.owl-next
+			background-image: url('../img/owl-next.svg')
+			@include border-right-radius(4px)
+			margin-left: -1px
+	.owl-dots
+		left: 0
+		@include transform(translateX(0))
+		bottom: 260px
+		.owl-dot
+			border-radius: 0
+			background: #BDC2C3
+			display: block
+			margin-bottom: 7px
+			width: 25px
+			height: 3px
+			border: none
+			@include transition(all .4s ease)
+			&.active
+				background: $green
+				width: 35px
+				height: 3px
+
+	
+.main-slider__image
+	min-height: 400px
+	.img-responsive
+		position: absolute
+		bottom: 0
+		left: 50%
+		@include transform(translateX(-50%))
+.main-slider__slide
+
+.main-slider__title
+	font-size: 32px
+	color: $green
+	margin-top: 80px
+	text-transform: uppercase
+
+.main-slider__subtitle
+	font-size: 30px
+	color: $blue
+	margin-top: 10px
+
+.main-slider__offer
+	font-size: 22px
+	color: $blue
+	margin-top: 25px
+	line-height: 27px
+	font-family: 'LatoWeb'
+
+.main-slider__btn
+	margin-top: 35px

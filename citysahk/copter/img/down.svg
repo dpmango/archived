@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="56px" height="30px" viewBox="0 0 56 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>down-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-772.000000, -644.000000)" fill="#FFFFFF">
+            <g id="1st---copy" transform="translate(-210.000000, 0.000000)">
+                <g id="down-arrow" transform="translate(982.000000, 644.000000)">
+                    <path d="M55.1863248,0.761904762 C54.4205128,-4.69901895e-14 53.1760684,-4.69901895e-14 52.4102564,0.761904762 L28,25.0952381 L3.54188034,0.761904762 C2.77606838,-4.69901895e-14 1.53162393,-4.69901895e-14 0.765811966,0.761904762 C-5.7620575e-14,1.52380952 -5.7620575e-14,2.76190476 0.765811966,3.52380952 L26.5641026,29.1904762 C26.9470085,29.5714286 27.425641,29.7619048 27.9521368,29.7619048 C28.4307692,29.7619048 28.957265,29.5714286 29.3401709,29.1904762 L55.1384615,3.52380952 C55.9521368,2.76190476 55.9521368,1.52380952 55.1863248,0.761904762 L55.1863248,0.761904762 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,200 @@
+/*****************
+	STATES 
+******************/
+
+// Elements
+
+.btn-primary{
+	background-color: $green !important;
+	@include border-radius(8px);
+	&:hover{
+	background-color: $greenHover !important;}
+}
+.btn-info{
+	background-color: #38A9EB !important;
+	@include border-radius(8px);
+	&:hover{
+		background-color: #5FBAEF !important;}
+}
+
+.caption.lg{
+	font-size: 36px;
+	margin-bottom: 15px;
+	display: inline-block;
+
+	@include mq($until: tablet) {font-size: 18px;}
+}
+
+// Header
+
+header.floating{
+	padding-bottom: 15px;
+	position: fixed;
+	width: 100%;
+	color: white;
+	@include linear-gradient(to top, transparent, transparent);
+	background-color: black;
+	z-index: 10;
+	@include transition(background-color 500ms ease-in);
+
+	@include mq($until: tablet) {padding-bottom: 8px;}
+}
+header.static{
+	@extend header.floating;
+	position: absolute;
+}
+
+// Autrhors
+
+.label.verified{
+	background-color: #3B95C5;
+	@include border-radius(9px);
+	color: white;
+	font-size: 11px;
+	line-height: 18px;
+	height: 18px;
+	padding: 0 25px;
+	display: inline-block;
+
+	@include mq($until: tablet) {font-size: 8px; line-height: 14px; height: 14px; padding: 0 15px;}
+}
+
+.logo-footer{
+	@include transform(scale(0.8));
+
+	@include mq($until: tablet) {@include transform(scale(0.6)); margin: 0 0 0 -15px;}
+}
+
+
+// OWL slider
+.owl-carousel{
+	position: relative;
+	.owl-controls{position: relative;}
+	.owl-dots{
+		position: absolute;
+		left: 50%; bottom: -40px; @include transform(translateX(-50%));
+	}
+	.owl-dot{
+		display: inline-block;
+		margin-right: 10px;
+		border: 1px solid $borderColor;
+		background-color: transparent;
+		width: 12px; height: 12px;
+		@include border-radius(10px);
+		&.active, &:hover {background-color: $borderColor; @include transition(all 0.5ms ease-in);}
+	}
+	.owl-prev{
+		display: block; position: absolute; width: 20px; height: 60px;
+		left: -60px; top: 50%; @include transform(translateY(-50%));
+		background: url('../img/left.png') no-repeat 0 0;
+		padding-left: 10px; padding-right: 10px;
+
+		@include mq($until: wide) {left: -50px;}
+		@include mq($until: desktop) {left: -40px;}
+		@include mq($until: tablet) {left: 0px;}
+	}
+	.owl-next{
+		display: block; position: absolute; width: 20px; height: 60px;
+		right: 60px; top: 50%; @include transform(translateY(-50%));
+		background: url('../img/next.png') no-repeat 0 0;
+		padding-left: 10px; padding-right: 10px;
+
+		@include mq($until: wide) {right: 50px;}
+		@include mq($until: desktop) {right: 40px;}
+		@include mq($until: tablet) {right: 0px;}
+	}
+	.owl-prev:hover, .owl-next:hover{@include transition(all 0.5ms ease-in); opacity: 0.5;}
+
+}
+
+
+@charset "UTF-8";
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+
+Copyright (c) 2015 Daniel Eden
+*/
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+

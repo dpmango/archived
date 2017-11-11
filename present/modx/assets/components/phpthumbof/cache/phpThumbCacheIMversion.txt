@@ -1,0 +1,6 @@
+6.9.3-10 Q16 
+Version: ImageMagick 6.9.3-10 Q16 x86_64 2016-05-04 http://www.imagemagick.org
+Copyright: Copyright (C) 1999-2016 ImageMagick Studio LLC
+License: http://www.imagemagick.org/script/license.php
+Features: Cipher 
+Delegates (built-in): bzlib cairo fontconfig freetype jng jpeg pangocairo png rsvg x xml zlib

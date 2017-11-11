@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- FRONT-END FROM RUSSIA WITH LOVE -.- SERGEY KHMELEVSKOY -.- -->
+	<!-- Follow BEM methodology and SMACSS to manage stylesheets -->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>POLIS 812 - Главная </title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/hamburgers.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	
+	<script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<!-- Scripts can be moved to the bottom -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/moment.js"></script>	
+	<script type="text/javascript" src="js/daterangepicker.js"></script>	
+	<script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/mainpage.js"></script>
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<!-- HEADER :: START -->
+	<header>
+		<div class="header-top hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-4 header-top__navi">
+						<a href="#">О КОМПАНИИ</a>
+						<a href="#">НОВОСТИ</a>
+						<a href="#">ОТЗЫВЫ О НАС</a>
+					</div>
+					<div class="hidden-sm col-md-4 header-top__clients text-center">
+						<i class="ico ico-header-people"></i> 300 000 клиентов по всей России!
+					</div>
+					<div class="col-sm-6 col-md-4 header-top__region text-right">
+						<div class="dropdown">
+							Ваш регион: 
+							<a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<span id="selected-region">Санкт-Петербург</span>
+							<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="header-region-toggle">
+							<li><a href="#" data-value="Санкт-Петербург">Санкт-Петербург</a></li>
+							<li><a href="#" data-value="Москва">Москва</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-center hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-md-4">
+						<a href="#">
+						<img src="img/logo.png" class="img-responsive" alt="">
+						</a>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="header-center__phone">
+							<span>8 800 200-26-12</span>
+							<div class="header-center__phone-location">
+							Бесплатные звонки по всей России
+							</div>
+						</div>
+					</div>
+					<div class="hidden-sm col-sm-3 col-md-3">
+						<div class="header-center__phone" id="region-phone--spb">
+							<span>8 812 93-63-812</span>
+							<div class="header-center__phone-location">
+							Санкт-Петербург
+							</div>
+						</div>
+						<div class="header-center__phone" id="region-phone--moscow">
+							<span>8 495 204-28-12</span>
+							<div class="header-center__phone-location">
+							Москва
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-md-2 no-pad-l">
+						<a href="#mailer" class="btn btn-trsp popup-with-zoom-anim"><i class="ico ico-hot-offer"></i> рассылка<br> горячих предложений</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-menu hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="header-menu__list">
+							<li><a href="#">ВИЗА ОНЛАЙН</a></li>
+							<li><a href="#">ОФОРМЛЕНИЕ ВИЗ</a></li>
+							<li class="active"><a href="#">ТУРИСТИЧЕСКАЯ СТРАХОВКА</a></li>
+							<li><a href="#">ОСАГО</a></li>
+							<li><a href="#">ЗЕЛЕНАЯ КАРТА</a></li>
+							<li><a href="#">ПОДБОР ТУРА</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-mobile visible-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-8 text-center">
+						<a href="#">
+						<img src="img/logo.png" class="img-responsive header-mobile__logo" alt="">
+						</a>
+					</div>
+					<div class="col-xs-4 text-right">
+						<button class="hamburger hamburger--collapse" type="button" id="show-me-menu">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="mobile-nav">
+			<ul class="main-navi">
+				<li><a href="#">ВИЗА ОНЛАЙН</a></li>
+				<li><a href="#">ОФОРМЛЕНИЕ ВИЗ</a></li>
+				<li><a href="#">ТУРИСТИЧЕСКАЯ СТРАХОВКА</a></li>
+				<li><a href="#">ОСАГО</a></li>
+				<li><a href="#">ЗЕЛЕНАЯ КАРТА</a></li>
+				<li><a href="#">ПОДБОР ТУРА</a></li>
+			</ul>
+			<div class="mobile-nav-contact">
+				<div class="header-phone"><a href="tel:88002002612">8 800 200-26-12</a></div>
+				<div class="header-adress">Бесплатные звонки по всей России</div>
+			</div>
+		</section>
+	</header>
+	<!-- HEADER :: END -->
+
+	<!-- MAINPAGE SLIDER :: START -->
+	<section class="main-slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="owl-carousel" id="owl-mainpage">
+						<div class="main-slider__slide">
+							<div class="row">
+								<div class="col-sm-6 col-sm-push-6 text-right">
+									<div class="main-slider__title">
+										ТУРИСТИЧЕСКАЯ СТРАХОВКА
+									</div>
+									<div class="main-slider__subtitle">
+										ШЕНГЕН ОТ <span>499 Р</span> НА 15 ДНЕЙ!
+									</div>
+									<div class="main-slider__offer">
+										Бесплатная доставка<br> домой или на работу
+									</div>
+									<div class="main-slider__btn">
+										<a href="http://mango-digital.ru/debug/1016-polis/modx/index.php?id=10" class="btn btn-slider">ОФОРМЛЕНИЕ ОНЛАЙН</a>
+									</div>
+								</div>
+								<div class="col-sm-6 col-sm-pull-6 main-slider__image">
+									<img src="images/slider-vzr.png" class="img-responsive" alt="" />
+								</div>
+							</div>
+						</div>
+						<div class="main-slider__slide">
+							<div class="row">
+								<div class="col-sm-6 text-right">
+									<div class="main-slider__title">
+										ТУРИСТИЧЕСКАЯ СТРАХОВКА
+									</div>
+									<div class="main-slider__subtitle">
+										ШЕНГЕН ОТ <span>499 Р</span> НА 15 ДНЕЙ!
+									</div>
+									<div class="main-slider__offer">
+										Бесплатная доставка<br> домой или на работу
+									</div>
+									<div class="main-slider__btn">
+										<a href="#" class="btn btn-slider">ОФОРМЛЕНИЕ ОНЛАЙН</a>
+									</div>
+								</div>
+								<div class="col-sm-6 main-slider__image">
+									<img src="images/slider-vzr.png" class="img-responsive" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- MAINPAGE SLIDER :: END -->
+	
+	<!-- MAINPAGE SERVICES :: START -->
+	<section class="services white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading text-center">Страховой онлайн-сервис №1 в Санкт-Петербурге</div>
+				</div>
+			</div>
+			<div class="row no-pad-cols">
+				<div class="col-xs-6 col-5">
+					<div class="services__block">
+						<div class="services__title">Оформление виз</div>
+						<div class="services__links">
+							<a href="#"><i class="ico ico-tick"></i> <span>Подготовка документов онлайн</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>Анкета на визу (бесплатное фото)</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>Финская виза 4950 Р</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>Другие визы 3999 Р</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-5">
+					<div class="services__block">
+						<div class="services__title">Страховка туристу</div>
+						<div class="services__links">
+							<a href="#"><i class="ico ico-tick"></i> <span>На 15 дней 499 Р</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>На 30 дней 599 Р</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>Оформление онлайн</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-5">
+					<div class="services__block">
+						<div class="services__title">Зеленая карта</div>
+						<div class="services__links">
+							<a href="#"><i class="ico ico-tick"></i> <span>На 15 дней 2320 Р</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>На 30 дней 4420 Р</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>Доставка к вам домой бесплатна!</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-5">
+					<div class="services__block">
+						<div class="services__title">ОСАГО</div>
+						<div class="services__links">
+							<a href="#"><i class="ico ico-tick"></i> <span>ОСАГО от 1000 Р</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>Техосмотр 499 Р</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6 col-5">
+					<div class="services__block">
+						<div class="services__title">Туры</div>
+						<div class="services__links">
+							<a href="#"><i class="ico ico-tick"></i> <span>Израиль от 14 000 Р</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>Таиланд от 16 000 Р</span></a>
+							<a href="#"><i class="ico ico-tick"></i> <span>Тенерифе от 24 000 Р</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- MAINPAGE SERVICES :: END -->
+
+	<!-- MAINPAGE PRICES :: START -->
+	<section class="price white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading text-center">Финская виза стоимость оформления в Санкт-Петербурге</div>
+					<div class="subtitle compact text-center">За 7 лет работы в сфере страхования и оформления документов для выезда из России, Страховой и Визовый центр «Полис 812» приобрел надежных партнеров, которые входят в ТОП наиболее успешных организаций, работающих на страховом и туристическом рынках.</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="price__block">
+						<div class="price__title">Подготовка документов</div>
+						<div class="price__price">499 <i class="fa fa-rub"></i></div>
+						<div class="price__short-desc">Подготовим полный пакет документов для личной подачи в визовый центр</div>
+						<div class="price__separator"></div>
+						<div class="price__pricing-table">
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-doc"></i> <span>Анкета</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-photo"></i> <span>Фото</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-insurance"></i> <span>Страховка на 30 дней</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-consul"></i> <span>Запись в визовый центр</span>
+							</div>
+						</div>
+						<a href="#" class="btn btn--outline btn--outline--pricing">Заказать онлайн</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="price__block">
+						<div class="price__title">Подготовка в консульство</div>
+						<div class="price__price">899 Р</div>
+						<div class="price__short-desc">Подготовим полный пакет документов для личной подачи в консульство</div>
+						<div class="price__separator"></div>
+						<div class="price__pricing-table">
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-doc"></i> <span>Анкета</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-photo"></i> <span>Фото</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-insurance"></i> <span>Страховка на 30 дней</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-consul"></i> <span>Запись в консульство</span>
+							</div>
+						</div>
+						<a href="#" class="btn btn--outline btn--outline--pricing">Заказать онлайн</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="price__block">
+						<div class="price__title">Пакет стандарт</div>
+						<div class="price__price">4999 Р</div>
+						<div class="price__short-desc">Полное оформление документов с подачей в визовый центр</div>
+						<div class="price__separator"></div>
+						<div class="price__pricing-table">
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-doc"></i> <span>Анкета</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-photo"></i> <span>Фото</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-insurance"></i> <span>Страховка на 30 дней</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-consul"></i> <span>Запись в визовый центр</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-podacha"></i> <span>Подача в визовый центр</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-sbor"></i> <span>Консульские сборы 35 евро</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-sbor"></i> <span>Визовый сбор 25 евро</span>
+							</div>
+						</div>
+						<a href="#" class="btn btn--outline btn--outline--pricing">Заказать онлайн</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="price__block">
+						<div class="price__title">Пакет премиум</div>
+						<div class="price__price">5999 Р</div>
+						<div class="price__short-desc">Забираем документы от Вас и потом доставляем готовые</div>
+						<div class="price__separator"></div>
+						<div class="price__pricing-table">
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-doc"></i> <span>Анкета</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-photo"></i> <span>Фото</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-insurance"></i> <span>Страховка на 30 дней</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-consul"></i> <span>Запись в визовый центр</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-podacha"></i> <span>Подача в визовый центр</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-sbor"></i> <span>Консульские сборы 35 евро</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-sbor"></i> <span>Визовый сбор 25 евро</span>
+							</div>
+							<div class="price__pricing-table__element">
+								<i class="ico ico-pricing-delivery"></i> <span>Услуги курьера</span>
+							</div>
+						</div>
+						<a href="#" class="btn btn--outline btn--outline--pricing">Заказать онлайн</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- MAINPAGE PRICES :: END -->
+
+
+	<!-- MAINPAGE CONTACT :: START -->
+	<section class="mainpage-contacts white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading text-center">Офисы ПОЛИС в Санкт-Петербурге</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-5">
+					<div id="map" class="map mt50" style=""></div>
+					<script type="text/javascript">
+					$(document).ready(function(){
+
+						ymaps.ready(init);
+							function init () {
+								var myMap = new ymaps.Map("map", {
+						            center: [59.9482,30.3056],
+						            zoom: 10,
+						            controls: ['zoomControl'],
+									
+						        }); 
+
+								var myGeoObjects = [];
+									myGeoObjects[0] = new ymaps.Placemark([59.8796,30.2620],{
+						                clusterCaption: 'Метро "Кировский завод"', 
+						                //balloonContentBody: 'Текст в балуне',
+						                },{
+						                // Необходимо указать данный тип макета.
+						                iconLayout: 'default#image',
+						                iconImageHref: 'img/ya-maps/1c.png',
+						                // Размеры метки.
+						                iconImageSize: [46, 30],
+						                // Смещение левого верхнего угла иконки относительно
+						                // её «ножки» (точки привязки).
+						                iconImageOffset: [-3, -42]
+						            });
+						        
+									myGeoObjects[1] = new ymaps.Placemark([59.9893,30.2552],{
+										clusterCaption: 'Метро "Старая деревня"', 
+										//balloonContentBody: 'Текст в балуне',
+										},{
+										// Необходимо указать данный тип макета.
+										iconLayout: 'default#image',
+										iconImageHref: 'img/ya-maps/2c.png',
+										// Размеры метки.
+										iconImageSize: [46, 30],
+										// Смещение левого верхнего угла иконки относительно
+										// её «ножки» (точки привязки).
+										iconImageOffset: [-3, -42]
+						            });
+						        
+									myGeoObjects[2] = new ymaps.Placemark([59.8332,30.3493],{
+						                clusterCaption: ' Метро "Звёздная"', 
+										//balloonContentBody: 'Текст в балуне',
+						                },{
+						                // Необходимо указать данный тип макета.
+						                iconLayout: 'default#image',
+						                iconImageHref: 'img/ya-maps/3c.png',
+						                // Размеры метки.
+						                iconImageSize: [46, 30],
+						                // Смещение левого верхнего угла иконки относительно
+						                // её «ножки» (точки привязки).
+						                iconImageOffset: [-16, -42]
+						            });
+									
+									myGeoObjects[3] = new ymaps.Placemark([60.0372,30.3218],{
+						                clusterCaption: 'Метро "Озерки"', 
+										//balloonContentBody: 'Текст в балуне',
+						                },{
+						                // Необходимо указать данный тип макета.
+						                iconLayout: 'default#image',
+						                iconImageHref: 'img/ya-maps/4c.png',
+						                // Размеры метки.
+						                iconImageSize: [46, 30],
+						                // Смещение левого верхнего угла иконки относительно
+						                // её «ножки» (точки привязки).
+						                iconImageOffset: [-16, -42]
+						            });
+									
+									myGeoObjects[4] = new ymaps.Placemark([55.7613,37.6630],{
+						                clusterCaption: 'Нижний Сусальный переулок дом 5', 
+										//balloonContentBody: 'Текст в балуне',
+						                },{
+						                // Необходимо указать данный тип макета.
+						                iconLayout: 'default#image',
+						                iconImageHref: 'img/ya-maps/4c.png',
+						                // Размеры метки.
+						                iconImageSize: [46, 30],
+						                // Смещение левого верхнего угла иконки относительно
+						                // её «ножки» (точки привязки).
+						                iconImageOffset: [-16, -42]
+						            });
+						        
+									var clusterIcons=[{
+											href:'/images/pointer.png',
+											size:[31,40],
+											offset:[0,0]
+									}];
+						        
+									var clusterer = new ymaps.Clusterer({
+										clusterDisableClickZoom: false,
+										clusterOpenBalloonOnClick: false,
+										// Устанавливаем стандартный макет балуна кластера "Карусель".
+										clusterBalloonContentLayout: 'cluster#balloonCarousel',
+										// Устанавливаем собственный макет.
+										//clusterBalloonItemContentLayout: customItemContentLayout,
+										// Устанавливаем режим открытия балуна. 
+										// В данном примере балун никогда не будет открываться в режиме панели.
+										clusterBalloonPanelMaxMapArea: 0,
+										// Устанавливаем размеры макета контента балуна (в пикселях).
+										clusterBalloonContentLayoutWidth: 300,
+										clusterBalloonContentLayoutHeight: 200,
+										// Устанавливаем максимальное количество элементов в нижней панели на одной странице
+										clusterBalloonPagerSize: 5
+										// Настройка внешего вида нижней панели.
+										// Режим marker рекомендуется использовать с небольшим количеством элементов.
+										// clusterBalloonPagerType: 'marker',
+										// Можно отключить зацикливание списка при навигации при помощи боковых стрелок.
+										// clusterBalloonCycling: false,
+										// Можно отключить отображение меню навигации.
+										// clusterBalloonPagerVisible: false
+									});
+
+							clusterer.add(myGeoObjects);
+							myMap.geoObjects.add(clusterer);
+							myMap.behaviors.disable('scrollZoom');
+						}
+					});
+					</script>
+				</div>
+				<div class="col-sm-7 big-pad-l mt50">
+					<div class="mainpage-contacts__office">
+						<div class="mainpage-contacts__icon">
+							<i class="ico ico-contact-sky"><span>1</span></i>	
+						</div>
+						
+						<div class="mainpage-contacts__content">
+							<div class="mainpage-contacts__name active">Метро «Кировский завод»</div>
+							<i class="ico ico-metro ico-metro--red"></i>
+							<div class="mainpage-contacts__contact-data active">
+								<div class="row">
+									<div class="col-sm-6">
+										пр. Стачек дом 55, Вход со двора<br><br>
+										Пн - Пт с 10-00 до 19-00<br>
+										Сб с 11 до 17-00, Вс - выходной
+									</div>
+									<div class="col-sm-6">
+										Телефон: <b><a href="tel:+78129303540">(812) 930-35-40</a></b><br><br>
+										Почта: <b><a href="mailto:info@polis812.ru">info@polis812.ru</a></b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mainpage-contacts__office">
+						<div class="mainpage-contacts__icon">
+							<i class="ico ico-contact-sky"><span>2</span></i>	
+						</div>
+						
+						<div class="mainpage-contacts__content">
+							<div class="mainpage-contacts__name">Метро «Старая деревня»</div>
+							<i class="ico ico-metro ico-metro--purple"></i>
+							<div class="mainpage-contacts__contact-data">
+								<div class="row">
+									<div class="col-sm-6">
+										пр. Стачек дом 55, Вход со двора<br><br>
+										Пн - Пт с 10-00 до 19-00<br>
+										Сб с 11 до 17-00, Вс - выходной
+									</div>
+									<div class="col-sm-6">
+										Телефон: <b><a href="tel:+78129303540">(812) 930-35-40</a></b><br><br>
+										Почта: <b><a href="mailto:info@polis812.ru">info@polis812.ru</a></b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mainpage-contacts__office">
+						<div class="mainpage-contacts__icon">
+							<i class="ico ico-contact-sky"><span>3</span></i>	
+						</div>
+						
+						<div class="mainpage-contacts__content">
+							<div class="mainpage-contacts__name">Метро «Звёздная»</div>
+							<i class="ico ico-metro ico-metro--blue"></i>
+							<div class="mainpage-contacts__contact-data">
+								<div class="row">
+									<div class="col-sm-6">
+										пр. Стачек дом 55, Вход со двора<br><br>
+										Пн - Пт с 10-00 до 19-00<br>
+										Сб с 11 до 17-00, Вс - выходной
+									</div>
+									<div class="col-sm-6">
+										Телефон: <b><a href="tel:+78129303540">(812) 930-35-40</a></b><br><br>
+										Почта: <b><a href="mailto:info@polis812.ru">info@polis812.ru</a></b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="mainpage-contacts__office">
+						<div class="mainpage-contacts__icon">
+							<i class="ico ico-contact-sky"><span>4</span></i>	
+						</div>
+						
+						<div class="mainpage-contacts__content">
+							<div class="mainpage-contacts__name">Метро «Озерки»</div>
+							<i class="ico ico-metro ico-metro--blue"></i>
+							<div class="mainpage-contacts__contact-data">
+								<div class="row">
+									<div class="col-sm-6">
+										пр. Стачек дом 55, Вход со двора<br><br>
+										Пн - Пт с 10-00 до 19-00<br>
+										Сб с 11 до 17-00, Вс - выходной
+									</div>
+									<div class="col-sm-6">
+										Телефон: <b><a href="tel:+78129303540">(812) 930-35-40</a></b><br><br>
+										Почта: <b><a href="mailto:info@polis812.ru">info@polis812.ru</a></b>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- MAINPAGE CONTACT :: END -->
+
+
+	<!-- SEO TEXT :: START -->
+	<section class="promo-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="promo-text__paragraph font-18">
+						<h2 class="h2">ВАЖНАЯ ИНФОРМАЦИЯ ПО ОФОРМЛЕНИЮ ВИЗЫ</h2>
+						<p>Внимание !!! с 17.11.2014 года консульство Финляндии начало выдавать визы на 2 года!!!!! (при наличии 2 мультивиз, выданных консульством Финляндии за последние 3 года)</p>
+					</div>
+					<div class="promo-text__paragraph">
+						<h2 class="h2">Документы необходимые чтобы оформить и получить Шенгенскую визу:</h2>
+						<p>
+							<ul class="ul">
+								<li>Действующий Загранпаспорт (если у вас в старом паспорте есть визы за последние 3 года, то следует взять и его)</li>
+								<li>Постоянная регистрация (НЕ ВРЕМЕННАЯ) в СЗФО.</li>
+								<li>Паспорт РФ (для лиц старше 16 лет)</li>
+								<li>Свидетельство о рождении (для лиц младше 18 лет)</li>
+								<li>Для детей до 18 лет при подаче документов без или с одним из родителей необходимы: согласие от родителей (нотариально заверенное), с 30.11.2015 на оформление документов принимают только с нотариальным согласием. </li>
+							</ul>
+						</p>
+						
+					</div>
+					<div class="promo-text__paragraph">
+						<h2 class="h2">Шенгенская мультивиза - правила использования</h2>
+						<p>В случае неправильного использования визы, а именно посещение в основном других стран Шенгена, Вам будет отказано и финскую визу Вы не сможете получить. Как правило карантин 1 год.</p>
+						<p>Чтобы этого не случилось, Вам надо, чтобы количество поездок в Финляндию было больше, чем в другие страны Шенгенского соглашения, минимум на 1 поездку, с хорошо откатанной визой, всегда можно получить мультивизу на больший срок.</p>
+					</div>
+					<div class="promo-text__paragraph">
+						<h2 class="h2">Процедура оформления медецинского полиса</h2>
+						<p>После получения визы, Вам не надо ехать и открывать её через Финляндию, это правило давно отменили! По мульти визе Вы можете сразу ехать в нужную Вам страну! С визой Шенген Вам открыты все страны Шенгенского соглашения!</p>
+						<p>Пример. У вас виза (MULTI), вы можете поехать сразу в Испанию, Италию и в любую страну Шенгенского соглашения.</p>
+						<p>В однократных визах стоит отметка - 01</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- SEO TEXT :: END -->
+
+	<!-- VIDEO :: START -->
+	<section class="video white-bg no-m-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+					<div class="heading">
+						Посмотрите как просто оформить визу
+					</div>
+					<div class="subtitle">
+						Наши специалисты подготовили подробное и понятное видео, которое поможет вам получить ответы на все вопросы.
+					</div>
+
+					<div class="video__wrap">
+						<img src="img/video-play.png" alt="" onclick="loadvideo();">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- VIDEO :: END -->
+
+	<!-- SOCIALS :: START -->
+	<section class="socials">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 text-center">
+					<div class="heading">
+						Получайте бонусы и скидки
+					</div>
+					<div class="subtitle">
+						Присоединяйтесь к нам в социальных сетях и получайте информацию о скидках, бонусах и важных новостях
+					</div>
+				</div>
+			</div>
+			<div class="row text-center">
+				<div class="col-xs-4 col-md-3 col-md-offset-1">
+					<a class="social__button social__button--instagram" href="#">
+						<i class="ico ico-instagram"></i>
+						<span>Подписаться</span>
+					</a>
+					<div class="social__metric">
+						1500 подписчиков в Инстаграм
+					</div>
+				</div>
+				<div class="col-xs-4 col-md-4">
+					<a class="social__button social__button--vk" href="#">
+						<i class="ico ico-vk"></i>
+						<span>Подписаться</span>
+					</a>
+					<div class="social__metric">
+						15 000 подписчиков ВКОНТАКЕ
+					</div>
+				</div>
+				<div class="col-xs-4 col-md-3">
+					<a class="social__button social__button--youtube" href="#">
+						<i class="ico ico-youtube"></i>
+						<span>Подписаться</span>
+					</a>
+					<div class="social__metric">
+						500 подписчиков в YouTube
+					</div>
+				</div>
+			</div>
+			<!-- SUBSCRIBE :: START -->
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<div class="subscribe white-bg">
+						<form accept="" action="">
+							<div class="row">
+								<div class="col-sm-8">
+									<div class="subscribe__title">Подпишитесь на рассылку горячих предложений</div>
+									<div class="form-group">
+										<label>Ваш email</label>
+										<input type="text" class="subscribe__control" placeholder="ivan.pupkin@mail.ru">
+										<a href="#" class="btn btn--green">ПОДПИСАТЬСЯ НА РАССЫЛКУ</a>
+									</div>
+								</div>
+								<div class="col-sm-4 no-pad-l">
+									<div class="subscribe__options-title">
+										По каким категориям вы хотите получать предложения и промо-коды ?
+									</div>
+									<div class="subscribe__chechboxes">
+										<div class="row">
+											<div class="col-sm-6 ">
+												<div class="calculator__form__filter__checkbox">
+													<input type="checkbox" name="calc__filter" id="subscribe__opt__1" checked="">
+													<label for="subscribe__opt__1">Оформление виз</label>
+												</div>
+												<div class="calculator__form__filter__checkbox">
+													<input type="checkbox" name="calc__filter" id="subscribe__opt__2" checked="">
+													<label for="subscribe__opt__2">Страховка ВЗР</label>
+												</div>
+											</div>
+											<div class="col-sm-6 no-pad-l no-pad-r">
+												<div class="calculator__form__filter__checkbox">
+													<input type="checkbox" name="calc__filter" id="subscribe__opt__3" checked="">
+													<label for="subscribe__opt__3">Зеленая карта</label>
+												</div>
+												<div class="calculator__form__filter__checkbox">
+													<input type="checkbox" name="calc__filter" id="subscribe__opt__4" checked="">
+													<label for="subscribe__opt__4">Страховка ОСАГО</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- SUBSCRIBE :: END -->
+		</div>
+	</section>
+	<!-- SOCIALS :: END -->
+
+
+	<!-- PRESS :: START -->
+	<section class="press white-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="heading">
+						Пресса о нас
+					</div>
+				</div>
+				<div class="owl-carousel" id="press-carousel">
+				<div class="col-sm-4">
+					<div class="press__image">
+						<img src="images/commersant.png" alt="">
+					</div>
+					<div class="press__title">
+						Компания «Полис»: финская шенгенская виза - это просто
+					</div>
+					<div class="press__short">
+						Цены на услуги не просто ниже средних, а одни из самых низких в России. Кроме того, компания широко использует систему бонусов и скидок, которые позволяют сэкономить больше.
+					</div>
+					<div class="press__link">
+						<a href="#">Подробнее на <span>kommersant.ru</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="press__image">
+						<img src="images/metro.png" alt="">
+					</div>
+					<div class="press__title">
+						Компания, за ценовую политику которой ее не любят конкуренты
+					</div>
+					<div class="press__short">
+						Полноценная и всестороння консультация и поддержка в режиме онлайн дает широкие возможности при оформлении любого полиса.
+					</div>
+					<div class="press__link">
+						<a href="#">Подробнее на <span>metronews.ru</span></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="press__image">
+						<img src="images/dpru.png" alt="">
+					</div>
+					<div class="press__title">
+						Как быстро и выгодно оформить туристическую страховку?
+					</div>
+					<div class="press__short">
+						Перспективная и быстроразвивающаяся компания готова сотрудничать с населением не только в реальном, но и в интернет-пространстве.
+					</div>
+					<div class="press__link">
+						<a href="#">Подробнее на <span>dp.ru</span></a>
+					</div>
+				</div>	
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="heading heading--top-border">
+						Отзывы наших клиентов <i class="ico ico-vk--heading"></i>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="owl-carousel" id="testimonials-carousel">
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Пользуюсь услугами "Полис 812" уже несколько лет. Еще с тех пор когда их офис был на ул. Сикейроса 6 корп.1 Делаю у них финские визы и страховки. Цены одни из самых низких по городу.Девушки работающие там всегда помогут в возникающих вопросах.
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Заказывали страховку для визы через интернет. Все быстро и удобно. Спасибо. Все лучшие
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Пользуюсь Вашими услугами уже не первый раз. Оформление страховки занимает всего пару минут, присланный на эл. почту полис никаких вопросов в посольстве не вызывает. Страховки выгоднее чем у Вас я не нашел, да еще и с промокодом
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+							</div>
+						</div>	
+						<div class="testimonial">
+							<div class="testimonial__image">
+								<img src="images/testimonial.png" alt="" class="img-responsive">
+							</div>
+							<div class="testinmonial__content">
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+							</div>
+						</div>		
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- PRESS :: END -->
+
+
+	<!-- NEWS :: START -->
+	<section class="news text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading">
+						Новости страхового центра Полис
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<a class="news__card" href="#">
+						<div class="news__card__title">
+							Стоимость зеленой карты с 15 сентября уменьшиться
+						</div>
+						<div class="news__card__short">
+							Легковой автомобиль на 15 дней 2450 руб на 30 дней 4670 руб на 1 год 22240 руб
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a class="news__card" href="#">
+						<div class="news__card__title">
+							Режим работы 12 июня
+						</div>
+						<div class="news__card__short">
+							12 июня только офис у м. Звездная с 12 до 17 13 июня в режиме выходного дня с 11 до 18 ( офис у м.Кировский Завод до 17-00)
+						</div>
+					</a>
+				</div>
+				<div class="col-sm-4">
+					<a class="news__card" href="#">
+						<div class="news__card__title">
+							График на майские праздники
+						</div>
+						<div class="news__card__short">
+							1 мая - выходной 9 мая - выходной
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- NEWS :: END -->
+
+
+	<!-- FOOTER :: START -->
+	<footer class="footer hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<div class="footer__heading">Страхование</div>
+					<div class="footer__links">
+						<a href="#">КАСКО</a>
+						<a href="#">Туристическая страховка</a>
+						<a href="#">ОСАГО</a>
+						<a href="#">Зеленая карта</a>
+						<a href="#">Проверить КБМ по базе РСА</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer__heading">Горящие туры</div>
+					<div class="footer__links">
+						<a href="#">Подбор тура</a>
+						<a href="#">Горящие туры в Грецию из Санкт-Петербурга</a>
+						<a href="#">Горящие туры в Крым из Санкт-Петербурга</a>
+						<a href="#">Горящие туры в Сочи из Санкт-Петербурга</a>
+						<a href="#">Горящие туры на Кипр из Санкт-Петербурга</a>
+						<a href="#">Билеты на паром</a>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="footer__heading">Оформление виз</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Виза в Испанию</a>
+								<a href="#">Виза в Эстонию</a>
+								<a href="#">Виза в Литву</a>
+								<a href="#">Виза в Италию</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Виза в США</a>
+								<a href="#">Виза в Англию</a>
+								<a href="#">Виза в Голландию</a>
+								<a href="#">Виза в Финляндию</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<div class="footer__heading">О компании</div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Контакты</a>
+								<a href="#">Обратная связь</a>
+								<a href="#">Реквизиты</a>
+								<a href="#">Способы оплаты</a>
+								<a href="#">Отзывы о нас</a>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer__links">
+								<a href="#">Пользовательское соглашение</a>
+								<a href="#">Условия возврата</a>
+								<a href="#">Отказ от услуги</a>
+								<a href="#">Карта сайта</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="under-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="under-footer__copywrite">
+						© 2016 Страховой центр «ПОЛИС»
+					</div>
+				</div>
+				<div class="col-sm-6 text-center">
+					<a href="#">
+						<i class="ico ico-vk"></i>
+					</a>
+					<a href="">
+						<i class="ico ico-fb"></i>
+					</a>
+					<a href="#">
+						<i class="ico ico-youtube"></i>
+					</a>
+					<a href="#">
+						<i class="ico ico-instagram"></i>
+					</a>
+					<a href="">
+						<i class="ico ico-gplus"></i>
+					</a>
+				</div>
+				<div class="col-sm-3 text-right">
+					<div class="under-footer__phone">
+						8 800 200-26-12
+						<span>Поможем с выбором с 10 до 20</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- FOOTER :: END -->
+
+	<!-- VZR-HELPER :: START -->
+	<div class="container absolute-container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="helper__general" id="show-helper">
+					<div class="pull-right"><i class="fa fa-times-circle-o" id="close-helper"></i></div>
+					Если у вас возникли сложности в приобритении полиса ВЗР, данный помошник поможет вам пошагово совершить покупку
+					<div class="helper__general__pagination">
+						<a href="#">
+							<i class="fa fa-arrow-left" id="helper__prev"></i>
+						</a>
+						<div class="helper__general__pagination__step">
+							1/7. <span>Выбор места путешествия</span>
+						</div>
+						<a href="#">
+							<i class="fa fa-arrow-right" id="helper__next"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- VZR-HELPER :: END -->
+
+	<!-- MAILER POPUP :: START -->
+	<div id="mailer" class="zoom-anim-dialog mfp-hide">
+
+		<form accept="" action="">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="subscribe__title">Подпишитесь на рассылку промо-кодов</div>
+					<div class="form-group">
+						<label>Ваш email</label>
+						<input type="text" class="subscribe__control" placeholder="ivan.pupkin@mail.ru">
+						<a href="#" class="btn btn--green">ПОДПИСАТЬСЯ НА РАССЫЛКУ</a>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="subscribe__options-title">
+						По каким категориям вы хотите получать предложения и промо-коды ?
+					</div>
+					<div class="subscribe__chechboxes">
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__1" checked="">
+							<label for="subscribe__opt__modal__1">Оформление виз</label>
+						</div>
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__2" checked="">
+							<label for="subscribe__opt__modal__2">Страховка ВЗР</label>
+						</div>
+
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__3" checked="">
+							<label for="subscribe__opt__modal__3">Зеленая карта</label>
+						</div>
+						<div class="calculator__form__filter__checkbox">
+							<input type="checkbox" name="calc__filter" id="subscribe__opt__modal__4" checked="">
+							<label for="subscribe__opt__modal__4">Страховка ОСАГО</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- MAILER POPUP :: END -->
+
+</body>
+</html>

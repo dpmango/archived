@@ -1,0 +1,208 @@
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+
+.hamburger:hover {
+  opacity: 0.7; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease; }
+
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block; }
+
+.hamburger-inner::before {
+  top: -10px; }
+
+.hamburger-inner::after {
+  bottom: -10px; }
+
+/*
+ * Spin
+ */
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin .hamburger-inner::before {
+  transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in; }
+
+.hamburger--spin .hamburger-inner::after {
+  transition: bottom 0.1s 0.34s ease-in, -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin.is-active .hamburger-inner {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  transition-delay: 0.14s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.hamburger--spin.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.14s ease-out; }
+
+.hamburger--spin.is-active .hamburger-inner::after {
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out, -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+/* hamburger */
+.hamburger {
+  margin-top: 15px;
+  padding: 10px 15px;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  float: left;
+  margin-right: 20px; }
+
+.hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: auto; }
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  background-color: white;
+  border-radius: 3px;
+  height: 4px;
+  width: 36px; }
+
+.mobile-nav {
+  display: none;
+  margin-top: 15px;
+  background: #99286E;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  font-size: 18px; }
+
+.main-navi li {
+  display: block;
+  margin-bottom: 7px;
+  text-transform: uppercase; }
+
+.main-navi li a {
+  color: white; }
+
+.main-navi li a:hover {
+  opacity: 0.7; }
+
+.main-navi li ul {
+  font-size: 14px;
+  padding: 10px 0 5px 0;
+  margin: 5px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background: rgba(255, 255, 255, 0.1); }
+
+@media (max-width: 1200px) {
+  .wrap {
+    width: 940px; } }
+@media (max-width: 992px) {
+  .wrap {
+    width: 750px; } }
+@media (max-width: 768px) {
+  .wrap {
+    width: 93%; } }
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important; }
+
+.hidden-xs {
+  display: block !important; }
+
+/* LG AND LESS */
+@media (max-width: 1200px) {
+  #header-menu-phones .header-skidka {
+    padding-left: 40px;
+    margin-top: 0px; }
+
+  #headImg1 {
+    width: 140px;
+    height: 140px;
+    border: 0; } }
+/* DESKTOP AND LESS */
+@media (max-width: 992px) {
+  #main-header {
+    background: url(img/main-head-bg.jpg) no-repeat 50% 50%; }
+
+  #header-menu-logo {
+    width: 180px; }
+
+  .header-menu-menu {
+    position: absolute;
+    left: 15px;
+    top: 70px; }
+
+  #header-menu-phones .header-skidka {
+    padding-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+    top: 5px;
+    right: 210px; }
+
+  #headImg1 {
+    width: 90px;
+    height: 90px;
+    border: 0; } }
+/* MOBILE */
+@media (max-width: 768px) {
+  .visible-xs {
+    display: block !important; }
+
+  .hidden-xs {
+    display: none !important; }
+
+  #header-menu-logo {
+    width: auto; } }
+
+/*# sourceMappingURL=reponsive.css.map */

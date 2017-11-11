@@ -1,0 +1,873 @@
+
+// HEADER TOP
+.header-top__navi
+	a
+		display: inline-block
+		padding-right: 16px
+		text-transform: uppercase
+		&:last-child
+			padding-right: 0
+		&:hover
+			@include transition(all .4s ease)
+			color: $blue
+		@include mq($until: bp1050)
+			padding-right: 10px
+
+.header-top__clients
+	font-size: 12px
+	margin-top: -3px
+
+.ico-header-people
+	background: url('../img/ico-people.svg') no-repeat 0 0
+	vertical-align: -4px
+	width: 37px
+	height: 21px
+	margin-right: 15px
+
+.header-top__region
+
+	.dropdown
+		text-transform: uppercase
+	.dropdown-menu
+		float: right
+		right: 0
+		left: auto 
+
+	#selected-region
+		color: $blue
+		cursor: pointer
+		display: inline-block
+		margin: 0 5px
+
+.caret
+	background: url('../img/caret.svg')
+	width: 8px
+	height: 5px
+	border: none
+
+
+// HEADER - CENTER
+.header-center__phone
+	padding-top: 10px
+	@include transition(all .4s ease)
+	span
+		color: $blue
+		text-transform: uppercase
+		font-size: 1.1em
+		font-size: 26px
+
+
+.header-center__phone-location
+	font-size: 12px
+	color: $gray
+	font-family: 'LatoWeb'
+	text-transform: none
+	margin-top: -2px
+
+.header-center
+	.btn-trsp
+		margin-top: 15px
+		font-size: 13px
+		white-space: normal
+		text-align: center
+		@include mq($until: bp1050)
+			padding-left: 5px
+			padding-right: 5px
+			max-width: 170px
+		@include mq($until: desktop)
+			float: right
+
+.ico-hot-offer
+	background: url('../img/ico-hot-offer.svg') no-repeat center
+	width: 12px
+	height: 15px
+	margin-right: 5px
+	vertical-align: -3px
+
+// HEDER MENU
+
+.header-menu__list
+	list-style: none
+	text-transform: uppercase
+	text-align: justify
+	line-height: 0px
+	font-size: 0px
+	li
+		display: inline-block
+		line-height: 18px
+		font-size: 18px
+		padding-left: 4px
+		padding-right: 4px
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+		&:hover, &.active
+			color: $green
+			@include transition(all .4s ease)
+		@include mq($until: bp1050)
+			font-size: 16px
+		@include mq($until: desktop)
+			font-size: 15px
+		@include mq($until: bp890)
+			font-size: 14px
+		@include mq($until: bp840)
+			font-size: 13px
+
+	&:after
+		display: inline-block
+		content: ''
+		height: 1px
+		width: 100%
+		font-size: 0
+		line-height: 0
+
+
+// CALCULATOR
+
+.calculator__breadcrumbs
+	font-size: 12px
+	color: $gray
+	font-family: 'LatoWeb'
+	a:hover
+		@include transition(all .4s ease)
+		color: $fontColor
+	@include mq($until: tablet)
+		display: none
+
+.calculator__title
+	@include mq($until: tablet)
+		text-align: center
+	h1
+		font-size: 32px
+		display: inline-block
+		font-weight: 700
+		margin-top: 17px
+		@include mq($until: tablet)
+			font-size: 22px
+			margin-top: 10px
+
+.calculator__helper
+	position: relative
+	display: inline-block
+	margin-right: 10px
+	@include mq($until: tablet)
+		display: none
+
+.pulse
+	display: block
+	border: 10px solid #3DB39E
+	background: transparent
+	border-radius: 60px
+	height: 50px
+	width: 50px
+	@include animation(pulse 4s ease-out)
+	@include animation-iteration-count(infinite)
+	position: absolute
+	top: -10px
+	left: -10px
+	z-index: -1
+	opacity: 0
+
+.ico-question--big
+	background: url('../img/ico-question-big.svg') no-repeat 0 0
+	width: 30px
+	height: 30px
+	vertical-align: -4px
+	z-index: 10
+	&:hover
+		@include transform(scale(1.2))
+		@include transition(all .4s ease-out)
+
+
+// BENEFITS
+
+.benefits
+	img
+		@include transition(all .4s ease)
+		@include mq($until: desktop)
+			@include transform(scale(.85))
+		@include mq($until: tablet)
+			@include transform(scale(.7))
+			margin-bottom: -20px
+
+.benefit-desc
+	font-size: 16px
+	margin-top: 17px
+	@include transition(all .4s ease)
+	@include mq($until: desktop)
+		font-size: 14px
+	@include mq($until: tablet)
+		margin-bottom: 10px
+
+
+
+// INSURANCE
+
+
+.insurance__heading
+	font-size: 24px
+	color: $blue
+	font-family: 'LatoWeb'
+	min-height: 82px
+	@include mq($until: desktop)
+		font-size: 20px
+	@include mq($until: tablet)
+		font-size: 16px
+		min-height: 50px
+
+	img
+		@include mq($until: desktop)
+			@include transform(scale(.8))
+			margin-left: -8px
+		@include mq($until: tablet)
+			@include transform(scale(.65))
+			margin-left: -15px
+
+
+	span
+		vertical-align: 0px
+		display: inline-block
+		margin-left: 35px
+		@include mq($until: desktop)
+			margin-left: 25px
+		@include mq($until: tablet)
+			margin-left: 10px
+
+
+.insurance__description
+	font-size: 15px
+	font-family: 'LatoWeb'
+	line-height: 18px
+	margin-top: 30px
+	@include mq($until: desktop)
+		font-size: 14px
+
+	@include mq($until: tablet)
+		font-size: 12px
+		margin-top: 10px
+
+
+.insurance__description__more
+	margin-top: 20px
+	font-size: 16px
+	font-weight: 700
+	border-bottom: 1px dashed $blue
+	color: $blue
+	@include transition(all .4s ease)
+	display: inline-block
+	text-decoration: none
+	&:hover
+		color: $green
+		border-color: $green
+	&:focus, &:visited
+		text-decoration: none
+	@include mq($until: desktop)
+		font-size: 14px
+		margin-top: 15px
+
+.insurance__description--hidden
+	display: none
+	margin-top: 15px
+
+.insurance__description--visible
+	display: block
+
+.insurance__title
+	font-size: 18px
+	margin-bottom: 10px
+	@include mq($until: desktop)
+		font-size: 16px
+
+.insurance__assist
+	margin-top: 50px
+	@include mq($until: desktop)
+		margin-top: 25px
+		margin-bottom: 15px
+
+
+.insurance__assist__images
+	margin-bottom: 30px
+	img
+		display: inline-block
+		margin-right: 30px
+		@include transition(all .4s ease)
+		&:last-child
+			margin-right: 0
+		@include mq($until: bp1050)
+			margin-right: 15px
+			@include transform(scale(.95))
+		@include mq($until: desktop)
+			@include transform(scale(.8))
+			margin-right: 0
+
+
+.insurance__docs
+	margin-bottom: 15px
+
+.toggable-mobile
+	@include mq($until: tablet)
+		.insurance__title
+			cursor: pointer
+			&:after
+				display: inline-block
+				background: url('../img/ico-plus-text.svg') no-repeat 0 0
+				width: 20px
+				height: 20px
+				content: ' '
+				margin-left: 10px
+				vertical-align: -5px
+				opacity: .5
+				@include transform(scale(0.8))
+				@include transition(all .4s ease)
+			&.active
+				color: $blue
+				&:after
+					opacity: .7
+					@include transform(scale(0.8) rotate(225deg))
+		.insurance__docs__link
+			display: none
+		.insurance__assist__images
+			display: none
+
+
+.insurance__docs__link
+	border: 1px solid #E3E6E7
+	background: #F8F8F8
+	border-radius: 4px
+	display: inline-block
+	margin-right: 20px
+	padding: 7px 10px
+	min-width: 135px
+	text-align: center
+	margin-bottom: 15px
+	&:hover
+		@include transition(all .4s ease)
+		border: 1px solid $blue
+		background-color: darken(#F8F8F8, 3%)
+	&:last-child
+		margin-right: 0
+	@include mq($until: desktop)
+		margin-right: 15px
+		min-width: auto
+
+.insurance__docs__link--with-ico
+	background-image: url("../img/ico-pdf.svg")
+	background-repeat: no-repeat
+	background-position: 15px center
+	font-family: 'LatoWeb'
+	padding-left: 60px
+	padding-right: 25px
+
+
+// text part
+
+.promo-text__paragraph
+	margin-bottom: 35px
+	position: relative
+	@include mq($until: tablet)
+		margin-bottom: 15px
+	.h2
+		font-weight: 700
+		font-size: 26px
+		margin-bottom: 25px
+		margin-top: 0
+		@include mq($until: desktop)
+			font-size: 23px
+			margin-bottom: 18px
+			line-height: 1.3em
+
+		@include mq($until: tablet)
+			font-size: 18px
+			margin-bottom: 10px
+			cursor: pointer
+			display: inline-block
+			&:after
+				display: inline-block
+				background: url('../img/ico-plus-text.svg') no-repeat 0 0
+				width: 20px
+				height: 20px
+				content: ' '
+				margin-left: 10px
+				vertical-align: -5px
+				opacity: .5
+				@include transform(scale(0.8))
+				@include transition(all .4s ease)
+		&.active
+			color: $blue
+			&:after
+				opacity: .7
+				@include transform(scale(0.8) rotate(225deg))
+	p
+		font-size: 15px
+		line-height: 18px
+		font-family: 'LatoWeb'
+		@include mq($until: desktop)
+			font-size: 14px
+			line-height: 17px
+
+		@include mq($until: tablet)
+			font-size: 12px
+			line-height: 14px
+			display: none
+
+.promo-text__paragraph__table
+	display: table
+	@include mq($until: tablet)
+		margin-bottom: 20px
+		display: none
+
+.promo-text__paragraph__table__row
+	display: table-row
+	span
+		font-size: 15px
+		font-family: 'LatoWeb'
+		display: table-cell
+		@include mq($until: tablet)
+			font-size: 13px
+			line-height: 20px
+		&:first-child
+			&:after
+				min-width: 150px
+				background: url('../img/dots.svg') repeat-x 0 bottom
+				height: 10px
+				content: ' '
+				display: inline-block
+				margin-left: 10px
+				margin-right: 10px
+				@include mq($until: tablet)
+					min-width: 50px
+		&:last-child
+
+
+// video
+
+.video__wrap
+	background: url('../img/video-holder-mac.png') no-repeat center
+	margin-top: 40px
+	min-height: 367px
+	@include mq($until: tablet)
+		background: white
+		min-height: auto
+		margin-top: 20px
+	img
+		margin-top: 85px
+		max-width: 100%
+		@include mq($until: tablet)
+			margin-top: 0px
+			@include transform(scale(.7))
+	iframe
+		margin-top: 22px
+		@include mq($until: tablet)
+			width: 100% !important
+			height: 250px !important
+
+
+//socials
+
+.social__button
+	display: block
+	border-radius: 25px
+	margin-top: 60px
+	font-size: 0
+	text-align: left
+	height: 50px
+	max-width: 270px
+	@include transition(all .4s ease)
+	span
+		font-size: 16px
+		color: white
+		margin-left: 55px
+		vertical-align: 20px
+		@include mq($until: wide)
+			margin-left: 35px
+
+	@include mq($until: tablet)
+		margin-top: 30px
+		max-width: auto
+		display: inline-block
+		span
+			display: none
+
+.social__button--instagram
+	background: #856860
+	&:hover
+		background: #6A453B
+
+.social__button--vk
+	background: #6884A1
+	margin-left: auto
+	margin-right: auto
+	&:hover
+		background: #46688C
+	@include mq($until: tablet)
+		margin-left: 0
+		margin-right: 0
+
+
+.social__button--youtube
+	background: #E06A56
+	&:hover
+		background: #DC472E
+
+.ico-instagram
+	background: url('../img/ico-instagram.svg') no-repeat 0 0
+	width: 50px
+	height: 50px
+
+.ico-vk
+	background: url('../img/ico-vk.svg') no-repeat 0 0
+	width: 50px
+	height: 50px
+
+.ico-vk--heading
+	background: url('../img/ico-vk-heading.svg') no-repeat 0 0
+	width: 43px
+	height: 24px
+	margin-left: 10px
+	vertical-align: -3px
+	@include mq($until: tablet)
+		@include transform(scale(.8))
+		vertical-align: -5px
+		margin-left: -5px
+
+.ico-youtube
+	background: url('../img/ico-youtube.svg') no-repeat 0 0
+	width: 50px
+	height: 50px
+	border-radius: 50%
+
+.ico-fb
+	background: url('../img/ico-fb.svg') no-repeat 0 0
+	width: 50px
+	height: 50px
+	border-radius: 50%
+
+.ico-gplus
+	background: url('../img/ico-gplus.svg') no-repeat 0 0
+	width: 50px
+	height: 50px
+	border-radius: 50%
+
+.social__metric
+	font-size: 17px
+	font-family: 'LatoWeb'
+	margin-top: 15px
+	@include mq($until: wide)
+		font-size: 15px
+	@include mq($until: desktop)
+		font-size: 14px
+	@include mq($until: tablet)
+		display: none
+
+// press
+
+#press-carousel
+	@include mq($from: tablet)
+		display: block !important
+	@include mq($until: tablet)
+		border-bottom: 1px solid $borderColor
+		padding-bottom: 50px
+
+.press__image
+	margin-top: 20px
+	text-align: center
+	min-height: 110px
+	position: relative
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		@include transform(translate(-50%, -50%))
+	@include mq($until: tablet)
+		@include transform(scale(.7))
+		position: static
+		margin-top: 0px
+		margin-bottom: -20px
+
+.press__title
+	font-size: 18px
+	line-height: 22px
+	margin-top: 10px
+	@include mq($until: desktop)
+		font-size: 16px
+	@include mq($until: tablet)
+		font-size: 14px
+
+.press__short
+	font-size: 15px
+	line-height: 18px
+	margin-top: 15px
+	opacity: .7
+	@include mq($until: desktop)
+		font-size: 14px
+	@include mq($until: tablet)
+		font-size: 13px
+		margin-top: 10px
+
+.press__link
+	font-size: 15px
+	color: $blue
+	margin-top: 15px
+	line-height: 17px
+	font-family: 'LatoWeb'
+	@include mq($until: tablet)
+		font-size: 13px
+		margin-top: 10px
+		padding-bottom: 25px
+	&:hover
+		@include transition(all .4s ease)
+		color: $green
+		span
+			border-color: $green
+		&:after
+			margin-left: 15px
+	&:after
+		display: inline-block
+		content: ' '
+		width: 13px
+		height: 10px
+		background: url('../img/ico-more.svg') no-repeat 0 0
+		vertical-align: -1px
+		margin-left: 5px
+		@include transition(all .4s ease)
+	span
+		display: inline-block
+		border-bottom: 2px solid $blue
+
+.testimonial
+	border: 2px solid #EAEDED
+	background: #FBFBFB
+	border-radius: 4px
+	position: relative
+	padding: 60px 15px 30px 15px
+	margin: 70px 15px 0 15px
+	&:before
+		display: block
+		position: absolute
+		left: 20px
+		top: 20px
+		width: 28px
+		height: 25px
+		content: ' '
+		background: url('../img/ico-quote.svg') no-repeat 0 0
+
+.testimonial__image
+	position: absolute
+	left: 50%
+	@include transform(translateX(-50%))
+	top: -38px
+	border-radius: 50%
+	width: 75px
+	height: 75px
+	border: 2px solid #EAEDED
+
+.testinmonial__content
+	text-align: center
+	font-size: 14px
+
+.owl-dots
+	position: absolute
+	left: 50%
+	@include transform(translateX(-50%))
+	bottom: -50px
+	.owl-dot
+		display: inline-block
+		height: 15px
+		width: 15px
+		border: 3px solid $borderColor
+		background: transparent
+		position: relative
+		border-radius: 50%
+		margin-right: 15px
+		@include mq($until: tablet)
+			height: 10px
+			width: 10px
+			margin-right: 5px
+		&.active
+			border: 2px solid $borderColor
+			background: $green
+
+#press-carousel
+	.owl-dots
+		bottom: 25px
+
+// news
+.news__card
+	display: block
+	border-radius: 6px
+	background: white
+	padding: 30px 20px 25px 20px
+	margin-top: 40px
+	min-height: 173px
+	&:hover
+		@include transition(all .4s ease)
+		@include box-shadow(0px,3px,6px,rgba(black,.4))
+	@include mq($until: desktop)
+		padding: 20px 
+
+	@include mq($until: tablet)
+		margin-top: 20px
+		padding: 15px 15px
+		min-height: auto
+
+.news__card__title
+	font-size: 20px
+	margin-bottom: 25px
+	line-height: 24px
+	@include mq($until: desktop)
+		font-size: 18px
+		margin-bottom: 20px
+		line-height: 20px
+
+	@include mq($until: tablet)
+		font-size: 16px
+		line-height: 20px
+		margin-bottom: 10px
+
+.news__card__short
+	font-size: 16px
+	font-family: 'LatoWeb'
+	line-height: 22px
+	@include mq($until: desktop)
+		font-size: 15px
+		line-height: 18px
+	@include mq($until: tablet)
+		font-size: 14px
+		line-height: 17px
+
+
+//footer
+
+.footer__heading
+	font-size: 14px
+	margin-bottom: 12px
+
+.footer__links
+	a
+		font-size: 13px
+		line-height: 16px
+		font-family: 'LatoWeb'
+		display: block
+		margin-bottom: 5px
+		@include mq($until: wide)
+			font-size: 12px
+		&:hover
+			opacity: .7
+
+.under-footer__copywrite
+	opacity: 0.7
+	font-size: 12px
+	font-family: 'LatoWeb'
+	padding-top: 17px
+	@include mq($until: tablet)
+		margin-bottom: 15px
+
+.under-footer
+	.ico
+		margin-right: 15px
+		@include mq($until: tablet)
+			@include transform(scale(.8))
+			margin-right: 0px
+		&:hover
+			opacity: 0.7
+			@include transition(all .4s ease)
+
+.under-footer__phone
+	font-size: 24px
+	@include mq($until: tablet)
+		margin-top: 15px
+		font-size: 23px
+	span
+		font-size: 12px
+		font-family: 'LatoWeb'
+		opacity: .7
+		display: block
+		margin-top: -3px
+
+
+/////////
+// HELPER
+/////////
+
+.absolute-container
+	position: absolute
+	top: 30%
+	left: 50%
+	@include transform(translateX(-50%))
+	text-align: right
+	width: 100%
+	filter: none !important
+
+.helper__general
+	display: inline-block
+	background: white
+	border-radius: 10px
+	padding: 20px 20px
+	font-family: 'LatoWeb'
+	text-align: center
+	max-width: 400px
+	@include box-shadow(0,0,6px, rgba(black, .4))
+	display: none
+	float: right
+	position: relative
+	#close-helper
+		padding: 10px
+		font-size: 16px
+		cursor: pointer
+		position: absolute
+		top: 0px
+		right: 0px
+		color: #3DB39E
+		&:hover
+			opacity: .7
+
+.helper__general__pagination
+	margin-top: 20px
+	padding-top: 20px
+	border-top: 1px solid $borderColor
+	position: relative
+	.fa
+		font-size: 24px
+		padding: 10px
+		color: #3DB39E
+		&:hover
+			opacity: .7
+	#helper__prev
+		position: absolute
+		left: 0
+		top: 10px
+	#helper__next
+		position: absolute
+		right: 0
+		top: 10px
+
+
+.helper__general__pagination__step
+	font-size: 14px
+	font-family: 'LatoWebBold'
+
+
+.helper__info
+	position: absolute
+	top: -135px
+	left: 50%
+	width: 70%
+	@include transform(translateX(-50%))
+	background: white
+	font-size: 12px
+	border-radius: 5px
+	padding: 10px
+	@include box-shadow(0,0,6px, rgba(black, .4))
+	display: none
+	text-align: center
+	&:after
+		position: absolute
+		left: 50%
+		bottom: -45px
+		@include transform(translateX(-50%))
+		display: block
+		content: ' '
+		background: url('../img/ico-helper-arrow.svg') no-repeat center
+		width: 40px
+		height: 40px

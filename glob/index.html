@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Glob contents</title>
+
+	<style>
+		*{padding: 0;  margin: 0;}
+		body{
+			font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; 
+			font-size: 16px;
+			color: #fff; 
+			height: 100vh;
+			width: 100%;
+			background-color: #9971BA;
+ 			background-image: -webkit-linear-gradient(-320deg, #e67e22 0%, #9b59b6 100%);
+  			background-image: linear-gradient(50deg, #e67e22 0%, #9b59b6 100%);
+  			overflow-x: hidden;
+		}
+		a{color: inherit; text-decoration: none;}
+
+		.links{ 
+ 			background-color: rgba(44,62,80,0.35);
+ 			border-radius: 10px;
+ 			margin: 5vh 2vw 0vh 2vw;
+ 			padding: 5vh 3vw;
+ 			width: 40vw;
+ 			float: left;
+  		}
+  		@media (max-width: 500px) {
+  			.links{
+  				float: none;
+  				width: 90vw;
+  			}
+  		}
+		ul{list-style: none;}
+		a{
+			display: inline-block;
+			padding: 1vh 0vw 1vh 2vw;
+			width: 95%;
+			border-bottom: 1px solid rgba(255, 255, 255,.1);
+		}
+		a:hover:before{
+			border: 2px solid tomato;
+			background: tomato;
+		}
+		a:before{
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			vertical-align: 3px;
+			margin-right: 10px;
+			margin-left: -6px;
+			content: ' ';
+			background: rgba(255,255,255,0.4);
+			border: 1px solid white;
+			box-sizing: border-box;
+			border-radius: 50%;
+		}
+		a:hover{
+			background: rgba(192, 57, 43,.35);
+			border-bottom: 1px solid rgba(255, 255, 255,.5);
+			color: rgba(255,255,255,.9);
+		}
+		h2{
+			margin-bottom: 3vh;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="links">
+	<h2>Listings pages</h2>
+	<ul class="">
+		<li><a href="all_ads.html" target="_blank">All ads</a></li>
+		<li><a href="all_company_listings.html" target="_blank">All companies</a></li>
+		<li><a href="all_jobs.html" target="_blank">All jobs</a></li>
+		<li><a href="all_motors.html" target="_blank">All motors</a></li>
+		<li><a href="all_neigborhoods.html" target="_blank">All neigborhoods</a></li>
+		<li><a href="all_pets.html" target="_blank">All pets</a></li>
+		<li><a href="all_properties.html" target="_blank">All properties</a></li>
+		<li><a href="all_services.html" target="_blank">All services</a></li>
+		<li><a href="all_wholesale.html" target="_blank">All wholesale</a></li>
+		<li><a href="view_all_ads.html" target="_blank">View all ads</a></li>
+	</ul>
+</div>
+
+<div class="links">
+	<h2>Listings inner pages</h2>
+	<ul class="">
+		<li><a href="edit_company.html" target="_blank">Edit company</a></li>
+		<li><a href="company_profile_form.html" target="_blank">Company profile form</a></li>
+		<li><a href="my_favourites.html" target="_blank">my favourites </a></li>
+		<li><a href="manage_ads.html" target="_blank">Manage ads</a></li>
+		<li><a href="listing.html" target="_blank">Listing</a></li>
+
+		<li><a href="single_service.html" target="_blank">Single service</a></li>
+		<li><a href="single_motor.html" target="_blank">Single motor</a></li>
+		<li><a href="single_neigborhood.html" target="_blank">Single neigborhood</a></li>
+		<li><a href="single_pet.html" target="_blank">Single pet</a></li>
+		<li><a href="single_property.html" target="_blank">Single property</a></li>
+		<li><a href="single_wholesale.html" target="_blank">Single wholesale</a></li>
+		<li><a href="single_ad.html" target="_blank">Single ad</a></li>
+		<li><a href="single_job.html" target="_blank">Single job</a></li>
+	</ul>
+</div>
+
+<div class="links">
+	<h2>Make new publication</h2>
+	<ul class="">
+		<li><a href="post_job.html" target="_blank">Post job</a></li>
+		<li><a href="post_motor.html" target="_blank">Post motor</a></li>
+		<li><a href="post_neighbourhood.html" target="_blank">Post neighbourhood</a></li>
+		<li><a href="post_pets.html" target="_blank">Post pets</a></li>
+		<li><a href="post_product.html" target="_blank">Post product</a></li>
+		<li><a href="post_property.html" target="_blank">Post property</a></li>
+		<li><a href="post_services.html" target="_blank">Post services</a></li>
+		<li><a href="post_stuff.html" target="_blank">Post stuff for sale</a></li>
+	
+	</ul>
+</div>
+
+
+<div class="links">
+	<h2>Service pages</h2>
+	<ul class="">
+		<li><a href="mainpage.html" target="_blank">Index (mainpage)</a></li>
+		<li><a href="about_us.html" target="_blank">About us</a></li>
+		<li><a href="contact_us.html" target="_blank">Contact us</a></li>
+		<li><a href="feedbacks.html" target="_blank">Feedbacks</a></li>
+		<li><a href="support.html" target="_blank">Support</a></li>
+		<li><a href="popups.html" target="_blank">All popups are here</a></li>
+	</ul>
+</div>
+
+<div class="links">
+	<h2>Profile section</h2>
+	<ul class="">
+		<li><a href="profile.html" target="_blank">User profile</a></li>
+		<li><a href="edit_profile.html" target="_blank">Edit profile</a></li>
+	</ul>
+</div>
+
+
+<div class="links">
+	<h2>Emails</h2>
+	<ul class="">
+		<li><a href="email/message.html" target="_blank">EMail: Message</a></li>
+		<li><a href="email/news.html" target="_blank">EMail: News</a></li>
+		<li><a href="email/notification.html" target="_blank">EMail: Notification</a></li>
+	</ul>
+</div>
+
+</body>
+</html>

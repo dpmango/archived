@@ -1,0 +1,34 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => false,
+  'namespace' => 'clientconfig',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"clientconfig-1.3.2-pl\\/modCategory\\/fb1f14713867276975413e1d9db7fa0b\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"clientconfig"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"clientconfig-1.3.2-pl\\/modCategory\\/fb1f14713867276975413e1d9db7fa0b\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"clientconfig"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"clientconfig-1.3.2-pl\\/modCategory\\/fb1f14713867276975413e1d9db7fa0b.tables.resolver.resolver","type":"php","name":"tables.resolver"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a0b357922d935150cf3c6804f4cabe6c',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'fb1f14713867276975413e1d9db7fa0b',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"ClientConfig"}',
+);

@@ -1,0 +1,843 @@
+@import "bourbon/bourbon"
+
+=transition($transition)
+  -webkit-transition: $transition
+  -moz-transition: $transition
+  -o-transition: $transition
+  transition: $transition
+=border-radius($rad)
+  -webkit-border-radius: $rad
+  -moz-border-radius: $rad
+  -o-border-radius: $rad
+  border-radius: $rad
+=border-top-left-radius($rad)
+  -webkit-border-top-left-radius: $rad
+  -moz-border-top-left-radius: $rad
+  -o-border-top-left-radius: $rad
+  border-top-left-radius: $rad
+=box-shadow($sh)
+  -webkit-box-shadow: $sh
+  -moz-box-shadow: $sh
+  box-shadow: $sh
+  
+$dark: #0a0b08
+$grey: #302321
+$blue: #018c91
+$blue-light: #4db1b5
+$red: #7a1100
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+  color: $dark
+  background-color: white
+  -webkit-font-smoothing:antialiased
+  -moz-osx-font-smoothing:grayscale
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  background: url(../img/bg.jpg) repeat 0 0
+
+a, a:hover
+  text-decoration: none
+  color: inherit
+
+.clearfix:after, .clear
+  content: ""
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
+
+.container
+  display: block
+  max-width: 1200px
+  margin: 0 auto
+  width: 100%
+  
+  
+//content starter
+
+header
+  padding-top: 10px
+  .logo
+  
+  .contacts
+    padding-left: 70px
+    .ico-phone
+      background: url(../img/phone.png) no-repeat 0 0
+      width: 50px
+      height: 50px
+      display: inline-block
+      position: absolute
+      left: 14px
+      top: 10px
+    .city
+      text-align: center
+      font-size: 12px
+      color: $grey
+    .ph
+      color: $blue
+      font-size: 18px
+      letter-spacing: 2px
+      text-align: center
+      span
+        font-size: 24px
+        font-weight: bold
+        color: $blue-light
+    .zvonki
+      @extend .city
+  .cart
+    margin-top: 10px
+    .ico-cart
+      background: url(../img/cart.png) no-repeat left center
+      width: 50px
+      height: 50px
+      display: inline-block
+    .shop-cart-body
+      position: relative
+    .count
+      color: white
+      font-size: 25px
+      position: absolute
+      font-style: bold
+      left: 18px
+      top: 0px
+    #cartEmpty
+      font-size: 12px
+      color: $grey
+      margin-top: -5px
+  .top-navigation
+    .menu
+      list-style-type: none
+      margin-top: 25px
+      font-family: 'Jura', sans-serif
+    li
+      display: inline-block
+      padding-left: 5px
+    li:first-child
+      padding-left: 15px
+    a
+      display: inline-block
+      color: white
+      background-color: $dark
+      font-size: 18px
+      height: 40px
+      line-height: 40px
+      @include border-top-radius(10px)
+      padding: 0px 20px
+      @include linear-gradient(50deg, $blue 0%, $blue-light 50%, $blue-light 51%, $blue 100%)
+    a:hover
+      @include linear-gradient(50deg, $blue-light 0%, $blue 50%, $blue 51%, $blue-light 100%)
+      +transition(all .4s ease-in-out)
+      
+
+  
+.slider
+  margin-top: -10px
+  .slide
+    border-radius: 10px
+    overflow: hidden
+    width: 100%
+    border: 2px solid gray
+    img
+      width: 100%
+      display: block
+      height: auto
+  .owl-dots
+    position: absolute
+    bottom: -20px
+    left: 50%
+    @include transform(translateX(-50%))
+  .owl-dot
+    display: inline-block
+    width: 30px
+    height: 4px
+    margin-right: 10px
+    background-color: #9e9e9e
+  .owl-dot.active, .owl-dot:hover
+    background-color: $blue-light
+    +transition(all .4s ease-in-out)
+  .owl-prev
+    opacity: 0
+    position: absolute
+    left: 40px
+    top: 50%
+    @include transform(translateY(-50%))
+    z-index: 2
+    @include triangle(30px, white, left)
+    display: block !important
+  .owl-next
+    opacity: 0
+    position: absolute
+    right: 40px
+    top: 50%
+    @include transform(translateY(-50%))
+    z-index: 2
+    @include triangle(30px, white, right)
+    display: block !important
+.slider:hover .owl-prev, .slider:hover .owl-next
+  opacity: 1
+  +transition(all .4s ease-in-out)
+
+    
+.main
+  margin-top: 30px
+  .container .row .col-sm-12 .row
+    background-color: #fff
+    @include border-top-radius(10px)
+    margin: 0px 0px
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.1)
+    border: 1px solid #c7c7c7
+  .container .row .col-sm-12 .tabsContent .row, .catalogItems, .categoryItems, .boxItem .row
+    box-shadow: 0px 0px 0px rgba(0,0,0,0) !important
+    border: none !important
+  .sidebar
+    margin-top: 15px
+    .search
+      +border-radius(15px)
+      border: 1px solid $blue
+      height: 30px
+      padding: 0px 10px
+      margin-left: 30px
+      width: 85%
+    #ajaxSearch_submit
+      background: url(../img/search.png) no-repeat center center
+      margin-left: 3px
+      border: 0px solid red
+      width: 35px
+      height: 30px
+      display: inline-block
+      position: absolute
+      top: 5px
+      left: 5px
+    .catalogHeading
+      color: white
+      background-color: $blue
+      text-align: center
+      width: 100%
+      display: inline-block
+      font-size: 18px
+      margin-top: 15px
+      line-height: 35px
+      @include border-top-radius(10px)
+    .catalogMenu
+      list-style-type: none
+      li
+        display: inline-block
+        width: 100%
+      .topLvl 
+        position: relative
+      .topLvl > a
+        display: inline-block
+        background: #e5e5e5 url(../img/bgMenuCik.png) no-repeat 10px center
+        padding: 8px 0px 8px 35px
+        width: 100%
+        border-bottom: 1px solid #c7c7c7
+      .topLvl > a:hover
+        background-color: white
+        +transition(all .4s ease-in-out)
+      .topLvl .exp
+        @include triangle(12px, $blue, down)
+        position: absolute
+        top: 16px
+        right: 15px
+        z-index: 2
+        cursor: pointer
+      .topLvl .exp.opened, .topLvl.opened .exp
+        @include transform(rotate(-180deg))
+        +transition(all .4s ease-in-out)
+      .topLvl.opened ul
+        display: inline-block
+        width: 100%
+      .topLvl ul
+        list-style-type: none
+        display: none
+      .topLvl ul li
+        border-bottom: 1px solid #c7c7c7
+      .topLvl ul li a
+        display: inline-block
+        width: 100%
+        padding: 8px 0px 8px 20px
+        background-color: #f4f2f2
+      .topLvl ul li a:hover
+        background-color: white
+        +transition(all .4s ease-in-out)
+        
+  h1
+    font-size: 32px
+    font-family: 'Jura', sans-serif
+    color: #45261f
+    margin-top: 13px
+  .breadcrumbs
+    padding: 2px 14px 0px 0px
+    font-size: 11px
+    font-weight: 300
+    opacity: 0.8
+    float: right
+    position: absolute
+    right: 0
+    top: 0
+    a
+      text-decoration: underline
+      
+  .filters
+    background-color: $blue
+    +border-radius(5px)
+    padding: 5px 10px
+    color: white
+    margin-top: 12px
+    margin-bottom: 20px
+    .sortby
+    .prePage
+      float: right
+      display: block
+    .styled-select
+      height: 25px
+      overflow: hidden
+      width: 240px
+      display: inline-block
+      +border-radius(10px)
+      position: relative
+      color: $blue
+      padding-left: 15px
+      select
+        background: white
+        border: none
+        font-size: 12px
+        height: 25px
+        padding: 5px
+        width: 268px
+    .short
+      width: 70px
+    .styled-select:after
+      content: ' '
+      @include triangle(12px, $red, down)
+      position: absolute
+      right: 10px
+      top: 10px
+  .pagination
+    font-size: 18px
+    font-weight: 700
+    float: right
+    a
+      text-decoration: underline
+      font-weight: 400
+      padding: 0px 5px
+      display: inline-block
+    .ditto_page, ditto_currentpage
+      
+    .ditto_next_link, .ditto_prev_link
+      position: relative
+      width: 20px
+      height: 20px
+      display: inline-block
+      +border-radius(15px)
+      background-color: $red
+      text-decoration: none
+    .ditto_next_link:after, .ditto_prev_link:after
+      content: ' '
+      display: inline-block
+      @include triangle(10px, white, right)
+      position: absolute
+      top: 5px
+      left: 7px
+    .ditto_prev_link:after
+      @include transform(rotate(180deg))
+      
+       
+  .catalogItems
+    .item
+      border: 4px solid $blue
+      +border-radius(10px)
+      display: inline-block
+      margin-top: 10px
+      width: 100%
+      img
+        width: 100%
+      .name
+        display: inline-block
+        width: 100%
+        color: white
+        background-color: $blue
+        text-align: center
+        padding: 5px
+        min-height: 65px
+        line-height: 1.3em
+    .item:hover
+      border: 4px solid $blue-light
+      +transition(all .4s ease-in-out)
+    .item:hover .name
+      background-color: $blue-light
+      +transition(all .4s ease-in-out)
+  .textBlock
+    padding-top: 40px
+    p
+      line-height: 1.6em
+
+
+  .categoryItems
+    .cItem
+      +border-radius(10px)
+      box-shadow: -2px 2px 6px rgba($blue, 0.4)
+      @include linear-gradient(to bottom, white 0%, white 68%, rgba($blue,.2) 100%)
+      padding: 7px 0px 15px 0px
+      margin-bottom: 20px
+    .shk-image
+      display: inline-block
+      width: 100%
+      padding: 0px 10px
+    .cName
+      padding: 7px 15px
+      display: inline-block
+      border-bottom: 1px dotted $grey
+    .line
+      display: block
+      width: 100%
+      height: 2px
+      margin-top: 5px
+      bac
+      @include linear-gradient(to left, white 0%, rgba($blue-light, .8) 50%, white 100%)
+    .shk-price
+      padding: 10px 15px
+      .price
+        font-size: 20px
+        color: $blue
+      .price span
+        font-size: 16px
+        font-weight: 300
+    .shs-count
+      float: right
+      position: relative
+      input
+        height: 30px
+        width: 35px
+        padding: 0px 10px
+        margin-right: 20px
+        @include border-left-radius(10px)
+        display: inline-block
+        outline: none
+        border: none
+        background-color: #f1f1f1
+    .plus
+      cursor: pointer
+      position: absolute
+      right: 0
+      top: 0
+      background: rgba($grey, 0.6)
+      width: 20px
+      height: 15px
+      display: inline-block
+      .ico
+        @include triangle(12px, white, up)
+        position: absolute
+        top: 50%
+        left: 50%
+        @include transform(translate(-50%, -50%))
+    .minus
+      cursor: pointer
+      position: absolute
+      right: 0
+      top: 15px
+      background: rgba($grey, 0.6)
+      display: inline-block
+      width: 20px
+      height: 15px
+      .ico
+        @include triangle(12px, white, down)
+        position: absolute
+        top: 50%
+        left: 50%
+        @include transform(translate(-50%, -50%))
+    .minus:hover, .plus:hover
+      opacity: 0.7
+      +transition(all .4s ease-in-out)
+    .button
+      padding: 0px 15px
+    .fa 
+      margin-right: 7px
+    .buyMe
+      +border-radius(10px)
+      color: white
+      background: $blue
+      line-height: 30px
+      margin-top: 10px
+      text-transform: uppercase
+      width: 100%
+      height: 30px
+      display: inline-block
+      border: none
+      outline: none
+    .buyMe:hover
+      +transition(all .4s ease-in-out)
+      background-color: $blue-light
+    .cItem:hover
+      box-shadow: -2px 2px 10px rgba($blue, 0.5)
+    .cItem:hover .cName
+      +transition(all .4s ease-in-out)
+      color: $blue
+      
+
+  .shk-item
+    padding-top: 3px
+    .picture
+      a
+        border: 3px solid $blue
+        display: inline-block
+      img
+        display: inline-block
+        width: 100%
+    .mini
+      a
+        margin-bottom: 10px
+    .priceHead
+      color: $blue
+      display: inline-block
+      font-size: 18px
+      padding-left: 15px
+      margin-bottom: 10px
+    .amount
+      float: right
+      display: inline-block
+      padding-right: 15px
+    .pricer
+      position: relative
+      background-color: #f8f8f8
+      padding: 5px 15px
+      border: 1px solid rgba(black,0.05)
+    .priceVal
+      font-size: 28px
+      color: $blue
+      display: inline-block
+      span
+        font-size: 14px
+        font-weight: 300
+    .shs-count
+      position: relative
+      margin-top: 4px
+      input
+        height: 30px
+        width: 35px
+        padding: 0px 10px
+        margin-right: 20px
+        @include border-left-radius(10px)
+        display: inline-block
+        outline: none
+        border: none
+        background-color: #f1f1f1
+    .stock
+      display: block
+      text-align: center
+      margin-top: 10px
+      font-size: 12px
+      font-weight: 300
+      .yes
+        color: $blue
+        display: block
+        font-size: 18px
+        font-weight: 400
+    .submit
+      display: block
+      border: none
+      outline: none
+      line-height: 40px
+      height: 40px
+      +border-radius(10px)
+      @include linear-gradient(to top, $blue 0%, $blue-light 100%)
+      color: white
+      width: 100%
+      margin-top: 10px
+      padding-top: 3px
+      .fa
+        margin-right: 7px
+    .submit:hover
+      @include linear-gradient(to bottom, $blue 0%, $blue-light 100%)
+      
+  .tabsSelect
+    list-style-type: none
+    margin-top: 40px
+    display: inline-block
+    li
+      @include border-top-radius(10px)
+      background-color: #e5e5e5
+      display: inline-block
+      line-height: 30px
+      padding: 5px 30px
+      margin-right: 10px
+      cursor: pointer
+      font-size: 16px
+      border: 1px solid rgba(black,0.1)
+      border-bottom: none
+      font-weight: 300
+    li.active, li:hover
+      background-color: white
+      color: $blue
+      +transition(all .4s ease-in-out)
+    li.active
+      font-weight: 700
+  .boxItem
+    border: 1px solid rgba(black,0.2)
+    +border-radius(10px)
+    +border-top-left-radius(0px)
+    +box-shadow(2px 2px 4px 0px rgba(0,0,0,0.2))
+    margin-top: -10px
+    padding: 40px 20px
+    margin-bottom: 40px
+    display: none
+    ul
+      padding-left: 30px
+    h3
+      margin: 0
+      padding: 0
+      color: $blue
+    table
+      width: 100%
+      margin-top: 20px
+      tr:nth-child(odd)
+        background-color: #f8f8f8
+      tr td
+        padding-top: 5px
+        padding-bottom: 5px
+      tr td:first-child
+        padding-left: 20px
+        font-weight: 700
+      tr td:last-child
+        text-align: right
+        padding-right: 20px
+  .boxItem.visible
+    display: block
+        
+        
+    
+    
+  .tabs
+    list-style-type: none
+    li
+      @include border-top-radius(10px)
+      background-color: #e5e5e5
+      display: inline-block
+      line-height: 30px
+      padding: 0px 20px
+      margin-right: 10px
+      cursor: pointer
+      font-family: 'Jura', sans-serif
+      font-size: 16px
+    li:first-child
+      margin-left: 20px
+    li.active, li:hover
+      background-color: $blue
+      color: white      
+      +transition(all .4s ease-in-out)
+  .box.visible
+    display: block
+  .box
+    border-bottom: 4px solid $blue
+    border-top: 4px solid $blue
+    margin-top: -10px
+    padding-bottom: 15px
+    display: none
+    .s-title
+      text-align: center
+      font-size: 16px
+      color: $blue
+      margin-top: 10px
+      margin-left: auto
+      margin-right: auto
+      display: block
+      margin-bottom: 10px
+    .carousel
+      padding-left: 80px
+      padding-right: 80px
+    .cItem
+      text-align: center
+      margin-right: 15px
+      width: 80%
+      img
+        border: 3px solid $blue
+        +border-radius(10px)
+      .cName
+        margin: 5px 0px 7px 0px
+        display: inline-block
+      .cPrice
+        border: 1px solid $blue-light
+        display: block
+        background-color: rgba($blue-light, 0.1)
+        color: $blue
+        text-align: center
+        +border-radius(5px)
+        span
+          font-size: 18px
+    .cItem:hover img
+      border: 3px solid $blue-light 
+      +transition(all .4s ease-in-out) 
+    .cItem:hover .cName
+      color: $blue
+      +transition(all .4s ease-in-out)
+    .owl-prev
+      position: absolute
+      left: 30px
+      top: 40%
+      @include transform(translateY(-40%))
+      z-index: 2
+      @include triangle(30px, $blue, left)
+    .owl-next
+      position: absolute
+      right: 30px
+      top: 40%
+      @include transform(translateY(-40%))
+      z-index: 2
+      @include triangle(30px, $blue, right)
+    .owl-prev:hover, .owl-next:hover
+      +transition(all .4s ease-in-out)
+      opacity: 0.7
+    .owl-prev:after, .owl-next:after
+      border: 1px solid rgba(black, 0.2)
+      width: 50px
+      height: 50px
+      display: block
+      +border-radius(30px)
+      content: ' '
+      position: absolute
+      top: -25px
+      left: -14px
+      +box-shadow(0px 0px 6px 0px rgba(0,0,0,0.2))
+    .owl-next:after
+      left: -36px !important
+    .owl-prev:hover:after, .owl-next:hover:after
+      +box-shadow(0px 0px 10px 0px rgba(0,0,0,0.3))
+      +transition(all .4s ease-in-out)
+      background-color: rgba(black,0.05)
+      
+      
+  .footerText
+    text-align: center
+    padding-top: 35px
+    padding-bottom: 50px
+
+footer
+  .links
+    color: white
+    background-color: $blue
+    padding: 10px 0px 10px 20px
+  .links a
+    margin-right: 10px
+  .links a:hover
+    +transition(all .4s ease-in-out)
+  .links a:after
+    content: '|'
+    font-size: 20px
+    margin-left: 10px
+  .links a:last-child:after
+    content: ''
+  
+.copy
+  text-align: center
+  font-size: 12px
+  padding: 7px 0px
+  color: white
+  background-color: darken($blue, 1.35)
+  font-weight: 300
+  
+// mobile
+
+.mobile-header
+  background-color: $blue
+  padding: 5px 0px 2px 0px
+  margin-bottom: 20px
+  img
+    margin-left: 60px
+    @include transform(scale(0.8))
+  .navi
+    font-size: 0
+    border: 1px solid rgba(white, 0.5)
+    background-color: rgba(white, .1)
+    width: 40px
+    height: 40px
+    +border-radius(5px)
+    padding: 7px 7px
+    cursor: pointer
+    margin-top: 13px
+    display: inline-block
+    margin-right: 15px
+    z-index: 99
+    position: absolute
+    .Htop, .Hmiddle, .Hbottom
+      background-color: white
+      width: 25px
+      height: 3px
+      margin-bottom: 7px
+      display: inline-block
+    .Hmiddle
+    .Hbottom
+      margin-bottom: 0px
+  .navi:hover .Htop, .navi:hover .Hmiddle, .navi:hover .Hbottom
+    opacity: 0.5
+    +transition(all .4s ease-in-out)
+  .navi:hover
+    border: 1px solid rgba(white, 1)
+    +transition(all .4s ease-in-out)
+  .hamburger
+    position: relative
+  .navi.active .Htop
+    @include transform(rotate(45deg))
+    +transition(all .4s ease-in-out)
+    position: absolute
+    margin-top: 10px
+  .navi.active .Hmiddle
+    display: none
+  .navi.active .Hbottom 
+    @include transform(rotate(-45deg))
+    +transition(all .4s ease-in-out)
+    position: absolute
+    margin-top: 10px
+  .Mcontacts
+    display: inline-block
+    float: right
+    color: white
+    margin-top: 13px
+    a
+      display: inline-block
+      border: 1px solid rgba(white, 0.5)
+      +border-radius(5px)
+      padding: 5px 10px
+      background-color: rgba(white, .1)
+    a:first-child
+      margin-right: 10px
+    a:hover
+      border: 1px solid rgba(white, 1)
+      +transition(all .4s ease-in-out) 
+    a:hover .fa
+      opacity: 0.5
+      +transition(all .4s ease-in-out)
+      
+.Mobilemenu
+  background-color: rgba(black, 0.5)
+  width: 100%
+  height: 100%
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 3
+  .menu
+    text-align: center
+    list-style-type: none
+    margin-top: 100px
+  .menu li
+    display: block
+  .menu li a
+    font-size: 20px
+    color: white
+    padding: 10px
+    display: inline-block
+    
+//fixes
+.owl-stage-outer
+  height: auto !important
+.slider .owl-item
+
+.inner .main
+  margin-top: -10px

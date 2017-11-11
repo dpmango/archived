@@ -1,0 +1,256 @@
+.image-popup-no-margins{
+	position: relative;
+	display: block;
+	&:hover{
+		@include transition(all .4s ease);
+		&:after{
+			background: rgba(black, .25) url('../img/svg/zoom.svg') no-repeat 90% 95%;
+			display: block;
+			width: 100%; height: 100%;
+			left: 0; top: 0;
+			position: absolute;
+			content: ' ';
+			@include transition(all .4s ease);
+		}
+	}
+}
+
+.photos .image-popup-no-margins{
+	&:hover{
+		&:after{
+			background: rgba(black, .25) url('../img/svg/zoom.svg') no-repeat 50% 50%;
+			border-radius: 50%;
+		}
+	}
+}
+
+
+/* Styles for dialog window */
+
+#course-1, #course-2, #course-3, #course-4, #course-5, #course-6 {
+	background: $dark url('../img/pattern.png') repeat 0 -200px;
+	border: 2px solid $purple;
+	border-radius: 40px;
+	color: white;
+	padding: 40px 30px;
+	text-align: left;
+	max-width: 800px;
+	margin: 40px auto;
+	position: relative;
+	@include box-shadow(0,0,20px,rgba(black, .25));
+	&:before {
+		content: " ";
+		position: absolute;
+		z-index: -1;
+		top: -6px;
+		left: -6px;
+		right: -6px;
+		bottom: -6px;
+		border: 4px solid white;
+		border-radius: 43px;
+		@include mq($until: tablet){display: none;};
+	}
+	&:after {
+		content: " ";
+		position: absolute;
+		z-index: -1;
+		top: -11px;
+		left: -11px;
+		right: -11px;
+		bottom: -11px;
+		border: 6px solid $purple;
+		border-radius: 43px;
+		@include mq($until: tablet){display: none;};
+	}
+	.mfp-close{
+		background: url('../img/cancel.png') no-repeat 0 0;
+		width: 41px; 
+		height: 41px;
+		font-size: 0;
+		right: 25px;
+		top: 25px;
+	}
+	.heading{
+		margin-bottom: 45px;
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	}
+	.btn-trsp{
+		font-size: 14px;
+		border: 1px solid white;
+		border-radius: 20px;
+		text-transform: uppercase;
+		padding: 7px 30px;
+		&:hover{
+			@include transition(all .4s ease);
+			background-color: rgba(white, .35);
+			color: white;
+		}
+	}
+	.popup-cta-caption{
+		margin-top: 25px;
+		text-align: center;
+	}
+}
+
+.popup-short{
+	font-size: 14px;
+	line-height: 17px;
+	position: relative;
+	span{
+		padding-left: 50px;
+		display: inline-block;
+	}
+}
+.ico-flag{
+	display: inline-block;
+	width: 33px;
+	height: 35px;
+	background: url('../img/flag.png') no-repeat 0 0;
+	position: absolute;
+	left:0;
+	top: 50%;
+	@include transform(translateY(-50%));
+}
+.popup-time{
+	margin-bottom: 15px;
+	span{vertical-align: 10px; display: inline-block; padding-left: 20px;}
+}
+.ico-calendar{
+	display: inline-block;
+	background: url('../img/calendar.png') no-repeat 0 0;
+	width: 33px;
+	height: 35px;
+}
+.popup-edu-type{
+	span{vertical-align: 10px;display: inline-block; padding-left: 20px;}
+}
+.ico-sun{
+	background: url('../img/sunny.png') no-repeat 0 0;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+}
+
+.popup-cert{
+	font-size: 13px;
+	font-style: italic;
+	text-align: center;
+	opacity: 0.5;
+	display: block;
+	margin: 30px auto 0 auto;
+}
+
+.popup-long{
+	margin-top: 20px;
+	line-height: 17px;
+}
+
+.table-heading{
+	font-size: 20px;
+	line-height: 20px;
+	display: inline-block;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+.table{
+	margin-top: 15px;
+	tr{
+		border: none;
+		&:nth-child(odd){background-color: #17242B};
+		&:nth-child(even){background-color: #1D2B33};
+	}
+}
+.table>tbody>tr>td{border-top: none;}
+
+// CALL ME
+
+#call-me, #sign-up-course {
+	background: $dark;
+	color: white;
+	padding: 30px 40px;
+	text-align: left;
+	max-width: 450px;
+	margin: 40px auto;
+	position: relative;
+	border-radius: 20px;
+	border: 2px solid $purple;
+	.mfp-close{
+		background: url('../img/cancel.png') no-repeat 0 0;
+		width: 41px; 
+		height: 41px;
+		font-size: 0;
+		right: 25px;
+		top: 25px;
+	}
+}
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}

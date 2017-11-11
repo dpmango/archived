@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="50" height="50"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="50" height="50" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="статика" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="polis812_about" transform="translate(-495.000000, -1358.000000)">
+            <g id="viza_price_v2" transform="translate(0.000000, 508.000000)">
+                <g id="seo" transform="translate(135.000000, 131.000000)">
+                    <g id="Group-3-Copy-2" transform="translate(264.000000, 573.000000)">
+                        <g id="search" transform="translate(96.000000, 146.000000)">
+                            <g id="Capa_1">
+                                <path d="M39.8292308,39.9898679 L31.2567308,30.9513208 C33.4432692,28.7280943 34.7978846,25.6631887 34.7978846,22.2830189 C34.7978846,15.5098113 29.3632692,10 22.6825,10 C16.0017308,10 10.5671154,15.5098113 10.5671154,22.2830189 C10.5671154,29.0562264 16.0017308,34.5660377 22.6825,34.5660377 C25.615,34.5660377 28.3063462,33.5032642 30.4040385,31.7397736 L38.9973077,40.8005472 C39.1103846,40.9204528 39.2615385,40.9801132 39.4132692,40.9801132 C39.5575,40.9801132 39.7011538,40.925717 39.8130769,40.8169245 C40.0426923,40.5929057 40.0496154,40.2226604 39.8292308,39.9898679 L39.8292308,39.9898679 Z M22.6825,33.3962264 C16.6380769,33.3962264 11.7209615,28.4110755 11.7209615,22.2830189 C11.7209615,16.1549623 16.6380769,11.1698113 22.6825,11.1698113 C28.7269231,11.1698113 33.6440385,16.1549623 33.6440385,22.2830189 C33.6440385,28.4110755 28.7263462,33.3962264 22.6825,33.3962264 L22.6825,33.3962264 Z" id="Shape" fill="#FFFFFF"></path>
+                                <use id="Rectangle-6" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

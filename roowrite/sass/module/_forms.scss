@@ -1,0 +1,56 @@
+
+// Form styles
+.form-group {
+	margin-bottom: 0;
+	b{color: #BD2424;}
+	.gray{color: #BABABA;}
+	small{display: block;}
+
+	&.half{display: inline-block !important; width: 45%; margin-right: 5%;}
+	.half{display: inline-block !important; width: 43%; } //with .separate-line
+	.select{border: 1px solid $formBorder; min-width: 100px;}
+	
+	label{
+		font-size: 16px; line-height: 1em; margin-bottom: 10px; display: inline-block;
+		
+		@include mq($until: tablet) {font-size: 12px; }
+	}
+
+	textarea, input{
+		border: 1px solid $formBorder; margin-bottom: 25px; @include border-radius(3px);
+		max-width: 100%;
+		@include mq($until: tablet){margin-bottom: 15px;}
+	}
+
+	.radio{
+		display: inline-block; padding-left: 8px; margin-right: 30px; 
+		
+		@include mq($until: tablet) {margin-right: 15px;}
+	}
+
+	.radio label {
+		font-size: 14px;
+		@include mq($until: tablet) {font-size: 12px; padding-left: 10px; }
+	}
+
+	input.error{border: 1px solid tomato; background-color: rgba(tomato,0.03);}
+	//Flat ui styles overwrite
+	.radio input.custom-radio[type="radio"]{width: 15px; height: 15px;}
+	.radio .icons{width: 15px; height: 15px; font-size: 15px; color: $borderColor;}
+	.radio input.custom-radio[type="radio"]:checked + .icons .icon-checked{color: $borderColor;}
+
+	.select2-arrow{
+		background: url('../img/arrow-down.png') no-repeat 0 0; 
+		width: 15px; height: 9px; top: 50%; @include transform(translateY(-50%)); right: 10px;
+		content: ' '; border-color: transparent; border-style: none; border-width: 0px; border-bottom-style: none;}
+
+	.select2-choice{@include border-radius(3px);}
+
+}
+
+.alert{
+	margin-top: 15px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 12px;
+}

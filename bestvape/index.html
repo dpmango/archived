@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!--Made with Love by Mango Digital Production-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<title>Title</title>
+	<meta name="Description" content="">
+
+	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/slidebars.min.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.hc-sticky.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/slidebars.min.js"></script>	
+	<script type="text/javascript" src="js/stacktable.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<link rel="stylesheet" href="css/demo.css" type="text/css" />
+
+	<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<header class="hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 logo">
+					<img src="img/logo.png" />
+				</div>
+				<div class="col-sm-4 contacts">
+					<i class="ico-phone"></i>
+					<div class="city">г. Москва</div>
+					<div class="ph">+7<span>(977)</span>858-34-77</div>
+					<div class="zvonki">Прием заказов с 8:00 - 21:00</div>
+				</div>
+				<div class="col-sm-1 col-sm-offset-3 cart">
+					<div id="shopCart" class="shop-cart">
+						<div id="cartInner" class="empty">
+							<div class="shop-cart-body">
+								<i class="ico-cart"></i>
+								<span class="count">0</span> 
+							</div>
+							<div id="cartEmpty">Корзина</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12 top-navigation">
+					<ul class="menu">
+						<li class="active"><a href="http://best-vape.ru/" title="Главная" >Главная</a></li>
+						<li><a href="/dostavka" title="Доставка и оплата" >Доставка</a></li>
+						<li><a href="/akczii" title="Акции" >Акции</a></li>
+						<li><a href="/kontaktyi" title="Контакты" >Контакты</a></li>
+						<li class="last"><a href="/stati" title="Статьи" >Статьи</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</header>
+	
+	<section class="mobile-header visible-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="navi">
+						<div class="hamburger">
+							<i class="Htop"></i><i class="Hmiddle"></i><i class="Hbottom"></i>
+						</div>
+					</div>
+					<img src="img/mlogo.png" />
+					<div class="Mcontacts">
+						<a href="tel:+7(977)8583477"><i class="fa fa-phone fa-2x"></i></a>
+						<a href="tel:"><i class="fa fa-shopping-cart fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="Mobilemenu">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<ul class="menu">
+						<li><a href="http://best-vape.ru/" title="Главная" >Главная</a></li>
+						<li><a href="/dostavka" title="Доставка и оплата" >Доставка</a></li>
+						<li><a href="/akczii" title="Акции" >Акции</a></li>
+						<li><a href="/kontaktyi" title="Контакты" >Контакты</a></li>
+						<li class="last"><a href="/stati" title="Статьи" >Статьи</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 slider owl-carousel">
+					<div class="slide">
+						<img src="images/banner.png" class="img-responsive" alt="" />
+					</div>
+					<div class="slide">
+						<img src="images/banner2.png" class="img-responsive" alt="" />
+					</div>
+					<div class="slide">
+						<img src="images/banner3.png" class="img-responsive" alt="" />
+					</div>
+					<div class="slide">
+						<img src="images/banner4.png" class="img-responsive" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-3 sidebar">
+							<form id="ajaxSearch_form" action="poisk" method="post">
+							    <input id="ajaxSearch_input" class="cleardefault search" type="text" name="search" placeholder="Запрос для поиска..." />
+							    <button id="ajaxSearch_submit" type="submit" name="sub" value=" " /></button>
+							</form>
+							
+							<span class="catalogHeading">Каталог</span>
+							<ul class="catalogMenu">
+								<li class="topLvl"><a href="#">Моды</a></li>
+								<li class="topLvl"><a href="#">Моды</a><i class="exp"></i>
+									<ul>
+										<li class=""><a href="#">Аккумуляторные моды</a></li>
+										<li class=""><a href="#">Мехмоды</a></li>
+									</ul>
+								</li>
+								<li class="topLvl opened"><a href="#">Автомайзеры</a><i class="exp"></i>
+									<ul>
+										<li class=""><a href="#">Аккумуляторные моды</a></li>
+										<li class=""><a href="#">Мехмоды</a></li>
+									</ul>
+								</li>
+								<li class="topLvl"><a href="#">Электронные кальяны</a></li>
+								<li class="topLvl"><a href="#">Аккумуляторы</a></li>
+								<li class="topLvl"><a href="#">Жидкость</a><i class="exp"></i>
+									<ul>
+										<li class=""><a href="#">Аккумуляторные моды</a></li>
+										<li class=""><a href="#">Мехмоды</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						
+						<div class="col-sm-9">
+							<h1>Интернет магазин электронных сигарет</h1>
+							<div class="row catalogItems">
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<a href="#" class="item">
+										<img src="http://best-vape.ru/assets/cache/images/ico/166x152-Gotovie-nabori.028.png" / alt="" class="img-responsive">
+										<span class="name">Стартовые наборы электронных сигарет</span>
+									</a>
+								</div>
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<a href="#" class="item">
+										<img src="http://best-vape.ru/assets/cache/images/ico/166x152-Modi.028.png" / alt="" class="img-responsive">
+										<span class="name">Моды</span>
+									</a>
+								</div>	
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<a href="#" class="item">
+										<img src="http://best-vape.ru/assets/cache/images/ico/166x152-Atomajzeri.028.png" / alt="" class="img-responsive">
+										<span class="name">Атомайзеры</span>
+									</a>
+								</div>	
+								<div class="col-xs-6 col-sm-4 col-md-3">
+									<a href="#" class="item">
+										<img src="http://best-vape.ru/assets/cache/images/ico/166x152-6.028.png" / alt="" class="img-responsive">
+										<span class="name">Электронные кальяны</span>
+									</a>
+								</div>	
+							</div>
+							
+							<div class="textBlock">
+								<p>Уникальная новинка &ndash; электронная сигарета, курить или &laquo;парить&raquo; которую разрешено даже в общественном месте продолжительное время. Наш специализированный <strong>магазин электронных сигарет в Москве </strong>предлагает большой выбор стартовых наборов и отдельных аксессуаров. Наборы готовы к эксплуатации, достаточно только заправить жидкостью для парения с выбранным вкусом и ароматом.</p>
+				<p>Максимум, что можно получить от курения традиционных сигарет &ndash; это тяжелый табачный дым, который раздражает окружающих, неэстетичный, желтый налет на зубах и пальцах. Здесь играет роль привычка, которую трудно оставить.</p>
+				<p>При &laquo;парении&raquo; электронных сигарет, возможно, получать максимум удовольствия, так как сам процесс приближен к традиционному курению. Но в этом случае образуется ароматный пар, совершенно безвредный для окружающих и не оставляющий никаких неприятных следов.</p>
+				<p>Доступный и <strong>недорогой магазин электронных сигарет</strong> даже начинающему вейперу придется по душе богатым выбором ассортимента. Различные стартовые наборы известных фирм-производителей предлагаются в стильных фирменных упаковках. В каждом наборе находится подробная инструкция, понятная даже новичку. Входящую в комплект <strong>электронную сигарету, в интернет-магазине купить недорого </strong>рекомендовано вместе с запасными деталями. При желании и возможности сборки электронной сигареты легко заменить входящие в набор детали другими. Таким образом, можно создавать наиболее подходящий комплект для индивидуального использования и отвечающий всем требованиям. Безопасность использования электронной сигареты очевидна &ndash; здесь нет открытого огня и горячего пепла. Она работает от заряженной батареи.</p>
+				<p>При курении обычных сигарет нет никакой возможности изменить вкус и &laquo;крепость&raquo; дыма. Одна фирменная <strong>электронная сигарета, купить в интернет-магазине</strong> которую можно в комплекте с расходными деталями, вполне удовлетворяет запросы даже заядлого курильщика. Легкая система регулировки поступления воздуха позволяет получать эффект сигаретной или кальянной затяжки. Жидкость для парения может, как содержать никотин, так и быть ароматизированной безникотиновой. Простая система заправки дает возможность попробовать несколько вариантов парения без смены электронной сигареты.</p>
+				<p>Удобный <strong>интернет-магазин электронных сигарет в Москве</strong> доступен каждому, так как доступен круглосуточно и имеет расширенную доставку для удаленных регионов. Малейшие сомнения в выборе определенной модели поможет развеять звонок консультанту, который расскажет и даст исчерпывающую информацию по использованию, комплектации и доставке. Поэтому купить электронное устройство и комплектующие материалы и испытать все удовольствия от процесса парения не составит никаких затруднений.</p>
+				<p>&nbsp;</p>
+							</div>
+						</div>
+
+						<ul class="tabs">
+							<li class="active"><a>Хиты продаж</a></li>
+							<li class=""><a>Новинки</a></li>
+							<li class=""><a>Акции</a></li>
+						</ul>
+						
+						<div class="tabsContent">
+							<div class="box visible">
+								<span class="s-title">Хиты продаж</span>
+								
+								<div class="row carousel owl-carousel">
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="box">
+								<span class="s-title">Новинки</span>
+								
+								<div class="row carousel owl-carousel">
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="box">
+								<span class="s-title">Акции</span>
+								
+								<div class="row carousel owl-carousel">
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+									<div class="cItem">
+										<a href="#"><img src="http://best-vape.ru/assets/cache/images/IJUST2/133x134-iJust2_01.e83.jpg" class="img-responsive"/></a>
+										<span class="cName">IJUST 2 KIT ELEAF</span>
+										
+										<span class="cPrice">Цена: <span>9990</span> руб.</span>
+									</div>
+								</div>
+							</div>							
+						</div>
+						
+						<div class="footerText">
+							<p>Приятных покупок!</p>
+							<p>ИП Архипов Владимир Павлович, ИНН: 772875471109, ОГРНИП: 315774600261673</p>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="links">
+						<a href="#">Главная</a>
+						<a href="#">Доставка</a>
+						<a href="#">Акции</a>
+						<a href="#">Контакты</a>
+						<a href="#">Статьи</a>
+					</div>
+					<div class="copy">
+						© 2016 г. Москва интернет магазин “Best-Vape”
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

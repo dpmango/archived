@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="формы" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="polis812_mainpage" transform="translate(-145.000000, -823.000000)">
+            <g id="services" transform="translate(0.000000, 608.000000)">
+                <g id="block" transform="translate(135.000000, 146.000000)">
+                    <g id="checked" transform="translate(10.000000, 69.000000)">
+                        <circle id="Oval" fill="#79C930" cx="12" cy="12" r="12"></circle>
+                        <path d="M3.44,12 C3.28,11.84 3.2,11.6 3.2,11.44 C3.2,11.28 3.28,11.04 3.44,10.88 L4.56,9.76 C4.88,9.44 5.36,9.44 5.68,9.76 L5.76,9.84 L10.16,14.56 C10.32,14.72 10.56,14.72 10.72,14.56 L21.44,3.44 L21.52,3.44 L21.52,3.44 C21.84,3.12 22.32,3.12 22.64,3.44 L23.76,4.56 C24.08,4.88 24.08,5.36 23.76,5.68 L23.76,5.68 L10.96,18.96 C10.8,19.12 10.64,19.2 10.4,19.2 C10.16,19.2 10,19.12 9.84,18.96 L3.6,12.24 L3.44,12 L3.44,12 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

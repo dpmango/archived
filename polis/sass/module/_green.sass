@@ -1,0 +1,300 @@
+// Зеленая карта
+.ul_numbers
+	font-family: 'LatoWeb'
+	margin-left: 30px
+	list-style: decimal
+	li
+		margin-bottom: 5px
+
+
+// Форма обратной связи
+.form__container
+	border: 4px solid $borderColor
+
+.forn__container__title
+	font-size: 22px
+	font-family: 'LatoWebBold'
+	text-align: center
+	margin-top: 20px
+	margin-bottom: 25px
+	padding-left: 15px
+	padding-right: 15px
+	@include mq($until: desktop)
+		font-size: 18px
+.form__container__input
+	position: relative
+	@include transition(all .4s ease)
+	&:after
+		width: 0px
+		height: 2px
+		background: $blue
+		content: ' '
+		display: block
+		position: absolute
+		bottom: 0px
+		left: 0
+		@include transition(all .4s ease)
+		z-index: 10
+	&:valid:after, &:hover:after
+		width: 100%
+	label
+		position: absolute
+		top: 15px
+		left: 20px
+		font-size: 15px
+		color: $fontColor
+		font-family: 'LatoWebBold'
+		transform: translate3d(0, 0, 0)
+		transition: all 0.2s ease-in-out
+
+	input, textarea
+		display: block
+		background: transparent
+		outline: none
+		border: 1px solid transparent
+		border-bottom: 2px solid $borderColor
+		color: $fontColor
+		font-size: 15px
+		height: 50px
+		padding: 20px 15px 7px 25px
+		width: 100%
+		line-height: 1em
+		cursor: pointer
+		position: relative
+		@include transition(all .4s ease)
+		&:valid, &:focus
+			outline: 0
+			
+			border-bottom: 2px solid $borderColor
+			@include transition(all .4s ease)
+
+		&:valid + label, &:focus + label
+			font-size: 12px
+			transform: translate3d(0, -10px, 0)
+			opacity: .7
+			display: inline-block
+			background: white
+			padding-left: 5px
+			padding-right: 5px
+			@include mq($until: tablet)
+				display: none
+	textarea
+		height: 85px
+
+	::-webkit-input-placeholder
+		color: $fontColor
+	::-moz-placeholder
+		color: $fontColor
+	:-moz-placeholder
+		color: $fontColor
+	:-ms-input-placeholder
+		color: $fontColor
+
+
+.form__container__submit
+	text-align: center
+
+
+// Table
+.table
+	border: 1px solid $borderColor
+	.bg-light-blue
+		background: #F1F5F9
+	thead
+		background: #F1F5F9
+	.center
+		text-align: center
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+	vertical-align: middle
+	padding: 10px 20px
+	border-right: 1px solid $borderColor
+	@include mq($until: wide)
+		padding: 10px 10px
+	@include mq($until: tablet)
+		padding: 7px 8px
+
+
+// Форма - шаг 2
+
+.regular-input
+	.form-group
+		position: relative
+	.calculator__form__dropdown
+		width: 100%
+		top: 85px
+		left: 0
+	label
+		font-size: 16px
+		color: white
+	.calculator__form__input--ico-car
+		background-position: 95% center
+
+.calculator__form__separator
+	background: $borderColor
+	height: 2px
+	margin-top: 5px
+	margin-bottom: 4px
+
+.calculator__form__separator__group-title
+	font-size: 18px
+	font-family: 'LatoWeb'
+	color: white
+	margin-top: 10px
+	margin-bottom: 5px
+
+.calculator__form__input--car-reg-num
+	position: relative
+	padding: 0px 20px
+
+	input
+		border: 1px solid $borderColor
+		border-radius: 4px
+		display: inline-block
+		width: 100%
+		height: 37px
+		padding-left: 20px
+		padding-right: 80px
+		padding-top: 5px
+		margin-top: 8px
+		&:focus
+			border: 1px solid $blue
+			outline: none
+	.calculator__form__input__car-reg-num__drop
+		position: absolute
+		right: 21px
+		top: 9px
+	.dropdown-toggle
+		height: 100%
+		border: none
+		border-left: 1px solid $borderColor
+		padding: 2px 20px 11px 12px
+		background: #E3E6E7
+		@include border-left-radius(0px)
+		font-size: 16px
+	.caret
+		position: absolute
+		top: 50%
+		@include transform(translateY(-50%))
+		right: 6px
+
+.calculator__form__input__car-reg-num__drop__wrap
+	position: relative
+
+.calculator__form__input__car-reg-num__drop__region
+	position: absolute
+	bottom: 2px
+	font-size: 8px
+	color: rgba($fontColor, .7)
+
+.ico-rus-reg-num
+	background: url('../img/ico-rus-reg-num.svg') no-repeat center
+	width: 11px
+	height: 7px
+	margin-left: 3px
+
+
+.calculator__form__contacts__input--ico-loc
+	background-image: url('../img/ico-form-input-loc.svg')
+	background-repeat: no-repeat
+
+#delivery-offices
+	display: none
+
+#delivery-self
+	display: none
+
+// Single switch
+.calculator__form__single-switch
+	display: block
+	font-size: 12px
+	position: relative
+	cursor: pointer
+	&.right
+		float: right
+		margin-top: 25px
+	&.active
+		.calculator__form__single-switch__wrap
+			background: #34495E
+			padding: 7px 40px 7px 20px
+			.toggler
+				right: 0px
+				background: #25B7D3
+				@include border-left-radius(0px)
+				@include border-right-radius(5px)
+	&:not(.active)
+		.calculator__form__single-switch__wrap
+			.toggler
+				left: 0px
+
+.calculator__form__single-switch__wrap
+	display: inline-block
+	background: white
+	border-radius: 5px
+	height: 30px
+	padding: 7px 20px 7px 40px
+	@include transition(all .4s ease)
+	.no
+		display: none
+		color: white
+	.toggler
+		content: ''
+		position: absolute
+		top: 0
+		width: 27px
+		height: 30px
+		background: #7C8895
+		@include border-left-radius(5px)
+		@include transition(all .4s ease)
+
+// SIDEBAR
+
+.green-sidebar
+	border-left: 1px solid $borderColor
+	font-size: 14px
+	margin-top: 25px
+	padding-top: 173px
+
+.calculator__form__uploader
+	background: rgba(black, .3)
+	border-radius: 5px
+	padding: 25px 10px
+	color: white
+	margin-bottom: 40px
+
+.calculator__form__uploader__title
+	font-size: 16px
+	text-align: center
+	line-height: 1.2em
+
+.calculator__form__price-preview
+	background: rgba(black, .3)
+	border-radius: 5px
+	text-align: center
+	padding: 20px 15px 70px 15px
+	position: relative
+	color: white
+
+.calculator__form__price-preview__title
+	font-size: 18px
+	line-height: 22px
+
+.calculator__form__price-preview__price
+	font-size: 22px
+	margin-top: 15px
+
+.calculator__form__price-preview__logo
+	position: absolute
+	bottom: 0
+	left: 0
+	@include border-bottom-radius(5px)
+	background: white
+	padding: 10px
+	width: 100%
+	.img-responsive
+		max-width: 160px
+		margin: 0 auto
+
+
+
+

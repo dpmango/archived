@@ -1,0 +1,67 @@
+/*************************
+GENERAL RULES
+*************************/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'LatoWebBold';
+  color: $fontColor;
+  font-size: 14px;
+  background-color: #F1F5F9;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @include mq($until: tablet) {font-size: 12px;}
+}
+
+a{
+  color: inherit;
+}
+
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6{
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.7rem;
+}
+
+b{
+  font-weight: 700;
+  font-style: bold;
+}
+
+.ico{
+  display: inline-block;
+  content: ' ';
+}
+/* Helpers */
+
+.center{
+  text-align: center;
+}
+
+.clearfix, .clear{
+  display: block;
+  content: '';
+  clear: both;
+}

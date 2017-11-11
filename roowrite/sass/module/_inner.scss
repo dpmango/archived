@@ -1,0 +1,695 @@
+
+/*******
+SPEC-Essay
+*******/
+
+.spec-essay{
+	.heading{
+		margin-bottom: 40px;
+		@include mq($until: wide) {font-size: 36px; line-height: 41px;}
+		@include mq($from: mobileLand, $until: tablet) {font-size: 30px; line-height: 36px; text-align: center; margin-bottom: 20px;}
+		@include mq($until: mobileLand) {font-size: 24px; line-height: 27px; text-align: center; margin-bottom: 10px;}
+	}
+	.img-responsive{
+		@include mq($from: mobileLand, $until: tablet) {margin: 0 auto; width: 40%;}
+		@include mq($until: mobileLand) {margin: 0 auto; width: 50%;}
+	}
+	.benefits-list{
+		margin-left: 0;
+
+		@include mq($until: wide) {font-size: 16px;}
+		@include mq($until: tablet) {font-size: 16px; line-height: 26px; margin-top: 20px;}
+
+		li{
+			@include mq($until: tablet) {margin-bottom: 20px;}
+		}
+		li:before{
+			top: 0; @include transform(translateY(0));
+			@include mq($until: tablet) { @include transform(scale(0.7)); margin-top: -3px;}
+		}
+	}
+}
+
+.details-form{
+	border: 1px solid $separator;
+	background-color: white;
+	margin-top: 8px;
+	@include box-shadow(0,0,4px,rgba(black,.3));
+	padding: 25px 40px 50px 40px;
+	margin-bottom: 100px;
+	@include border-radius(3px);
+
+	@include mq($until: wide) {padding: 25px 20px 30px 20px; margin-bottom: 40px;}
+
+	.btn{ 
+		width: 100%; display: block;
+
+		@include mq($until: tablet) {margin-top: 15px;}
+	}
+	label{@include mq($until: desktop) {font-size: 14px;}}
+	.form-group .radio{@include mq($until: desktop) {margin-right: 10px;}}
+	.form-group .radio:last-child{margin-right: 0;}
+	.radio label{@include mq($until: desktop) {padding-left: 15px;}}
+}
+
+.form-caption{
+	display: inline-block;
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 12px;
+	@include mq($until: tablet) {font-size: 24px; }
+}
+
+
+/*******
+Checkout
+*******/
+
+.checkout .heading{
+	@include mq($until: tablet) {font-size: 24px;}
+}
+
+.form-delivery{
+	border: 1px solid $separator;
+	background-color: white;
+	@include box-shadow(0,0,4px,rgba(black,.3));
+	padding: 25px 20px 30px 20px;
+	margin-top: 15px;
+	@include border-radius(3px);
+
+	@include mq($until: tablet) {padding: 25px 14px 30px 14px; }
+
+	label{
+		@include mq($until: tablet) {font-size:14px;}
+	}
+	.btn{
+		font-size: 18px; margin-top: 0px; padding-left: 30px; padding-right: 30px; @include border-radius(3px); cursor: default;
+		@include mq($until: tablet) {font-size:14px; padding-left: 15px; padding-right: 15px;}
+	}
+	.btn-primary{background-color: #66D082 !important; &:hover{background-color: #66D082 !important;}}
+	.btn-info{
+		margin-right: 15px; background-color: #3CAEE1 !important;
+		@include mq($until: tablet) {margin-right: 7px;}
+		&:hover{background-color: #3CAEE1 !important;}
+	}
+}
+
+// A/B second version
+
+.form-delivery.version-2{
+	padding: 15px 40px 15px 50px;
+	
+	@include mq($until: tablet) {padding: 15px 30px 15px 30px;}
+	.author-chars, .author-name{
+		@include mq($from: mobileLand, $until: tablet) {font-size: 14px;}
+	}
+	.img-responsive{
+		margin-top: 10px;
+		@include mq($until: tablet) {margin-top: 0;}
+	}
+	.author-rating{
+		position: static;
+		font-size: 11px; margin-top: 8px;
+		padding-left: 10px;
+		padding-top: 3px;
+		svg{}
+		.num{margin-top: -5px; display: inline-block;}
+		@include mq($until: tablet) {margin-top: 0;}
+	}
+	.col-sm-4{padding-right:0;}
+	.boxed{
+		padding: 10px 10px 20px 10px;
+		@include border-radius(8px);
+
+		@include mq($until: tablet) {margin-top: 15px;};
+		.btn{
+			width: 48%; padding-left: 0; padding-right: 0;
+			&.btn-info{margin-right: 0;}
+			&:last-child{float: right;}
+		}
+	}
+}
+
+
+.horizontal-list{
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	@include mq($until: tablet) {margin: 20px 0 20px 0;}
+	span{
+		font-size: 18px;
+		line-height: 20px;
+		display: block;
+		padding-left: 40px;
+		width: 80%;
+
+		@include mq($until: tablet) {font-size: 14px; line-height: 30px; width: 100%;}
+		@include mq($until: mobileLand) {font-size: 12px; line-height: 30px; width: 100%;}
+	}
+}
+
+i.checkmark{
+	position: absolute;
+	display: inline-block;
+	content: '';
+	background: url('../img/success.png') no-repeat 0 0;
+	width: 37px; height: 37px;
+	left: 14px; top: 0; margin-top: -4px;
+	@include transform(scale(0.82));
+
+	@include mq($until: tablet) {@include transform(scale(0.5)); margin-top: -2px;}
+}
+
+// payment form
+.form-payment{
+	border: 1px solid $separator;
+	background-color: white;
+	@include box-shadow(0,0,4px,rgba(black,.3));
+	padding: 15px 80px 20px 80px;
+	margin-top: 15px;
+	@include border-radius(3px);
+
+	@include mq($until: tablet) {padding: 15px 15px 20px 15px;}
+
+	label{
+		@include mq($until: tablet) {font-size:14px;}
+	}
+	.form-group.pull-right{
+		@include mq($until: tablet) {float: none; width: 100%;}
+	}
+	.checkbox{
+		margin-bottom: 10px;
+	}
+	.checkbox label{
+		padding-left: 0px; font-size: 14px;
+		@include mq($until: tablet) {font-size: 10px !important; line-height: 11px !important;}
+	}
+	.checkbox .icons{
+		top: 6px;
+		@include mq($until: tablet) {top: 0;}
+	}
+	.btn{
+		color: white; padding: 0 30px; font-size: 24px; line-height: 46px; height: 46px; margin-top: 0;
+		@include mq($until: tablet) {padding: 0 45px; font-size: 20px; margin-bottom: 10px;}
+	}
+	.jumbotron{padding: 5px 20px; margin-bottom: 20px; background-color: #F3F3F3; 
+		@include mq($until: tablet) {padding: 3px 10px;}
+	}
+	.form-submit-cta{
+		@include mq($until: tablet) {text-align: center;}
+	}
+	a{color: #006BC0; &:hover{@include transition (all 0.5s ease); color: $green;}}
+}
+
+.payment-price{
+	font-size: 18px;
+	img{padding-left: 10px;}
+	display: inline-block;
+
+	@include mq($until: tablet) {font-size: 16px;}
+}
+.separate-line{
+	font-size: 16px;
+	display: inline-block; 
+	margin: 5px 3% 0 3%;
+}
+
+.ssl{
+	display: inline-block;
+	margin-left: 15px;
+	margin-top: 0px;
+}
+
+.secure-server{
+	font-size: 18px;
+	font-style: bold;
+	font-weight: 700;
+	line-height: 20px;
+
+	@include mq($until: tablet) {font-size: 14px; margin-bottom: 10px;}
+	.ico-lock--big{
+		background: url('../img/lock.png') no-repeat 0 0;
+		width: 19px; height: 24px;
+		margin-left: 4px;
+		vertical-align: -5px;
+	}
+}
+.secure-payment{
+	display: block;
+	margin-top: 7px;
+	font-size: 12px;
+	display: block;
+	margin-bottom: 11px;
+	.ico-lock{
+		background: url('../img/small-lock.png') no-repeat 0 0;
+		width: 10px; height: 12px;
+		margin-right: 5px;
+	}
+}
+
+
+/*******
+Confirmation
+*******/
+.confirmation{
+	.boxed{
+		@include box-shadow(0px,0px,4px,rgba(black,.3)); 
+		@include mq($until: tablet){padding: 15px 10px 20px 10px;}
+	}
+	.caption{
+		@include mq($until: tablet){margin-bottom: 5px; display: inline-block;}
+	}
+	.heading{
+		@include mq($until: tablet) {font-size: 24px; margin-bottom: 15px; display: inline-block;}
+	}
+	.btn{
+		display: block; color: white; padding: 0px 30px; width: 100%; line-height: 42px; height: 42px; margin-top: 6px; cursor: default;
+	}
+	.btn-sucess{
+		background-color: #60CC6B; font-size: 16px;
+		@include mq($until: tablet){font-size: 14px; text-align: center; margin-bottom: 40px;}
+	}
+	.btn-warning{
+		background-color: #E4A53A; font-size: 18px; font-weight: 400; font-style: normal;
+		@include mq($until: tablet){font-size: 16px; text-align: center;}
+	}
+	.del-info{
+		line-height: 17px; font-size: 16px; 
+		@include mq($until: tablet){font-size: 14px; line-height: 17px; margin-top: 20px; display: inline-block;}
+	}
+
+	.table{
+		margin-left: 25px; margin-top: 10px;
+		@include mq($until: tablet){margin-left: 0;}
+		tr{background-color: #F5F5F5; font-size: 14px;
+			@include mq($until: tablet){font-size: 12px;}
+			&:hover{background-color: #f0f0f0;}
+
+		}
+		tr td:first-child{
+			color: #8C8C8C; width: 70%; padding-left: 28px;
+			@include mq($until: tablet){width: 50%; padding-left: 10px;}
+		}
+		tr td:last-child{
+			text-align: center; width: 30%; padding-right: 24px;
+			@include mq($until: tablet){width: 50%; padding-right: 10px;}
+		}
+	}
+
+	.col-xs-7{
+		@include mq($until: tablet){padding-left: 0;}
+	}
+	.author-name{@include mq($until: tablet){font-size: 16px;}}
+	.author-location, .author-gpa{
+		@include mq($until: tablet){font-size: 12px;}
+	}
+	.author-rating{
+		@include transform(scale(0.8)); margin: 4px -10px 0 0;
+	}
+}
+
+.caption{
+	font-size: 24px;
+	@include mq($until: tablet){font-size: 20px;}
+}
+
+
+/*******
+Free-essays
+*******/
+.free-essays{
+	.caption{
+		margin-top: 25px;
+		margin-bottom: 20px;
+		display: inline-block;
+
+		@include mq($until: tablet){margin-top: 15px; margin-bottom: 15px; font-size: 18px; line-height: 20px;}
+	}
+	a:hover{
+		color: inherit;
+		.essay-item{
+			@include box-shadow(0,0,4px,rgba(black,0.3));
+			@include transition(all 400ms ease);
+		}
+		.essay-type{
+			color:  $green;
+			@include transition(all 400ms ease);
+		}
+	}
+}
+
+.hero-gradient.blue{
+	padding: 180px 0 120px 0;
+	@include linear-gradient(45deg, #59AFDD 0%, #576EB2 100%);
+
+	@include mq($until: tablet){padding: 120px 0 80px 0;}
+}
+
+.hero-heading{
+	font-size: 40px;
+	line-height: 44px;
+	color: white;
+
+	@include mq($until: wide){font-size: 36px; line-height: 41px;}
+	@include mq($until: tablet){font-size: 24px; line-height: 27px;}
+}
+
+.essay-item{
+	margin-bottom: 20px;
+	cursor: pointer;
+
+	@include mq($until: tablet){margin-bottom: 15px; margin-left: 14px; margin-right: 14px;}
+	&.boxed{
+		padding: 30px 50px 30px 40px;
+		@include mq($until: tablet){padding: 20px 10px 15px 15px;}
+	}
+	p{
+		font-size: 14px;
+		line-height: 16px;
+
+		@include mq($until: tablet){font-size: 11px; line-height: 12px;}
+	}
+}
+
+.essay-type{
+	font-size: 20px;
+	line-height: 22px;
+	display: block;
+	margin-bottom: 8px;
+	margin-top: 7px;
+
+	@include mq($until: tablet){font-size: 16px; line-height: 17px; margin-top: 0; margin-bottom: 12px;}
+}
+.essay-title{
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+	font-style: bold;
+	display: block;
+	margin-bottom: 5px;
+
+	@include mq($until: tablet){font-size: 14px; line-height: 16px; margin-bottom: 15px;}
+}
+
+/*******
+Free Essay
+*******/
+
+.free-essay{
+	.caption{
+		margin-top: 10px;
+		margin-bottom: 25px;
+
+		@include mq($until: tablet) {font-size: 18px; line-height: 20px; margin-bottom: 15px;}
+	}
+	.img-resposnive{
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.warn-info{
+	background-color: #FFFAF3;
+	border: 1px solid #CFC2A5;
+	@include border-radius(10px);
+	color: #816A40;
+	font-size: 18px; line-height: 20px;
+	padding: 20px 10px 20px 40px;
+	margin: 0 14px;
+
+	@include mq($until: wide) {font-size: 14px; line-height: 18px;}
+	@include mq($until: desktop) {font-size: 12px; line-height: 20px;}
+	@include mq($until: tablet) {font-size: 10px; line-height: 11px; padding: 10px 0px 10px 0px;}
+
+	.btn{
+		margin-top: 0px; width: 100%; display: inline-block;
+	}
+}
+
+
+.essay-example{
+	border: 1px solid $separator;
+	background-color: white;
+	margin-top: 8px;
+	@include box-shadow(1px,3px,7px,rgba(black,.5));
+	padding: 80px 100px;
+	margin-bottom: 35px; 
+
+	@include mq($until: wide) {padding: 40px 50px;}
+	@include mq($until: tablet) {padding: 20px 15px; @include box-shadow(0px,0px,0px,tranparent);}
+
+	p{
+		font-family: $georgia;
+		font-size: 14px;
+		line-height: 37px;
+		padding: 7px 0;
+
+		@include mq($until: wide) {font-size: 12px; line-height: 31px;}
+		@include mq($until: tablet) {font-size: 10px; line-height: 20px; padding: 4px 0;}
+	}
+	.essay-name{
+		font-family: $georgia;
+		font-weight: 700;
+		font-style: bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		display: block;
+		margin-bottom: 20px;
+
+		@include mq($until: tablet) {font-size: 12px; line-height: 20px; margin-bottom: 15px;}
+	}
+	.essay-cta{
+		border-top: 1px solid $borderColor;
+		padding-top: 25px;
+
+		@include mq($until: tablet) {padding-top: 15px;}
+		
+		span{
+			font-size:20px;font-style: bold; font-weight:700;line-height: 22px;
+			@include mq($until: tablet) {font-size: 14px; line-height: 16px;}
+		}
+		.btn{
+			padding: 0 30px; line-height: 40px; height: 40px; font-size: 18px; margin-top: 20px;
+			display: block; margin: 20px auto 0px auto;
+			@include mq($until: tablet) {font-size: 16px; margin-top: 10px;}
+		}
+	}
+}
+
+.benefits-block{
+
+	@include mq($until: tablet) {margin-bottom: 30px;}
+
+	img{
+		margin: 0 auto;
+		@include mq($until: tablet) {width: 50%; margin: 0 auto;}
+	}
+
+	.btn{
+		color: white; font-size: 24px; margin-top: 10px;
+
+		@include mq($until: desktop) {font-size: 20px;}
+		@include mq($until: tablet) {font-size: 18px; width: 100%; text-align: center;}
+	}
+}
+.benefits-c{
+	font-size: 30px;
+	line-height: 34px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	display: inline-block;
+
+	@include mq($until: desktop) {font-size: 24px;}
+	@include mq($until: tablet) {font-size: 18px;}
+}
+.essay-benefits{
+	list-style: none;
+	margin-top: 15px;
+	li{
+		font-size: 20px;
+		height: 36px;
+
+		@include mq($until: wide) {font-size: 18px;}
+		@include mq($until: desktop) {font-size: 14px;}
+
+		&:before{
+			display: inline-block;
+			content: ' ';
+			background: url('../img/checkmark-blue.png') no-repeat 0 0;
+			width: 25px; height: 25px;
+			margin-right: 10px;
+
+			@include mq($until: wide) {margin-bottom: -4px;}
+			@include mq($until: tablet) {@include transform(scale(0.7)); margin-right: 5px; margin-bottom: -7px;}
+		}
+	}
+}
+
+/*******
+Writers
+*******/
+
+.writers{
+
+}
+
+.hero-gradient.green{
+	padding: 180px 0 120px 0;
+	@include linear-gradient(45deg, #2F9BB8 0%, #63B15F 100%);
+
+	@include mq($until: tablet){padding: 120px 0 80px 0;}
+}
+
+.writer-nums{
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	@include mq($until: tablet){margin: 25px 0;}
+	.col-xs-4{
+		border-right: 1px solid #BBBBBB;
+		&:last-child{border-right: none;}
+	}
+	.ico{
+		@include mq($until: tablet){@include transform(scale(0.7));}
+	}
+}
+
+.writer-num-desc{
+	font-size: 18px;
+	line-height: 30px;
+
+	@include mq($until: tablet){font-size: 12px; line-height: 16px;}
+	b{display: block;}
+}
+
+.ico-users--writers{background: url('../img/ico-users-w.png') no-repeat 0 0; width: 40px; height: 38px;}
+.ico-list--writers{background: url('../img/ico-list-w.png') no-repeat 0 0; width: 40px; height: 40px;}
+.ico-edit--writers{background: url('../img/ico-edit-w.png') no-repeat 0 0; width: 40px; height: 40px;}
+
+
+.secondary-cta.inner{
+	margin-top: 20px;
+	margin-bottom: 50px;
+
+	@include mq($until: tablet){padding-top: 20px; padding-bottom: 20px; margin-bottom: 30px;}
+}
+
+.join-cta{
+	margin-top: 35px;
+	margin-bottom: 100px;
+
+	@include mq($until: tablet){margin-bottom: 50px;}
+
+	.heading{@include mq($until: tablet){font-size: 24px;}}
+	.btn{
+		font-size: 24px; padding: 0 50px; line-height: 54px; height: 54px;
+		@include mq($until: tablet){font-size: 18px; line-height: 42px; height: 42px;}
+	}
+}
+
+/*******
+Writer Sign up
+*******/
+.hero-gradient.purple{
+	padding: 180px 0 120px 0;
+	@include linear-gradient(45deg, #9971BA 0%, #64B3E0 100%);
+
+	@include mq($until: tablet){padding: 120px 0 80px 0;}
+}
+
+.form-join{
+	background: white;
+	@include border-radius(3px);
+	border: 1px solid $separator;
+	padding: 40px 65px;
+	margin-top: 15px;
+	margin-bottom: 120px;
+
+	@include mq($until: tablet){padding: 20px 15px; margin-bottom: 40px;}
+
+	label{
+		@include mq($until: tablet){font-size:14px;}
+	}
+	.btn-info{
+		margin-top: 0; font-size: 18px; padding: 0px 30px; line-height: 40px; height: 40px;
+		@include mq($until: tablet){width: 100%; font-size: 16px;}
+	}
+}
+
+.requirements{
+	ul{margin-left: 25px;}
+	li{
+		font-size: 24px;
+
+		@include mq($until: wide){font-size: 22px;}
+		@include mq($until: desktop){font-size: 20px;}
+		@include mq($until: tablet){font-size: 14px;}
+	}
+}
+
+/*******
+Contact Us
+*******/
+
+.contact-us{
+
+}
+
+.hero-gradient.orange{
+	padding: 180px 0 120px 0;
+	@include linear-gradient(45deg, #FBA01B 0%, #E65760 100%);
+
+	@include mq($until: tablet){padding: 120px 0 80px 0;}
+}
+
+.send-contact{
+	margin-top: 65px;
+	margin-bottom: 140px;
+
+	@include mq($until: tablet){margin: 30px 0 60px 0;}
+}
+
+/*******
+Text Page
+*******/
+
+.text-content {
+	background: white;
+	@include border-radius(3px);
+	border: 1px solid $separator;
+	padding: 10px 60px 50px 25px;
+	margin-top: 15px;
+	margin-bottom: 70px;
+
+	@include mq($until: tablet){padding: 15px 15px 25px 15px;}
+
+	.caption{line-height: 1em;}
+	p{
+		font-size: 14px;
+		line-height: 17px;
+		padding: 5px 0px 5px 25px;
+
+		@include mq($until: tablet){padding: 0px 0; font-size: 12px; line-height: 16px;}
+	}
+	ul{
+		margin: 5px 40px;
+
+		@include mq($until: tablet){margin-left: 25px;}
+	}
+	li{
+		font-size:14px; line-height: 17px; 
+
+		@include mq($until: tablet){font-size: 12px; line-height: 16px;}
+		&:last-child{margin-bottom: 10px;}
+	}
+
+	// Terms
+	&.terms{
+		ul{
+			list-style: none; margin-left: 25px;
+			@include mq($until: tablet){margin-left: 0;}
+		}
+	}
+
+}
